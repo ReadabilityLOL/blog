@@ -1,1 +1,1 @@
-# A blog, ig
+# A blog, I guess
