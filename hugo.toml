@@ -4,7 +4,7 @@ theme = "ghostwriter"
 
 [Params]
     mainSections = ["post"]
-    intro = trues
+    intro = true
     headline = '''((Lost In (Superfluous) Parentheses))'''
     description = "The blog of someone who doesn't know Lisp"
     github = "https://github.com/XXX"
