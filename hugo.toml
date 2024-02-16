@@ -1,12 +1,12 @@
 baseurl = "/"
-title = "My blog"
+title = "Lost In Superfluous Parentheses"
 theme = "ghostwriter"
 
 [Params]
     mainSections = ["post"]
-    intro = true
-    headline = "My headline"
-    description = "My description"
+    intro = trues
+    headline = '''((Lost In (Superfluous) Parentheses))'''
+    description = "The blog of someone who doesn't know Lisp"
     github = "https://github.com/XXX"
     twitter = "https://twitter.com/XXX"
     email = "XXX@example.com"
