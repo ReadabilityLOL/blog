@@ -1,7 +1,7 @@
 +++
 title = 'second post'
 date = 2024-02-17T02:27:47Z
-draft = true
+draft = false
 +++
 
 Today is the beginning of February break. I have no idea what to type about, so I'm going to talk about my likes and stuff. 
