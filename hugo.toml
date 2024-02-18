@@ -2,18 +2,42 @@ baseurl = "/"
 title = "Lost In Superfluous Parentheses"
 theme = "ghostwriter"
 
+[author]
+name = "The Supreme Leader"
+
 [Params]
     mainSections = ["post"]
     intro = true
     headline = '''((Lost In (Superfluous) Parentheses))'''
     description = "A blog that is, in fact, not about Lisp."
     github = "https://github.com/readabilityLOL"
-    twitter = "https://m.youtube.com/watch?v=dQw4w9WgXcQ"
     email = "techsheep7@proton.me"
+    rss = true
+    readingTime = true
     opengraph = true
     shareTwitter = true
     dateFormat = "Mon, Jan 2, 2006"
 
 [Permalinks]
     post = "/:filename/"
+
+[[menu.main]]
+name = "Blog"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Projects"
+url = "/project/"
+weight = 2
+
+[[menu.main]]
+name = "Contact"
+url = "/page/contact/"
+weight = 3
+
+[[menu.main]]
+name = "About"
+url = "/page/about/"
+weight = 4
 
