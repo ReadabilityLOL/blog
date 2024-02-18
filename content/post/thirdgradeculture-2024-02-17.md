@@ -1,7 +1,7 @@
 +++
 title = 'An analysis of third grade culture'
 date = 2024-02-18
-draft = true
+draft = false
 +++
 
 # Introduction to the third grader
@@ -21,18 +21,38 @@ A table is shown, presenting the difference in different classes.
 |Greeting|"Hi!"|"Hi, fartface"|"Hi!"|
 |Farewell remark|"Bye!"|"Bye, fartypoop"|"See you!"|
 
-As you can see, the dialect spoken by the class known as third graders is quite different from other areas.
+As you can see, the dialect spoken by the class known as third graders is quite different in language than other people groups.
 
 # An observation of culture
 
 ## Social Hierarchy
 
-The third grader's social heirarchy has several subclasses. 
+The third grader's social hierarchy has several subclasses. 
 
-At the top of the pyramid is the 'cool people'. These people may have derived this coolness from athletic activity, highly honored by this group, ability to do 'forbidden things', such as watching movies over PG, or often mentioning synonyms to fecal matter. These people have high ranking, and are highly respected by others. People in this class often do not do their homework, or fail tests.
+At the top of the pyramid is the 'cool people'. These people may have derived this status from athletic activity, highly honored by this group, ability to do 'forbidden things', such as watching movies rated over PG, or often mentioning words related to excretory functions. These people have high ranking, and are highly respected by others. People in this class often do not do their homework, or fail tests.
 
 Next in the rankings are those who are slightly above average in things. These people are unable to advance due to reasons such as being overshadowed by more athletic people, overdoing the common jokes near them, or having spoken to a member of the other gender. People in this rank often do okay on homework and tests, but below average. These people often follow the top class around.
 
 Next is the middle class. Members of this area usually are passable in athletic activity, but are shadowed by others who 'never pass to them' or 'are ball-hogs'. These people, while having less adoration for the top class, still respect them and would most likely obey one of a higher class' commands. These people most likely recieve average grades.
 
-After this is the so-called 'smart people'. These people are most likely subpar in athletic performance, but most likely recieve higher grades than most. 
+After this is the so-called 'smart people'. These people are most likely subpar in athletic performance, but are more likely to recieve higher grades than others. These people are often asked for help on homework, and so are not the lowest class, as they are not expendable.
+
+Finally, at the bottom of the pyramid appear to be, if not outcasts, the different people. These people may be bad at sports, or just weird in that they obsess about random things like ghosts, or World War II. Whatever the case, these are rarely spoken to and mostly ignored.
+
+## Cultural Beliefs
+
+The third grader's beliefs may seem strange to others, but they do help maintain a semblance of order in their society. For example, unlike with other groups, high grades do not distinguish rank, and can often be detrimental to placement on the social pyramid.
+
+Another common belief is that the other gender is lesser or weirder than them. What this means is that those who have contact with females are often shunned or lowered in the social rank.
+
+One social element that seems to lend itself to third grade culture having a common ancestor with other cultures is the dislike of authorities. For example, the third-grader, if reprimanded for a misdeed such as attacking another or speaking loudly while another is speaking, will speak out against the authority who reprimanded them, with words such as 'mean teacher', or 'He/She's a bad teacher'. 
+
+Another thing that emerges due to this dislike of authorities is a scorning of those whom the authority favors, with words like 'Teacher's pet'.
+
+Another result of the scorn of the authoritorial figures is a shaming of those that report misdeeds. Those who do these things are often excluded from social circles, or exiled from society.
+
+# Conclusion
+
+In conclusion, third grade culture is a unique and distinct culture that could very well be classified as a unique subclass, distinct from other members of elementary school.
+
+Their social hierarchy is quite different from other groups, and their unique culture certainly merits more study in more detail.
