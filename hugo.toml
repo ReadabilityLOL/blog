@@ -8,7 +8,7 @@ theme = "ghostwriter"
     headline = '''((Lost In (Superfluous) Parentheses))'''
     description = "A blog that is, in fact, not about Lisp."
     github = "https://github.com/readabilityLOL"
-    twitter = "https://twitter.com/XXX"
+    twitter = "https://m.youtube.com/watch?v=dQw4w9WgXcQ"
     email = "techsheep7@proton.me"
     opengraph = true
     shareTwitter = true
