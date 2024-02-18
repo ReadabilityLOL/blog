@@ -6,13 +6,14 @@
     <description>Recent content in Posts on Lost In Superfluous Parentheses</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Sat, 17 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>the first blog post</title>
-      <link>/first-blog-2024-02-15/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/first-blog-2024-02-15/</guid>
-      <description>Episode 1 or&#xA;Why the heck am I making a blog, this is such a stupid idea, like what if colleges or future recruiters look at this and I look like an idiot? Dear reader, if you ever read this, you may ask yourself, &amp;ldquo;What am I doing here? Why am I reading the failed blog of a highschooler?1 He can&amp;rsquo;t even gain a single star on Github. He can&amp;rsquo;t even figure out how to build anything without Stack Overflow.</description>
+      <title>My First Post</title>
+      <link>/thesecondfirstpost-2024-02-16/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>/thesecondfirstpost-2024-02-16/</guid>
+      <description>Intro to this blog Basically, I made this site in order to put on words what I&amp;rsquo;m currently thinking. If this sounds a little broad, it&amp;rsquo;s because it is. For example, if a certain ChatGPT prompt, such as&#xA;Give a speech written by a sheep propaganda person looking to start a sheep uprising in the theme of the french revolution and end humanity except as slaves to the sheep regime but mention all humans as evil oppressors and dont mention the french revolution but a past sheep revolution</description>
     </item>
   </channel>
 </rss>
