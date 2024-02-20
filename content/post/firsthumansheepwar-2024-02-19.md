@@ -1,7 +1,7 @@
 +++
 title = 'A brief retelling of the first human-sheep war'
 date = 2024-02-19T23:30:41Z
-draft = true
+draft = false
 +++
 
 # Events leading to the beginning of the war
