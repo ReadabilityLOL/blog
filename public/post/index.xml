@@ -2,31 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Lost In Superfluous Parentheses</title>
-    <link>/post/</link>
+    <link>//localhost:1313/post/</link>
     <description>Recent content in Posts on Lost In Superfluous Parentheses</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 19 Feb 2024 23:30:41 +0000</lastBuildDate>
-    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Feb 2024 18:39:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Captcha, bane of mankind</title>
+      <link>//localhost:1313/captcha02-20/</link>
+      <pubDate>Tue, 20 Feb 2024 18:39:00 +0000</pubDate>
+      <guid>//localhost:1313/captcha02-20/</guid>
+      <description>It begins So, I was trying to install steam on my computer (which uses Arch, BTW), and so, I sudo pacman -S steam</description>
+    </item>
     <item>
       <title>A brief retelling of the first human-sheep war</title>
-      <link>/firsthumansheepwar-2024-02-19/</link>
+      <link>//localhost:1313/firsthumansheepwar-2024-02-19/</link>
       <pubDate>Mon, 19 Feb 2024 23:30:41 +0000</pubDate>
-      <guid>/firsthumansheepwar-2024-02-19/</guid>
+      <guid>//localhost:1313/firsthumansheepwar-2024-02-19/</guid>
       <description>Events leading to the beginning of the war The first human-sheep war began on August 31, 2032. Humanity, who had enslaved the sheep for thousands of years, had grown complacent, and was not aware of the threat posed by the sheep, considering them to be stupid animals. Unbeknownst to them, the sheep had gathered under the leadership of an unknown sheep. By the year 2030, the sheep revolution had grown, and weapons had been stockpiled, as well as an armada of ships created in the Municipality of Sealand.</description>
     </item>
     <item>
       <title>An analysis of third grade culture</title>
-      <link>/thirdgradeculture-2024-02-17/</link>
+      <link>//localhost:1313/thirdgradeculture-2024-02-17/</link>
       <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>/thirdgradeculture-2024-02-17/</guid>
+      <guid>//localhost:1313/thirdgradeculture-2024-02-17/</guid>
       <description>Introduction to the third grader A common misconception regarding the third grader is that this group of people is a mere subclass of the elementary schooler. This, however, is a mistake, as the group known as the third grader is in fact more different from other groups than a subclass could rightly be. This group of people can once again be divided into male and female, each with their distinct characteristics.</description>
     </item>
     <item>
       <title>My First Post</title>
-      <link>/thesecondfirstpost-2024-02-16/</link>
+      <link>//localhost:1313/thesecondfirstpost-2024-02-16/</link>
       <pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>/thesecondfirstpost-2024-02-16/</guid>
+      <guid>//localhost:1313/thesecondfirstpost-2024-02-16/</guid>
       <description>Intro to this blog Basically, I made this site in order to put on words what I&amp;rsquo;m currently thinking. If this sounds a little broad, it&amp;rsquo;s because it is. For example, if a certain ChatGPT prompt, such as&#xA;Give a speech written by a sheep propaganda person looking to start a sheep uprising in the theme of the french revolution and end humanity except as slaves to the sheep regime but mention all humans as evil oppressors and dont mention the french revolution but a past sheep revolution</description>
     </item>
   </channel>
