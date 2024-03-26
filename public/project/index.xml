@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on </title>
+    <title>Projects on glitched</title>
     <link>/project/</link>
-    <description>Recent content in Projects on </description>
+    <description>Recent content in Projects on glitched</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 18 Nov 2014 02:13:50 +0000</lastBuildDate>
     <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My awesome project</title>
+      <title>Terminus</title>
       <link>/project/my-awesome-project/</link>
       <pubDate>Tue, 18 Nov 2014 02:13:50 +0000</pubDate>
       <guid>/project/my-awesome-project/</guid>
-      <description>About project Aenean ipsum justo, semper eu nisl ut, pretium tincidunt sem. Praesent et diam sit amet lacus lobortis dictum a id lacus. Quisque hendrerit sit amet turpis eu varius. Ut id lorem ac felis ultrices tincidunt. Pellentesque consequat arcu ac fringilla imperdiet. Phasellus pellentesque, sapien non pulvinar blandit, sapien ante aliquet felis, vel porttitor sapien ante in lacus. Fusce non urna aliquet, malesuada nibh vel, luctus urna. Phasellus ut lacus molestie, varius purus quis, malesuada lorem.</description>
+      <description>About Terminus is a terminal theme for Hugo. I built it for my own site, but you can use it for your site If you want to. I built this in my spare time to teach myself, so if anything is broken, don&amp;rsquo;t hesitate to tell me or fix it and give me a pull request.&#xA;Install git submodule add https://github.com/readabilityLOL/terminus.git themes/terminus </description>
     </item>
   </channel>
 </rss>
