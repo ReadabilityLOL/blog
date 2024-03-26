@@ -1,4 +1,3 @@
-@font-face { font-family: Spaceage; src: url('/fonts/Dune_Rise.otf'); }
 @font-face { font-family: orbitron; src: url('/fonts/teko.ttf'); }
 @font-face { font-family: firacode; src: url('/fonts/FiraCode-Regular.ttf'); }
 body{
@@ -88,6 +87,5 @@ ul, ol{
    font-family:orbitron;
 }
 .homepage-header{
-	margin-left:auto;
-	margin-right:auto;
+	text-align:center;
 }
