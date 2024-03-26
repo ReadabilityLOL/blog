@@ -1,20 +1,16 @@
 +++
-title = "My awesome project"
-description = "Description of my awesome project."
+title = "Terminus"
+description = "A Hugo theme"
 date = 2014-11-18T02:13:50Z
-author = "My name"
+author = "Joshua Anand"
 +++
 
-## About project
+## About
 
-Aenean ipsum justo, semper eu nisl ut, pretium tincidunt sem. Praesent et diam sit amet lacus lobortis dictum a id lacus. Quisque hendrerit sit amet turpis eu varius. Ut id lorem ac felis ultrices tincidunt. Pellentesque consequat arcu ac fringilla imperdiet. Phasellus pellentesque, sapien non pulvinar blandit, sapien ante aliquet felis, vel porttitor sapien ante in lacus. Fusce non urna aliquet, malesuada nibh vel, luctus urna. Phasellus ut lacus molestie, varius purus quis, malesuada lorem.
+ Terminus is a terminal theme for Hugo. I built it for [my own site](https://blog.glitched.tech), but you can use it for your site If you want to. I built this in my spare time to teach myself, so if anything is broken, don't hesitate to tell me or fix it and give me a pull request.
 
 ## Install
 
 ```bash
-go get -u -v github.com/spf13/hugo
+git submodule add https://github.com/readabilityLOL/terminus.git
 ```
-
-## Docs
-
-https://godoc.org/github.com/spf13/hugo

@@ -1,5 +1,5 @@
 baseurl = "/"
-theme = "epictheme"
+theme = "terminus"
 
 [author]
 name = "The Supreme Leader"
