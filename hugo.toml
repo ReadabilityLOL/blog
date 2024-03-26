@@ -1,6 +1,6 @@
 baseurl = "/"
-title = "Lost In Superfluous Parentheses"
-theme = "ghostwriter"
+title = "glitched"
+theme = "epictheme"
 
 [author]
 name = "The Supreme Leader"
@@ -8,36 +8,34 @@ name = "The Supreme Leader"
 [Params]
     mainSections = ["post"]
     intro = true
-    headline = '''((Lost In (Superfluous) Parentheses))'''
+    headline = '''glitched.tech'''
     description = "A blog that is, in fact, not about Lisp."
     github = "https://github.com/readabilityLOL"
     email = "techsheep7@proton.me"
     rss = true
     readingTime = true
     opengraph = true
-    shareTwitter = true
     dateFormat = "Mon, Jan 2, 2006"
 
 [Permalinks]
     post = "/:filename/"
 
 [[menu.main]]
-name = "Blog"
+name = "blog"
 url = "/"
 weight = 1
 
 [[menu.main]]
-name = "Projects"
+name = "projects"
 url = "/project/"
 weight = 2
 
 [[menu.main]]
-name = "Contact"
-url = "/page/contact/"
-weight = 3
-
-[[menu.main]]
-name = "About"
+name = "about"
 url = "/page/about/"
 weight = 4
 
+[[menu.main]]
+name = "contact"
+url = "/page/contact"
+weight = 5
