@@ -1,5 +1,6 @@
 baseurl = "/"
 theme = "terminus"
+title = "glitched"
 
 [author]
 name = "The Supreme Leader"
@@ -8,7 +9,6 @@ name = "The Supreme Leader"
     mainSections = ["post"]
     intro = true
     headline = '''glitched.tech'''
-    title = "Homepage"
     subtitle = "A blog that is, in fact, not about Lisp."
     github = "https://github.com/readabilityLOL"
     email = "techsheep7@proton.me"
