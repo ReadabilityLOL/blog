@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on glitched</title>
-    <link>/project/</link>
+    <link>//localhost:1313/project/</link>
     <description>Recent content in Projects on glitched</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 18 Nov 2014 02:13:50 +0000</lastBuildDate>
-    <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Terminus</title>
-      <link>/project/my-awesome-project/</link>
+      <link>//localhost:1313/project/my-awesome-project/</link>
       <pubDate>Tue, 18 Nov 2014 02:13:50 +0000</pubDate>
-      <guid>/project/my-awesome-project/</guid>
-      <description>About Terminus is a terminal theme for Hugo. I built it for my own site, but you can use it for your site If you want to. I built this in my spare time to teach myself, so if anything is broken, don&amp;rsquo;t hesitate to tell me or fix it and give me a pull request.&#xA;Install git submodule add https://github.com/readabilityLOL/terminus.git themes/terminus </description>
+      <guid>//localhost:1313/project/my-awesome-project/</guid>
+      <description>About Terminus is a terminal theme for Hugo. I built it for my own site, but you can use it for your site If you want to. I built this in my spare time to teach myself, so if anything is broken, don&amp;rsquo;t hesitate to tell me or fix it and give me a pull request.&#xA;Install Enter your themes directory&#xA;Run this command&#xA;git clone https://github.com/readabilityLOL/terminus.git themes/terminus </description>
     </item>
   </channel>
 </rss>

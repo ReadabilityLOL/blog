@@ -11,6 +11,9 @@ author = "Joshua Anand"
 
 ## Install
 
-```bash
-git submodule add https://github.com/readabilityLOL/terminus.git themes/terminus
-```
+1. Enter your themes directory
+
+2. Run this command 
+    ```bash
+    git clone https://github.com/readabilityLOL/terminus.git themes/terminus
+    ```

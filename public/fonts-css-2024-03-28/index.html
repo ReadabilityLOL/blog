@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<link rel="stylesheet" href="/css/style.css">
+<meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <title>glitched | How to add new fonts in css</title>
+<title>How to add new fonts in css | glitched</title>
+<body class="dark-theme || light-theme">
+<div id="nav-border" class="container">
+    <nav id="nav" class="nav justify-content-center">
+	<a class="nav-link main" href = "/">/home/glitched
+        
+        <a class="nav-link" href="/">
+        
+        
+        ~/blog
+        </a>
+        
+        <a class="nav-link" href="/project/">
+        
+        
+        ~/projects
+        </a>
+        
+        <a class="nav-link" href="/page/about/">
+        
+        
+        ~/about
+        </a>
+        
+        <a class="nav-link" href="/page/contact">
+        
+        
+        ~/contact
+        </a>
+        
+    </nav>
+</div>
+<hr>
+<div id="content">
+
+<h1 class="post-title">How to add new fonts in css</h1>
+<div class="post-metadata">
+
+
+<i data-feather="calendar"></i>
+<time datetime="2024-03-22">Fri, Mar 22, 2024</time>
+
+
+</div>
+<br><br>
+<div class="post-content">
+<h2 id="intro">Intro</h2>
+<p>Now, I have never made a post like this, and I don&rsquo;t feel I&rsquo;m qualified to do this, but here goes. When making the <a href="https://github.com/readabilitylol/terminus">theme</a> for this blog, I wanted to add some custom fonts. After some googling, I found that it was ridiculously easy to do, but I want to write a post, so, why not?</p>
+<h2 id="adding-fonts">Adding fonts</h2>
+<p>There are two ways to do this. The first (The one I used ), is to download the font online and enter the file path.</p>
+<p>For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>@<span style="color:#66d9ef">font-face</span> { <span style="color:#f92672">font-family</span><span style="color:#f92672">:</span> <span style="color:#f92672">firacode</span><span style="color:#f92672">;</span> <span style="color:#f92672">src</span><span style="color:#f92672">:</span> <span style="color:#f92672">url</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#39;/fonts/FiraCode-Regular.ttf&#39;</span><span style="color:#f92672">);</span> }
+</span></span></code></pre></div><p>The second way is to load it from a website online. This is similar to the other way, except the file path is a URL.</p>
+<p>For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#f92672">url</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#39;https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&amp;family=Teko:wght@300..700&amp;display=swap&#39;</span><span style="color:#f92672">)</span>
+</span></span></code></pre></div>
+</div>
+
+        </div><hr class="footer">
+<p class="footer text-center">Copyright (c) 2024 Joshua Anand</p>
+<script defer>
+const toggle = document.querySelector(".toggle")
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("light")
+})
+</script>
+</body>
+</html>
