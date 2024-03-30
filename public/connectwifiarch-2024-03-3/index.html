@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html><meta charset="utf-8">
+<link rel="stylesheet" href="/css/style.css">
+<meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <title>glitched | How to connect to the wifi via the terminal</title>
+<title>How to connect to the wifi via the terminal | glitched</title>
+<body class="dark-theme || light-theme">
+<div id="nav-border" class="container">
+    <nav id="nav" class="nav justify-content-center">
+	<a class="nav-link main" href = "/">/home/glitched
+        
+        <a class="nav-link" href="/">
+        
+        
+        ~/blog
+        </a>
+        
+        <a class="nav-link" href="/project/">
+        
+        
+        ~/projects
+        </a>
+        
+        <a class="nav-link" href="/page/about/">
+        
+        
+        ~/about
+        </a>
+        
+        <a class="nav-link" href="/page/contact">
+        
+        
+        ~/contact
+        </a>
+        
+    </nav>
+</div>
+<hr>
+<div id="content">
+
+<h1 class="post-title">How to connect to the wifi via the terminal</h1>
+<div class="post-metadata">
+
+
+<i data-feather="calendar"></i>
+<time datetime="2024-03-30">Sat, Mar 30, 2024</time>
+
+
+</div>
+<br><br>
+<div class="post-content">
+<h2 id="intro">Intro</h2>
+<p>Today, I was connecting to the wifi in an Airbnb, and had to connect to the wifi. Because of my infinite wisdom, I didn&rsquo;t have a gui app to connect to the wifi, so I had to use the terminal. Because of this, you get a free lesson, so good for you!</p>
+<h2 id="how-to-connect">How to connect</h2>
+<ol>
+<li>
+<p>Enable iwd</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl enable iwd
+</span></span></code></pre></div></li>
+<li>
+<p>Run iwctl</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>iwctl
+</span></span></code></pre></div></li>
+<li>
+<p>Connect to the network</p>
+<ol>
+<li>
+<p>Scan for networks</p>
+<p>You should see something like this:</p>
+<pre tabindex="0"><code>[iwd]# station wlan0 get-networks
+
+                             Available networks                             
+--------------------------------------------------------------------------------
+      Network name                      Security            Signal
+--------------------------------------------------------------------------------
+  &gt;   Tropical Riverhouse               psk                 ****
+      Crazyinlove                       psk                 ****
+      Peacock                           psk                 ****
+</code></pre></li>
+<li>
+<p>Connect to the network</p>
+<pre tabindex="0"><code>[iwd]# station wlan0 connect &#34;Tropical Riverhouse&#34;
+Type the network passphrase for Tropical Riverhouse psk.
+Passphrase: *********  &lt;-- password here
+Terminate
+[iwd]#
+</code></pre></li>
+<li>
+<p>Done!</p>
+<p>Try pinging something e.g. <code>bash ping archlinux.org</code></p>
+</li>
+</ol>
+</li>
+</ol>
+
+</div>
+
+        </div><hr class="footer">
+<p class="footer text-center">Copyright (c) 2024 Joshua Anand</p>
+<script defer>
+const toggle = document.querySelector(".toggle")
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("light")
+})
+</script>
+</body>
+</html>
