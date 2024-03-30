@@ -90,3 +90,8 @@ ul, ol{
 	text-align:center;
 	font-size:4ch
 }
+
+table, th, td {
+  border: 1px solid;
+  border-color:blue;
+}

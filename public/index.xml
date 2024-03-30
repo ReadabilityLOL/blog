@@ -2,87 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>glitched</title>
-    <link>/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on glitched</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 30 Mar 2024 16:16:14 +0000</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to connect to the wifi via the terminal</title>
-      <link>/connectwifiarch-2024-03-3/</link>
+      <link>//localhost:1313/connectwifiarch-2024-03-3/</link>
       <pubDate>Sat, 30 Mar 2024 16:16:14 +0000</pubDate>
-      <guid>/connectwifiarch-2024-03-3/</guid>
+      <guid>//localhost:1313/connectwifiarch-2024-03-3/</guid>
       <description>Intro Today, I was connecting to the wifi in an Airbnb, and had to connect to the wifi. Because of my infinite wisdom, I didn&amp;rsquo;t have a gui app to connect to the wifi, so I had to use the terminal. Because of this, you get a free lesson, so good for you!&#xA;How to connect Enable iwd&#xA;systemctl enable iwd Run iwctl&#xA;iwctl Connect to the network&#xA;Scan for networks</description>
     </item>
     <item>
+      <title>How to add new fonts in css</title>
+      <link>//localhost:1313/fonts-css-2024-03-28/</link>
+      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/fonts-css-2024-03-28/</guid>
+      <description>Intro Now, I have never made a post like this, and I don&amp;rsquo;t feel I&amp;rsquo;m qualified to do this, but here goes. When making the theme for this blog, I wanted to add some custom fonts. After some googling, I found that it was ridiculously easy to do, but I want to write a post, so, why not?&#xA;Adding fonts There are two ways to do this. The first (The one I used ), is to download the font online and enter the file path.</description>
+    </item>
+    <item>
       <title>Analysis and results of the second sheep war</title>
-      <link>/thesecondsheepwar-2024-02-20/</link>
+      <link>//localhost:1313/thesecondsheepwar-2024-02-20/</link>
       <pubDate>Wed, 21 Feb 2024 01:11:23 +0000</pubDate>
-      <guid>/thesecondsheepwar-2024-02-20/</guid>
+      <guid>//localhost:1313/thesecondsheepwar-2024-02-20/</guid>
       <description>Tensions rise After the first human-sheep war, tensions seemed to die down between the two species. By the year 2053, trade began between the sheep and the humans. The moose had control of Canada and the northern U.S, the emus controlled australia, and the sheep had what remained of what was agreed on by the sixth treaty of Paris. As trade emerged, humans began to see sheep as potential allies instead of threats, as shown by the rising popularity of vegetarianism.</description>
     </item>
     <item>
       <title>A brief retelling of the first human-sheep war</title>
-      <link>/firsthumansheepwar-2024-02-19/</link>
+      <link>//localhost:1313/firsthumansheepwar-2024-02-19/</link>
       <pubDate>Mon, 19 Feb 2024 23:30:41 +0000</pubDate>
-      <guid>/firsthumansheepwar-2024-02-19/</guid>
+      <guid>//localhost:1313/firsthumansheepwar-2024-02-19/</guid>
       <description>Events leading to the beginning of the war The first human-sheep war began on August 31, 2032. Humanity, who had enslaved the sheep for thousands of years, had grown complacent, and was not aware of the threat posed by the sheep, considering them to be stupid animals. Unbeknownst to them, the sheep had gathered under the leadership of an unknown sheep. By the year 2030, the sheep revolution had grown, and weapons had been stockpiled, as well as an armada of ships created in the Municipality of Sealand.</description>
     </item>
     <item>
       <title>An analysis of third grade culture</title>
-      <link>/thirdgradeculture-2024-02-17/</link>
+      <link>//localhost:1313/thirdgradeculture-2024-02-17/</link>
       <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>/thirdgradeculture-2024-02-17/</guid>
+      <guid>//localhost:1313/thirdgradeculture-2024-02-17/</guid>
       <description>Introduction to the third grader A common misconception regarding the third grader is that this group of people is a mere subclass of the elementary schooler. This, however, is a mistake, as the group known as the third grader is in fact more different from other groups than a subclass could rightly be. This group of people can once again be divided into male and female, each with their distinct characteristics.</description>
     </item>
     <item>
       <title>My First Post</title>
-      <link>/thesecondfirstpost-2024-02-16/</link>
+      <link>//localhost:1313/thesecondfirstpost-2024-02-16/</link>
       <pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>/thesecondfirstpost-2024-02-16/</guid>
+      <guid>//localhost:1313/thesecondfirstpost-2024-02-16/</guid>
       <description>Intro to this blog Basically, I made this site in order to put on words what I&amp;rsquo;m currently thinking. If this sounds a little broad, it&amp;rsquo;s because it is. For example, if a certain ChatGPT prompt, such as&#xA;Give a speech written by a sheep propaganda person looking to start a sheep uprising in the theme of the french revolution and end humanity except as slaves to the sheep regime but mention all humans as evil oppressors and dont mention the french revolution but a past sheep revolution</description>
     </item>
     <item>
       <title>Post 3</title>
-      <link>/posts/post-3/</link>
+      <link>//localhost:1313/posts/post-3/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>/posts/post-3/</guid>
+      <guid>//localhost:1313/posts/post-3/</guid>
       <description>Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum.</description>
     </item>
     <item>
       <title>Post 2</title>
-      <link>/posts/post-2/</link>
+      <link>//localhost:1313/posts/post-2/</link>
       <pubDate>Wed, 15 Feb 2023 10:00:00 -0700</pubDate>
-      <guid>/posts/post-2/</guid>
+      <guid>//localhost:1313/posts/post-2/</guid>
       <description>Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.&#xA;Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia.</description>
     </item>
     <item>
       <title>Post 1</title>
-      <link>/posts/post-1/</link>
+      <link>//localhost:1313/posts/post-1/</link>
       <pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate>
-      <guid>/posts/post-1/</guid>
+      <guid>//localhost:1313/posts/post-1/</guid>
       <description>Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.&#xA;Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea.</description>
     </item>
     <item>
       <title>About</title>
-      <link>/page/about/</link>
+      <link>//localhost:1313/page/about/</link>
       <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
-      <guid>/page/about/</guid>
+      <guid>//localhost:1313/page/about/</guid>
       <description>About A guy who does stuff.&#xA;What I&amp;rsquo;m reading Heir of Novron by Michael J. Sullivan The fall of Gondolin by J.R.R Tolkien Discworld by Terry Pratchet </description>
     </item>
     <item>
       <title>Contact</title>
-      <link>/page/contact/</link>
+      <link>//localhost:1313/page/contact/</link>
       <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
-      <guid>/page/contact/</guid>
+      <guid>//localhost:1313/page/contact/</guid>
       <description>Contact Email: givespamhere7@gmail.com&#xA;Github: https://github.com/readabilityLOL</description>
     </item>
     <item>
       <title>Terminus</title>
-      <link>/project/my-awesome-project/</link>
+      <link>//localhost:1313/project/my-awesome-project/</link>
       <pubDate>Tue, 18 Nov 2014 02:13:50 +0000</pubDate>
-      <guid>/project/my-awesome-project/</guid>
+      <guid>//localhost:1313/project/my-awesome-project/</guid>
       <description>About Terminus is a terminal theme for Hugo. I built it for my own site, but you can use it for your site If you want to. I built this in my spare time to teach myself, so if anything is broken, don&amp;rsquo;t hesitate to tell me or fix it and give me a pull request.&#xA;Install Enter your themes directory&#xA;Run this command&#xA;git clone https://github.com/readabilityLOL/terminus.git themes/terminus </description>
     </item>
   </channel>
