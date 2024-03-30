@@ -3,10 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/post/</loc>
+<<<<<<< Updated upstream
     <lastmod>2024-03-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/fonts-css-2024-03-28/</loc>
     <lastmod>2024-03-22T00:00:00+00:00</lastmod>
+=======
+    <lastmod>2024-02-26T22:51:45+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/themathconspiracy-2024-02-26/</loc>
+    <lastmod>2024-02-26T22:51:45+00:00</lastmod>
+>>>>>>> Stashed changes
   </url><url>
     <loc>//localhost:1313/thesecondsheepwar-2024-02-20/</loc>
     <lastmod>2024-02-21T01:11:23+00:00</lastmod>
@@ -23,6 +30,7 @@
     <loc>//localhost:1313/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
+<<<<<<< Updated upstream
     <loc>//localhost:1313/tags/blue/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
@@ -47,6 +55,8 @@
     <loc>//localhost:1313/posts/</loc>
     <lastmod>2023-01-01T08:30:00-07:00</lastmod>
   </url><url>
+=======
+>>>>>>> Stashed changes
     <loc>//localhost:1313/page/about/</loc>
     <lastmod>2015-04-03T02:13:50+00:00</lastmod>
   </url><url>
@@ -63,5 +73,10 @@
     <lastmod>2014-11-18T02:13:50+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
+<<<<<<< Updated upstream
+=======
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+>>>>>>> Stashed changes
   </url>
 </urlset>

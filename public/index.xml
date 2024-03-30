@@ -6,6 +6,7 @@
     <description>Recent content in Home on glitched</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+<<<<<<< Updated upstream
     <lastBuildDate>Fri, 22 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -14,6 +15,16 @@
       <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/fonts-css-2024-03-28/</guid>
       <description>Intro Now, I have never made a post like this, and I don&amp;rsquo;t feel I&amp;rsquo;m qualified to do this, but here goes. When making the theme for this blog, I wanted to add some custom fonts. After some googling, I found that it was ridiculously easy to do, but I want to write a post, so, why not?&#xA;Adding fonts There are two ways to do this. The first (The one I used ), is to download the font online and enter the file path.</description>
+=======
+    <lastBuildDate>Mon, 26 Feb 2024 22:51:45 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Themathconspiracy 2024 02 26</title>
+      <link>//localhost:1313/themathconspiracy-2024-02-26/</link>
+      <pubDate>Mon, 26 Feb 2024 22:51:45 +0000</pubDate>
+      <guid>//localhost:1313/themathconspiracy-2024-02-26/</guid>
+      <description>Throughout history</description>
+>>>>>>> Stashed changes
     </item>
     <item>
       <title>Analysis and results of the second sheep war</title>
@@ -83,7 +94,11 @@
       <link>//localhost:1313/project/my-awesome-project/</link>
       <pubDate>Tue, 18 Nov 2014 02:13:50 +0000</pubDate>
       <guid>//localhost:1313/project/my-awesome-project/</guid>
+<<<<<<< Updated upstream
       <description>About Terminus is a terminal theme for Hugo. I built it for my own site, but you can use it for your site If you want to. I built this in my spare time to teach myself, so if anything is broken, don&amp;rsquo;t hesitate to tell me or fix it and give me a pull request.&#xA;Install Enter your themes directory&#xA;Run this command&#xA;git clone https://github.com/readabilityLOL/terminus.git themes/terminus </description>
+=======
+      <description>About Terminus is a terminal theme for Hugo. I built it for my own site, but you can use it for your site If you want to. I built this in my spare time to teach myself, so if anything is broken, don&amp;rsquo;t hesitate to tell me or fix it and give me a pull request.&#xA;Install git submodule add https://github.com/readabilityLOL/terminus.git themes/terminus </description>
+>>>>>>> Stashed changes
     </item>
   </channel>
 </rss>

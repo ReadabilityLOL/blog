@@ -13,7 +13,11 @@
       <link>//localhost:1313/project/my-awesome-project/</link>
       <pubDate>Tue, 18 Nov 2014 02:13:50 +0000</pubDate>
       <guid>//localhost:1313/project/my-awesome-project/</guid>
+<<<<<<< Updated upstream
       <description>About Terminus is a terminal theme for Hugo. I built it for my own site, but you can use it for your site If you want to. I built this in my spare time to teach myself, so if anything is broken, don&amp;rsquo;t hesitate to tell me or fix it and give me a pull request.&#xA;Install Enter your themes directory&#xA;Run this command&#xA;git clone https://github.com/readabilityLOL/terminus.git themes/terminus </description>
+=======
+      <description>About Terminus is a terminal theme for Hugo. I built it for my own site, but you can use it for your site If you want to. I built this in my spare time to teach myself, so if anything is broken, don&amp;rsquo;t hesitate to tell me or fix it and give me a pull request.&#xA;Install git submodule add https://github.com/readabilityLOL/terminus.git themes/terminus </description>
+>>>>>>> Stashed changes
     </item>
   </channel>
 </rss>
