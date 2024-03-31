@@ -1,22 +1,17 @@
 <!DOCTYPE html>
-<html><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<html><meta charset="utf-8">
+<link rel="stylesheet" href="/css/style.css">
 <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
     
     
     <title>My New Hugo Site | Post 3</title>
 <title>Post 3 | My New Hugo Site</title>
-<script src="/js/feather.min.js"></script>
-<script>
-  feather.replace()
-</script>
-
-<body>
+<body class="dark-theme || light-theme">
 <div id="nav-border" class="container">
     <nav id="nav" class="nav justify-content-center">
-	<a class="nav-link" href = "/">/home/My New Hugo Site</span>
+	<a class="nav-link main" href = "/">/home/My New Hugo Site
         
         <a class="nav-link" href="/">
         
@@ -38,8 +33,11 @@
         
     </nav>
 </div>
+<hr>
 <div id="content">
-<h1>Post 3</h1>
+
+<h1 class="post-title">Post 3</h1>
+<div class="post-metadata">
 
 
 <i data-feather="calendar"></i>
@@ -48,26 +46,32 @@
 <i data-feather="tag"></i>
 
 
-<a class="btn btn-sm btn-outline-dark tag-btn" href="http://localhost:1313/tags/red">red</a>
+<a class="btn btn-sm btn-outline-dark tag-btn" href="https://example.org/tags/red">red</a>
 
 
-<a class="btn btn-sm btn-outline-dark tag-btn" href="http://localhost:1313/tags/green">green</a>
+<a class="btn btn-sm btn-outline-dark tag-btn" href="https://example.org/tags/green">green</a>
 
 
-<a class="btn btn-sm btn-outline-dark tag-btn" href="http://localhost:1313/tags/blue">blue</a>
+<a class="btn btn-sm btn-outline-dark tag-btn" href="https://example.org/tags/blue">blue</a>
 
 
 
+</div>
 <br><br>
+<div class="post-content">
 <p>Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.</p>
 <p><img src="bryce-canyon.jpg" alt="Bryce Canyon National Park"></p>
 <p>Sit excepteur do velit veniam mollit in nostrud laboris incididunt ea. Amet eu cillum ut reprehenderit culpa aliquip labore laborum amet sit sit duis. Laborum id proident nostrud dolore laborum reprehenderit quis mollit nulla amet veniam officia id id. Aliquip in deserunt qui magna duis qui pariatur officia sunt deserunt.</p>
 
+</div>
 
-        </div><p class="footer text-center">Copyright (c) 2024 John Doe</p>
-<script src="/js/feather.min.js"></script>
-<script>
-  feather.replace()
+        </div><hr class="footer">
+<p class="footer text-center">Copyright (c) 2024 Joshua Anand</p>
+<script defer>
+const toggle = document.querySelector(".toggle")
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("light")
+})
 </script>
 </body>
 </html>

@@ -1,22 +1,17 @@
 <!DOCTYPE html>
-<html><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<html><meta charset="utf-8">
+<link rel="stylesheet" href="/css/style.css">
 <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
     
     
     <title>My New Hugo Site | Red</title>
 <title>Red | My New Hugo Site</title>
-<script src="/js/feather.min.js"></script>
-<script>
-  feather.replace()
-</script>
-
-<body>
+<body class="dark-theme || light-theme">
 <div id="nav-border" class="container">
     <nav id="nav" class="nav justify-content-center">
-	<a class="nav-link" href = "/">/home/My New Hugo Site</span>
+	<a class="nav-link main" href = "/">/home/My New Hugo Site
         
         <a class="nav-link" href="/">
         
@@ -38,6 +33,7 @@
         
     </nav>
 </div>
+<hr>
 <div id="content">
   <main>
     <article>
@@ -51,24 +47,27 @@
       
       
         <li>
-          <a href="/posts/post-3/">2023-03-15 | Post 3</a>
+		<h1> <a href="/posts/post-3/">Post 3</a></h1>
         </li>
       
         <li>
-          <a href="/posts/post-2/">2023-02-15 | Post 2</a>
+		<h1> <a href="/posts/post-2/">Post 2</a></h1>
         </li>
       
         <li>
-          <a href="/posts/post-1/">2023-01-15 | Post 1</a>
+		<h1> <a href="/posts/post-1/">Post 1</a></h1>
         </li>
       
     </ul>
   </main>
 
-        </div><p class="footer text-center">Copyright (c) 2024 John Doe</p>
-<script src="/js/feather.min.js"></script>
-<script>
-  feather.replace()
+        </div><hr class="footer">
+<p class="footer text-center">Copyright (c) 2024 Joshua Anand</p>
+<script defer>
+const toggle = document.querySelector(".toggle")
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("light")
+})
 </script>
 </body>
 </html>

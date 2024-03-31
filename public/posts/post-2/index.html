@@ -1,22 +1,17 @@
 <!DOCTYPE html>
-<html><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<html><meta charset="utf-8">
+<link rel="stylesheet" href="/css/style.css">
 <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
     
     
     <title>My New Hugo Site | Post 2</title>
 <title>Post 2 | My New Hugo Site</title>
-<script src="/js/feather.min.js"></script>
-<script>
-  feather.replace()
-</script>
-
-<body>
+<body class="dark-theme || light-theme">
 <div id="nav-border" class="container">
     <nav id="nav" class="nav justify-content-center">
-	<a class="nav-link" href = "/">/home/My New Hugo Site</span>
+	<a class="nav-link main" href = "/">/home/My New Hugo Site
         
         <a class="nav-link" href="/">
         
@@ -38,8 +33,11 @@
         
     </nav>
 </div>
+<hr>
 <div id="content">
-<h1>Post 2</h1>
+
+<h1 class="post-title">Post 2</h1>
+<div class="post-metadata">
 
 
 <i data-feather="calendar"></i>
@@ -48,22 +46,28 @@
 <i data-feather="tag"></i>
 
 
-<a class="btn btn-sm btn-outline-dark tag-btn" href="http://localhost:1313/tags/red">red</a>
+<a class="btn btn-sm btn-outline-dark tag-btn" href="https://example.org/tags/red">red</a>
 
 
-<a class="btn btn-sm btn-outline-dark tag-btn" href="http://localhost:1313/tags/green">green</a>
+<a class="btn btn-sm btn-outline-dark tag-btn" href="https://example.org/tags/green">green</a>
 
 
 
+</div>
 <br><br>
+<div class="post-content">
 <p>Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.</p>
 <p>Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia. Velit id fugiat occaecat do tempor. Sit officia Lorem aliquip eu deserunt consectetur. Aute proident deserunt in nulla aliquip dolore ipsum Lorem ut cupidatat consectetur sit sint laborum. Esse cupidatat sit sint sunt tempor exercitation deserunt. Labore dolor duis laborum est do nisi ut veniam dolor et nostrud nostrud.</p>
 
+</div>
 
-        </div><p class="footer text-center">Copyright (c) 2024 John Doe</p>
-<script src="/js/feather.min.js"></script>
-<script>
-  feather.replace()
+        </div><hr class="footer">
+<p class="footer text-center">Copyright (c) 2024 Joshua Anand</p>
+<script defer>
+const toggle = document.querySelector(".toggle")
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("light")
+})
 </script>
 </body>
 </html>
