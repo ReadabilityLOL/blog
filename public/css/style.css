@@ -4,13 +4,21 @@ body{
 	color:#ffffff;
 	background-color:#191c24;
 	border-color:green;
-	font-family:firacode;
+	font-size:20px;
+	font-family:sans;
 }
 
-h1,h2,h3,h4,h5,h6{
+
+
+h1,h2,h3,h4,h5,h6,.subtitle{
 	color:#6fffe9;
 	font-family:orbitron;
 }
+
+.nav-link{
+	font-size:40px;
+}
+
 nav{
 	border-style:solid;
 	border-radius:10px;
