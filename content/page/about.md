@@ -11,6 +11,5 @@ A guy who does stuff.
 
 ## What I'm reading
 
-- Heir of Novron by Michael J. Sullivan
-- The fall of Gondolin by J.R.R Tolkien
 - Discworld by Terry Pratchet
+- 
