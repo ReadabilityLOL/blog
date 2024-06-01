@@ -23,13 +23,6 @@
       <description>Introduction This post, despite its name, is not about the feasibility of time travel. This post is, rather, about a common theory dealing with time travel paradoxes. People often claim that if someone time travelled to kill Hitler, for example, his parent would adopt, or someone else would come to power, and kill the six million people in an equivalent scenario. I believe that this frankly isn&amp;rsquo;t true. Brief Disclaimer: This is my opinion.</description>
     </item>
     <item>
-      <title>How to connect to the wifi via the terminal</title>
-      <link>/connectwifiarch-2024-03-3/</link>
-      <pubDate>Sat, 30 Mar 2024 16:16:14 +0000</pubDate>
-      <guid>/connectwifiarch-2024-03-3/</guid>
-      <description>Intro Today, I was connecting to the wifi in an Airbnb, and had to connect to the wifi. Because of my infinite wisdom, I didn&amp;rsquo;t have a gui app to connect to the wifi, so I had to use the terminal. Because of this, you get a free lesson, so good for you!&#xA;How to connect Enable iwd&#xA;systemctl enable iwd Run iwctl&#xA;iwctl Connect to the network&#xA;Scan for networks</description>
-    </item>
-    <item>
       <title>Analysis and results of the second sheep war</title>
       <link>/thesecondsheepwar-2024-02-20/</link>
       <pubDate>Wed, 21 Feb 2024 01:11:23 +0000</pubDate>
