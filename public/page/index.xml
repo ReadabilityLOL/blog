@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on glitched</title>
-    <link>//localhost:1313/page/</link>
+    <link>/page/</link>
     <description>Recent content in Pages on glitched</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 03 Apr 2015 02:13:50 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>//localhost:1313/page/about/</link>
+      <link>/page/about/</link>
       <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
-      <guid>//localhost:1313/page/about/</guid>
+      <guid>/page/about/</guid>
       <description>About A guy who does stuff.&#xA;What I&amp;rsquo;m reading Discworld by Terry Pratchet Contact </description>
     </item>
     <item>
       <title>Contact</title>
-      <link>//localhost:1313/page/contact/</link>
+      <link>/page/contact/</link>
       <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
-      <guid>//localhost:1313/page/contact/</guid>
+      <guid>/page/contact/</guid>
       <description> ## Contact Email: Github: </description>
     </item>
   </channel>
