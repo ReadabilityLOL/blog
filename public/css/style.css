@@ -4,19 +4,13 @@ body{
 	color:#ffffff;
 	background-color:#191c24;
 	border-color:green;
-	font-size:20px;
-	font-family:sans;
+	font-family:firacode;
 }
 
-h1,h2,h3,h4,h5,h6,.subtitle{
+h1,h2,h3,h4,h5,h6{
 	color:#6fffe9;
 	font-family:orbitron;
 }
-
-.nav-link{
-	font-size:40px;
-}
-
 nav{
 	border-style:solid;
 	border-radius:10px;
@@ -55,12 +49,11 @@ hr{
 	margin-bottom:3%;
 }
 .footer{
-	margin:10px;
 	margin-top:3%;
-	margin-bottom:9px;
-	margin-left:25;
+	margin-bottom:0px;
 	position: fixed;
   	bottom: 0;
+
   	left: 0;
   	right: 0;
 }
@@ -95,12 +88,5 @@ ul, ol{
 }
 .homepage-header{
 	text-align:center;
-	font-size:4ch;
-}
-
-table, th, td {
-  border: 2px solid;
-  border-color:#6fffe9;
-  border-collapse:collapse;
-  border-radius:3px;
+	font-size:4ch
 }
