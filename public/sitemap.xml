@@ -62,9 +62,6 @@
     <loc>/posts/</loc>
     <lastmod>2023-01-01T08:30:00-07:00</lastmod>
   </url><url>
-    <loc>/page/about/</loc>
-    <lastmod>2015-04-03T02:13:50+00:00</lastmod>
-  </url><url>
     <loc>/page/contact/</loc>
     <lastmod>2015-04-03T02:13:50+00:00</lastmod>
   </url><url>
@@ -73,6 +70,8 @@
   </url><url>
     <loc>/project/terminus/</loc>
     <lastmod>2014-11-18T02:13:50+00:00</lastmod>
+  </url><url>
+    <loc>/page/about/</loc>
   </url><url>
     <loc>/categories/</loc>
   </url>

@@ -2,13 +2,15 @@
 @font-face { font-family: firacode; src: url('/fonts/FiraCode-Regular.ttf'); }
 body{
 	color:#ffffff;
-	background-color:#191c24;
+	/*background-color:#191c24;*/
+	background-color:#000000;
 	border-color:green;
 	font-family:firacode;
 }
 
 h1,h2,h3,h4,h5,h6{
-	color:#6fffe9;
+	/*color:#6fffe9;*/
+	color:#ffffff;
 	font-family:orbitron;
 }
 nav{
@@ -24,6 +26,7 @@ nav{
 	margin-right:auto;
 	font-family:orbitron;
 	font-size:3.5ch;
+
 }
 .post-title, .post-metadata, .post-content,div#content, .homepage-content{
 	margin-right:auto;
@@ -43,7 +46,7 @@ nav{
 	display: inline-block;
 }
 a{
-	color:#6fffe9;
+	color:#00d1ff;
 }
 hr{
 	margin-bottom:3%;
@@ -83,10 +86,23 @@ ul, ol{
   border-left-color:#6fffe9;
 }
 .post-title-home{
+	 color:#ffffff;
    font-size:3ch;
    font-family:orbitron;
+	 font-weight: bold;
 }
 .homepage-header{
 	text-align:center;
 	font-size:4ch
+}
+.post{
+	border-style: solid;
+	border-radius: 10px;
+	padding-left: 2%;
+	padding-right: 2%;
+	margin: 2%;
+}
+
+.post a{
+	font-weight:bold;
 }

@@ -39,3 +39,6 @@ weight = 4
 name = "contact"
 url = "/page/contact"
 weight = 5
+
+[markup.goldmark.renderer]
+  unsafe = true # Allow HTML in md files
