@@ -1,6 +1,6 @@
 baseurl = "/"
-theme = "terminus"
-title = "glitched"
+theme = "hugo-coder"
+title = "Glitched"
 
 [author]
 name = "The Supreme Leader"
@@ -22,7 +22,7 @@ name = "The Supreme Leader"
 
 [[menu.main]]
 name = "blog"
-url = "/"
+url = "/post/"
 weight = 1
 
 [[menu.main]]

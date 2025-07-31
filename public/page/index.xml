@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on glitched</title>
-    <link>/page/</link>
-    <description>Recent content in Pages on glitched</description>
+    <title>Pages on Glitched</title>
+    <link>//localhost:1313/page/</link>
+    <description>Recent content in Pages on Glitched</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 03 Apr 2015 02:13:50 +0000</lastBuildDate>
-    <atom:link href="/page/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contact</title>
-      <link>/page/contact/</link>
+      <link>//localhost:1313/page/contact/</link>
       <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
-      <guid>/page/contact/</guid>
+      <guid>//localhost:1313/page/contact/</guid>
       <description>## Contact&#xA;&#xA;Email: &lt;givespamhere7@gmail.com&gt;  &#xA;Github: &lt;https://github.com/readabilityLOL&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>/page/about/</link>
+      <link>//localhost:1313/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/page/about/</guid>
-      <description>&lt;style&gt;&#xA;.text{&#xA;    margin-left:40%;&#xA;}:&#xA;&#xA;.post-title{&#xA;    width:0px;&#xA;    height:0px;&#xA;    color:black;&#xA;}&#xA;&lt;/style&gt;&#xA;&lt;div class=&#34;text&#34;&gt;&#xA;&lt;h1 id=&#34;who-am-i&#34;&gt;Who am I?&lt;/h1&gt;&#xA;&lt;h1 id=&#34;my-hobbies&#34;&gt;My Hobbies&lt;/h1&gt;&#xA;&lt;h1 id=&#34;what-im-reading&#34;&gt;What I&amp;rsquo;m reading&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;h2 id=&#34;kings-of-the-wyld-by-nicholas-eames&#34;&gt;Kings of the Wyld by Nicholas Eames&lt;/h2&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;h2 id=&#34;words-and-rules-by-steven-pinker&#34;&gt;Words and Rules by Steven Pinker&lt;/h2&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;what-im-watching&#34;&gt;What I&amp;rsquo;m watching&lt;/h1&gt;&#xA;&lt;h1 id=&#34;contact-me&#34;&gt;Contact me&lt;/h1&gt;&#xA;&lt;/div&gt;&#xA;&lt;!--&#xA;# About&#xA;&lt;p&gt;A guy who does stuff.&lt;/p&gt;&#xA;&lt;h1 id=&#34;what-im-reading-1&#34;&gt;What I&amp;rsquo;m reading&lt;/h1&gt;&#xA;&lt;h1 id=&#34;contact&#34;&gt;Contact&lt;/h1&gt;&#xA;&lt;p&gt;&amp;ndash;&amp;gt;&lt;/p&gt;</description>
+      <guid>//localhost:1313/page/about/</guid>
+      <description>&lt;style&gt;&#xA;.text{&#xA;    margin-left:40%;&#xA;}:&#xA;&#xA;.post-title{&#xA;    width:0px;&#xA;    height:0px;&#xA;    color:black;&#xA;}&#xA;&lt;/style&gt;&#xA;&lt;div class=&#34;text&#34;&gt;&#xA;&lt;h1 id=&#34;who-am-i&#34;&gt;&#xA;  Who am I?&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#who-am-i&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h1 id=&#34;my-hobbies&#34;&gt;&#xA;  My Hobbies&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#my-hobbies&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h1 id=&#34;what-im-reading&#34;&gt;&#xA;  What I&amp;rsquo;m reading&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#what-im-reading&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;h2 id=&#34;kings-of-the-wyld-by-nicholas-eames&#34;&gt;&#xA;  Kings of the Wyld by Nicholas Eames&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#kings-of-the-wyld-by-nicholas-eames&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;h2 id=&#34;words-and-rules-by-steven-pinker&#34;&gt;&#xA;  Words and Rules by Steven Pinker&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#words-and-rules-by-steven-pinker&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;what-im-watching&#34;&gt;&#xA;  What I&amp;rsquo;m watching&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#what-im-watching&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h1 id=&#34;contact-me&#34;&gt;&#xA;  Contact me&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#contact-me&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;/div&gt;&#xA;&lt;!--&#xA;# About&#xA;&lt;p&gt;A guy who does stuff.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
