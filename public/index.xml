@@ -6,8 +6,15 @@
     <description>Recent content on Glitched</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 05 Jan 2025 02:13:50 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Aug 2025 18:40:22 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>In which I get a Windows XP machine</title>
+      <link>/windowsxp/</link>
+      <pubDate>Fri, 01 Aug 2025 18:40:22 +0000</pubDate>
+      <guid>/windowsxp/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;&#xA;  Intro&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#intro&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Recently, I recieved an old Windows XP machine. I was pretty excited to use it, but I will admit that it sat around in my garage for a week or two before I brought it inside. I wasn&amp;rsquo;t too sure what I could do with an old machine like that, but I figured I could have some fun with it. I decided that, if nothing else, I could at least play some games on it.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>FAIL rss</title>
       <link>/project/failrss/</link>
