@@ -1,3 +1,4 @@
+<!--
 {{ if and (isset .Site.Params "avatarurl") (not (isset .Site.Params "gravatar")) }}
   {{ with .Site.Params.avatarURL }}
     <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
@@ -6,3 +7,5 @@
 {{ with .Site.Params.gravatar }}
   <div class="avatar"><img src="https://www.gravatar.com/avatar/{{md5 .}}?s=240&d=mp" alt="gravatar"></div>
 {{ end }}
+-->
+<div class="avatar"><img src="/img/avatar2.jpg"></div>
