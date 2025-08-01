@@ -7,6 +7,7 @@ description = "A list of projects I've made"
 
 # My Projects
 
+- [Python text editor](https://github.com/ReadabilityLOL/Python-text-editor)
 - [FailRSS](https://github.com/readabilityLOL/FAIL), [Site link](https://failrss.glitched.tech)
 - [Terminus](https://github.com/readabilityLOL/Terminus)
 - [Wallet](https://github.com/ReadabilityLOL/wallet)
