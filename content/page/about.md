@@ -4,19 +4,7 @@ author = "Joshua Anand"
 description = "Things about me."
 +++
 
-<style>
-.text{
-    margin-left:40%;
-}:
 
-.post-title{
-    width:0px;
-    height:0px;
-    color:black;
-}
-</style>
-
-<div class="text">
 
 # About me
 ## Who am I?
@@ -31,7 +19,6 @@ description = "Things about me."
 
 ## Contact me
 
-</div>
 <!--
 # About
 

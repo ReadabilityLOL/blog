@@ -16,6 +16,8 @@ name = "The Supreme Leader"
     readingTime = true
     opengraph = true
     dateFormat = "Mon, Jan 2, 2006"
+    colorScheme = "auto"
+    hidecolorschemetoggle = false
 
 [Permalinks]
     post = "/:filename/"
@@ -27,7 +29,7 @@ weight = 1
 
 [[menu.main]]
 name = "projects"
-url = "/project/"
+url = "/page/project/"
 weight = 2
 
 #[[menu.main]]

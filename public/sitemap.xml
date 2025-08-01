@@ -5,6 +5,12 @@
     <loc>/</loc>
     <lastmod>2024-02-02T04:14:54-08:00</lastmod>
   </url><url>
+    <loc>/project/</loc>
+    <lastmod>2025-01-05T02:13:50+00:00</lastmod>
+  </url><url>
+    <loc>/project/failrss/</loc>
+    <lastmod>2025-01-05T02:13:50+00:00</lastmod>
+  </url><url>
     <loc>/post/</loc>
     <lastmod>2024-07-27T00:00:00+00:00</lastmod>
   </url><url>
@@ -14,9 +20,6 @@
     <loc>/podcasts-and-pyraminx/</loc>
     <lastmod>2024-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/project/</loc>
-    <lastmod>2024-06-01T16:09:57-04:00</lastmod>
-  </url><url>
     <loc>/project/walletv1/</loc>
     <lastmod>2024-06-01T16:09:57-04:00</lastmod>
   </url><url>
@@ -25,6 +28,9 @@
   </url><url>
     <loc>/thetimetravelproblem/</loc>
     <lastmod>2024-05-29T17:41:44-04:00</lastmod>
+  </url><url>
+    <loc>/project/terminus/</loc>
+    <lastmod>2024-03-26T02:13:50+00:00</lastmod>
   </url><url>
     <loc>/thesecondsheepwar-2024-02-20/</loc>
     <lastmod>2024-02-21T01:11:23+00:00</lastmod>
@@ -44,10 +50,9 @@
     <loc>/page/</loc>
     <lastmod>2015-04-03T02:13:50+00:00</lastmod>
   </url><url>
-    <loc>/project/terminus/</loc>
-    <lastmod>2014-11-18T02:13:50+00:00</lastmod>
-  </url><url>
     <loc>/page/about/</loc>
+  </url><url>
+    <loc>/page/project/</loc>
   </url><url>
     <loc>/categories/</loc>
   </url><url>
