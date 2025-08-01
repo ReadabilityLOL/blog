@@ -18,17 +18,18 @@ description = "Things about me."
 
 <div class="text">
 
-# Who am I?
+# About me
+## Who am I?
 
-# My Hobbies
+## My Hobbies
 
-# What I'm reading
+## What I'm reading
 - ## Kings of the Wyld by Nicholas Eames
 - ## Words and Rules by Steven Pinker
 
-# What I'm watching
+## What I'm watching
 
-# Contact me
+## Contact me
 
 </div>
 <!--

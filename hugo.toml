@@ -30,15 +30,15 @@ name = "projects"
 url = "/project/"
 weight = 2
 
-[[menu.main]]
-name = "about"
-url = "/page/about/"
-weight = 4
+#[[menu.main]]
+#name = "about"
+#url = "/page/about/"
+#weight = 4
 
-[[menu.main]]
-name = "contact"
-url = "/page/contact"
-weight = 5
+#[[menu.main]]
+#name = "contact"
+#url = "/page/contact"
+#weight = 5
 
 [markup.goldmark.renderer]
   unsafe = true # Allow HTML in md files
