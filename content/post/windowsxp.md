@@ -2,7 +2,17 @@
 title = 'In which I get a Windows XP machine'
 date = 2025-08-01T18:40:22Z
 draft = false
+tags = ['windows xp','games']
 +++
+
+<audio id="page-sound" autoplay=True>
+    <source src="/audio-effects/xp.mp3">
+</audio>
+
+<script>
+  var audio = document.getElementById("page-sound");
+  audio.volume = 0.1;
+</script>
 
 ## Intro
 

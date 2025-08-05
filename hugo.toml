@@ -11,13 +11,14 @@ name = "The Supreme Leader"
     headline = '''glitched.tech'''
     info = "A blog I made."
     github = "https://github.com/readabilityLOL"
-    email = "techsheep7@proton.me"
+    email = "kramningevidence@gmail.com"
     rss = true
     readingTime = true
     opengraph = true
     dateFormat = "Mon, Jan 2, 2006"
     colorScheme = "auto"
     hidecolorschemetoggle = false
+    giscus = "readabilitylol/blog"
 
 [Permalinks]
     post = "/:filename/"
@@ -33,9 +34,14 @@ url = "/page/project/"
 weight = 2
 
 #[[menu.main]]
-#name = "about"
-#url = "/page/about/"
-#weight = 4
+#name = "'artwork'"
+#url = "/page/stats/"
+#weight = 3
+
+[[menu.main]]
+name = "about"
+url = "/page/about/"
+weight = 4
 
 #[[menu.main]]
 #name = "contact"
