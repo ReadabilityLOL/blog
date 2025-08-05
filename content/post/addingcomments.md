@@ -1,7 +1,7 @@
 +++
 title = 'Adding comments to this site'
 date = 2025-08-05T20:59:01Z
-draft = true
+draft = false
 +++
 
 # Intro
