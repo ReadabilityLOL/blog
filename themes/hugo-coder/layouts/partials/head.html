@@ -2,8 +2,6 @@
 
 {{ if .Params.canonicalUrl }}
 <link rel="canonical" href="{{ .Params.canonicalUrl }}">
-{{ else if eq "{{ .Permalink }}" "/" }}
-<link rel="canonical" href="https://glitched.tech">
 {{ else }}
 <link rel="canonical" href="{{ .Permalink }}">
 {{ end }}
