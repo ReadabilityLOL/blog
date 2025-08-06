@@ -3,6 +3,7 @@ title = 'In which I get a Windows XP machine'
 date = 2025-08-01T18:40:22Z
 draft = false
 tags = ['windows xp','games']
+description = "I recieve a Windows XP machine and install some software on it"
 +++
 
 <audio id="page-sound" autoplay=True>

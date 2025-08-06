@@ -2,6 +2,7 @@
 title = 'Podcasts and Pyraminx'
 date = 2024-07-24
 draft = false
+description = "a post I wrote in the summer of 2024 while in the airport. I believe this was my last post for over a year."
 +++
 
 # Podcasts

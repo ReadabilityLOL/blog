@@ -2,6 +2,7 @@
 title = 'Analysis and results of the second sheep war'
 date = 2024-02-21T01:11:23Z
 draft = false
+description = "a continuation of the first sheep war story"
 +++
 
 # Tensions rise

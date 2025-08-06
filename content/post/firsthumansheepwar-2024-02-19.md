@@ -2,6 +2,7 @@
 title = 'A brief retelling of the first human-sheep war'
 date = 2024-02-19T23:30:41Z
 draft = false
+description = "a little story I wrote about a fictional human-sheep war, from the point of view of a historian"
 +++
 
 # Events leading to the beginning of the war

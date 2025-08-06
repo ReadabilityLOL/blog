@@ -2,6 +2,7 @@
 title = 'A complaint about the english language'
 date = 2024-05-28
 draft = true
+description = "I complain about the english language a little bit"
 +++
 
 # Introduction

@@ -3,6 +3,7 @@ title = 'Making a Notes App for Windows XP: part 0'
 date = 2025-08-03T17:02:33Z
 draft = true
 tags = ['windows xp','code']
+description = "I begin work on a notes app for windows xp"
 +++
 
 <audio id="page-sound" autoplay=True>

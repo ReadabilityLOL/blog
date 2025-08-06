@@ -2,6 +2,7 @@
 title = 'Lying Fortune Cookies'
 date = 2024-07-27
 draft = false
+description = "I write about a fortune cookie that lied to me"
 +++
 
 # Fortune Cookies

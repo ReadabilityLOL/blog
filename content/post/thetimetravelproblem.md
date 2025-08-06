@@ -2,6 +2,7 @@
 title = 'The time travel problem'
 date = 2024-05-29T17:41:44-04:00
 draft = false
+description = "my comments on one so called 'paradox' people bring up when talking about time travel"
 +++
 
 # Introduction

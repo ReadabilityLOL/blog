@@ -2,6 +2,7 @@
 title = 'My First Post'
 date = 2024-02-16
 draft = false
+description = "the first post I made"
 +++
 
 # Intro to this blog 

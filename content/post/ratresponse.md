@@ -2,6 +2,7 @@
 title = 'A response to the issues raised by the honourable Doctor John Smith'
 date = 2024-05-30T19:27:07-04:00
 draft = false
+description = "a little fake business letter I made to practice some formatting"
 +++
 
 

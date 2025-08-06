@@ -2,6 +2,7 @@
 title = 'An analysis of third grade culture'
 date = 2024-02-18
 draft = false
+description = "a fake academic paper-styled article about third-graders"
 +++
 
 # Introduction to the third grader

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
 
+{{ if .Description }}
+   <meta name="description" content="{{ .Description }}">
+{{ end }}
+
 <head>
   <title>{{ block "title" . }}{{ .Site.Params.HeadTitle | default .Site.Title }}{{ end }}</title>
   {{ partial "head.html" . }}
