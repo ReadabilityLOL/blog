@@ -65,10 +65,10 @@
     <loc>/page/contact/</loc>
     <lastmod>2015-04-03T02:13:50+00:00</lastmod>
   </url><url>
-    <loc>/page/about/</loc>
-  </url><url>
     <loc>/page/project/</loc>
   </url><url>
     <loc>/categories/</loc>
+  </url><url>
+    <loc>/page/now/</loc>
   </url>
 </urlset>
