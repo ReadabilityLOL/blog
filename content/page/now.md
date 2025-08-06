@@ -34,4 +34,7 @@ I'm also preparing for my high school Calculus and Physics classses with the hel
 
 I've also been practicing German a bit, using [Clozemaster](https://clozemaster.com), and [Anki](https://ankiweb.net), though I should probably work on these a bit more intensely as school approaches. I'm also preparing for the SAT, because I'm taking it for the first time in November. I've already started doing Collegeboard's [SAT Question of the Day](https://qotd.collegeboard.org), but I feel that I can do a bit more, and I'll probably start doing Khan Academy's SAT prep course.
 
-Finally, I'm also learning a bit of [Game Theory](https://en.wikipedia.org/wiki/Game_theory), since that's a pretty cool subject. I'm currently using William Spaniel's excellent [Game Theory 101](https://www.youtube.com/playlist?list=PLKI1h_nAkaQoDzI4xDIXzx6U2ergFmedo) course, and taking notes in [Obsidian](https://obsidian.md)
+Finally, I'm also learning a bit of [Game Theory](https://en.wikipedia.org/wiki/Game_theory), since that's a pretty cool subject. I'm currently using William Spaniel's excellent [Game Theory 101](https://www.youtube.com/playlist?list=PLKI1h_nAkaQoDzI4xDIXzx6U2ergFmedo) course, and taking notes in [Obsidian](https://obsidian.md).
+
+## Chess
+I've started playing chess a bit more lately, mostly as a guest on [Chess.com](https://chess.com) and on [Lichess](https://lichess.org). I'll try to use lichess's api to attach my current elo in this section of the page, since that seems like an interesting idea.
