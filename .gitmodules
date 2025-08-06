@@ -1,6 +1,9 @@
 [submodule "themes/terminus"]
 	path = themes/terminus
 	url = https://github.com/readabilitylol/terminus
+[submodule "themes/--force"]
+	path = themes/--force
+	url = https://github.com/totoroot/hugo-github-calendar.git
 [submodule "themes/hugo-github-calendar"]
 	path = themes/hugo-github-calendar
 	url = https://github.com/totoroot/hugo-github-calendar.git
