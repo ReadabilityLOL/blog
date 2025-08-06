@@ -2,7 +2,9 @@
 <html lang="{{ .Site.Language.Lang }}">
 
 {{ if .Description }}
-   <meta name="description" content="{{ .Description }}">
+  <meta name="description" content="{{ .Description }}">
+{{else}}
+  <meta name="description" content="a page on my site, glitched.tech">
 {{ end }}
 
 <head>
