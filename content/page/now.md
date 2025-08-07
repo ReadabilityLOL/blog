@@ -4,7 +4,7 @@ author = "Joshua Anand"
 description = "What I'm doing now"
 +++
 
-Last updated: 2025-08-06
+Last updated: 2025-08-07
 
 ## Who are you, anyway?
 
@@ -25,7 +25,7 @@ I'm currently working on a few projects right now. First off, I'm working on a t
 
 I'm also currently taking Health over the summer at my school, since I figured it would take up unnecessary time during the school year. I don't really regret the decision, even though it takes up 2 hours each day, because I wasn't doing anything with those hours anyway.
 
-I also signed myself up to be a DM at my school's DnD club next year, and I haven't started preparing yet. I should really start that soon.
+I started working on my DnD campaign for school with a friend. We decided on which system we'll use, which is proabably a good first step. We've decided to use [sw5e](https://sw5e.com) as our system, because it seemed like fun, and we both have some star wars knowledge from the movies and from playing KOTOR.
 
 I'm trying to exercise a bit more, since that's always healthy, and I'll try to update that here later.
 
