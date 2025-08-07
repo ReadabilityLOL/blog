@@ -7,16 +7,16 @@ description = "a little fake business letter I made to practice some formatting"
 
 
 May 30, 2024
-` `  
-` `  
-` `  
-` `  
+<br>
+<br>
+<br>
+<br>
 Dr. John Smith\
 Extinct, Inc\
 1600 Maryland Avenue\
 Boring, Oregon 97009
 
-` `  
+<br>
 Dear Mr. Smith
 
 We have been informed about some of your concerns regarding the safety of our food. I would like to inform you that we strive to make our food digestible by the vast majority of those who consume it and agree that public safety should be a priority in any company. In this letter, I hope to address all of your points about our food safety and edibility.
@@ -31,12 +31,9 @@ Finally, concerning your allegations about our "numerous health violations", we 
 
 Sincerely,
 
-` `  
-` `  
-` `  
+<br>
+<br>
+<br>
 James Fredrickson\
 CEO
 
-` `  
-` `  
-` `  

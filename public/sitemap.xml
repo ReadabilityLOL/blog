@@ -2,75 +2,96 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2024-02-02T04:14:54-08:00</lastmod>
   </url><url>
-    <loc>/post/</loc>
+    <loc>//localhost:1313/post/</loc>
     <lastmod>2025-08-05T20:59:01+00:00</lastmod>
   </url><url>
-    <loc>/addingcomments/</loc>
+    <loc>//localhost:1313/addingcomments/</loc>
     <lastmod>2025-08-05T20:59:01+00:00</lastmod>
   </url><url>
-    <loc>/page/</loc>
+    <loc>//localhost:1313/page/stats/</loc>
     <lastmod>2025-08-05T00:15:18+00:00</lastmod>
   </url><url>
-    <loc>/tags/games/</loc>
+    <loc>//localhost:1313/page/</loc>
+    <lastmod>2025-08-05T00:15:18+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/code/</loc>
+    <lastmod>2025-08-03T17:02:33+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/makinganotesapp1/</loc>
+    <lastmod>2025-08-03T17:02:33+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2025-08-03T17:02:33+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/windows-xp/</loc>
+    <lastmod>2025-08-03T17:02:33+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/games/</loc>
     <lastmod>2025-08-01T18:40:22+00:00</lastmod>
   </url><url>
-    <loc>/windowsxp/</loc>
+    <loc>//localhost:1313/windowsxp/</loc>
     <lastmod>2025-08-01T18:40:22+00:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2025-08-01T18:40:22+00:00</lastmod>
-  </url><url>
-    <loc>/tags/windows-xp/</loc>
-    <lastmod>2025-08-01T18:40:22+00:00</lastmod>
-  </url><url>
-    <loc>/project/</loc>
+    <loc>//localhost:1313/project/</loc>
     <lastmod>2025-01-05T02:13:50+00:00</lastmod>
   </url><url>
-    <loc>/project/failrss/</loc>
+    <loc>//localhost:1313/project/failrss/</loc>
     <lastmod>2025-01-05T02:13:50+00:00</lastmod>
   </url><url>
-    <loc>/lady-liberty-and-lying-fortune-cookies/</loc>
+    <loc>//localhost:1313/lady-liberty-and-lying-fortune-cookies/</loc>
     <lastmod>2024-07-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/podcasts-and-pyraminx/</loc>
+    <loc>//localhost:1313/podcasts-and-pyraminx/</loc>
     <lastmod>2024-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/project/walletv1/</loc>
+    <loc>//localhost:1313/hello/</loc>
+    <lastmod>2024-06-01T17:05:14-04:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/apis/</loc>
+    <lastmod>2024-06-01T17:04:53-04:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/project/walletv1/</loc>
     <lastmod>2024-06-01T16:09:57-04:00</lastmod>
   </url><url>
-    <loc>/ratresponse/</loc>
+    <loc>//localhost:1313/ratresponse/</loc>
     <lastmod>2024-05-30T19:27:07-04:00</lastmod>
   </url><url>
-    <loc>/thetimetravelproblem/</loc>
+    <loc>//localhost:1313/thetimetravelproblem/</loc>
     <lastmod>2024-05-29T17:41:44-04:00</lastmod>
   </url><url>
-    <loc>/project/terminus/</loc>
+    <loc>//localhost:1313/complaintaboutenglish/</loc>
+    <lastmod>2024-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/writegooder-2024-05-09/</loc>
+    <lastmod>2024-05-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/project/terminus/</loc>
     <lastmod>2024-03-26T02:13:50+00:00</lastmod>
   </url><url>
-    <loc>/thesecondsheepwar-2024-02-20/</loc>
+    <loc>//localhost:1313/thesecondsheepwar-2024-02-20/</loc>
     <lastmod>2024-02-21T01:11:23+00:00</lastmod>
   </url><url>
-    <loc>/firsthumansheepwar-2024-02-19/</loc>
+    <loc>//localhost:1313/firsthumansheepwar-2024-02-19/</loc>
     <lastmod>2024-02-19T23:30:41+00:00</lastmod>
   </url><url>
-    <loc>/thirdgradeculture-2024-02-17/</loc>
+    <loc>//localhost:1313/thirdgradeculture-2024-02-17/</loc>
     <lastmod>2024-02-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/thesecondfirstpost-2024-02-16/</loc>
+    <loc>//localhost:1313/thesecondfirstpost-2024-02-16/</loc>
     <lastmod>2024-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/page/contact/</loc>
+    <loc>//localhost:1313/page/contact/</loc>
     <lastmod>2015-04-03T02:13:50+00:00</lastmod>
   </url><url>
-    <loc>/page/about/</loc>
+    <loc>//localhost:1313/page/about/</loc>
   </url><url>
-    <loc>/page/project/</loc>
+    <loc>//localhost:1313/page/project/</loc>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
   </url><url>
-    <loc>/page/now/</loc>
+    <loc>//localhost:1313/page/now/</loc>
   </url>
 </urlset>
