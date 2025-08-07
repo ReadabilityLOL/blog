@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
 
+
+<head>
+  <title>{{ block "title" . }}{{ .Site.Params.HeadTitle | default .Site.Title }}{{ end }}</title>
+  {{ partial "head.html" . }}
+</head>
+
 {{ if .Description }}
   <meta name="description" content="{{ .Description }}">
 {{else}}
   <meta name="description" content="a page on my site, glitched.tech">
 {{ end }}
 
-<head>
-  <title>{{ block "title" . }}{{ .Site.Params.HeadTitle | default .Site.Title }}{{ end }}</title>
-  {{ partial "head.html" . }}
-</head>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="b784ca14-ae7f-400a-ab68-c35fd54f8256"></script>
 
 {{ $csClass := "colorscheme-light" }}
 {{ if eq .Site.Params.colorScheme "dark" }}
