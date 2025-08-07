@@ -1,4 +1,0 @@
-User-agent: *
-
-Disallow: 
-Sitemap: "https://glitched.tech/sitemap.xml"

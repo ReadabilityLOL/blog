@@ -2,31 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Glitched</title>
-    <link>//localhost:1313/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Glitched</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 03 Aug 2025 17:02:33 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Aug 2025 18:40:22 +0000</lastBuildDate>
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Code</title>
-      <link>//localhost:1313/tags/code/</link>
-      <pubDate>Sun, 03 Aug 2025 17:02:33 +0000</pubDate>
-      <guid>//localhost:1313/tags/code/</guid>
+      <title>Games</title>
+      <link>/tags/games/</link>
+      <pubDate>Fri, 01 Aug 2025 18:40:22 +0000</pubDate>
+      <guid>/tags/games/</guid>
       <description></description>
     </item>
     <item>
       <title>Windows Xp</title>
-      <link>//localhost:1313/tags/windows-xp/</link>
-      <pubDate>Sun, 03 Aug 2025 17:02:33 +0000</pubDate>
-      <guid>//localhost:1313/tags/windows-xp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Games</title>
-      <link>//localhost:1313/tags/games/</link>
+      <link>/tags/windows-xp/</link>
       <pubDate>Fri, 01 Aug 2025 18:40:22 +0000</pubDate>
-      <guid>//localhost:1313/tags/games/</guid>
+      <guid>/tags/windows-xp/</guid>
       <description></description>
     </item>
   </channel>
