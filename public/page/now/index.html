@@ -39,6 +39,7 @@
 <link rel="canonical" href="/page/now/">
 
 
+
 <link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
@@ -66,15 +67,8 @@
 
 
 
-<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
-<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
 
 
 
@@ -128,10 +122,6 @@
               <a class="navigation-link " href="/page/now/">now</a>
             </li>
           
-            <li class="navigation-item">
-              <a class="navigation-link " href="/page/about/">about</a>
-            </li>
-          
         
         <li>
         </li>
@@ -155,6 +145,14 @@
     </header>
 
     <p>Last updated: 2025-08-06</p>
+<h2 id="who-are-you-anyway">
+  Who are you, anyway?
+  <a class="heading-link" href="#who-are-you-anyway">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>I’m Josh, a high schooler who decided last year to start a blog. I’m interested in technology, old games, and books. When I’m not wasting my time mindlessly doomscrolling on Reddit, I’m usually reading a book or trying to teach myself something, like how to make a blog or how to design a wallet in Freecad. I like making things, and I intend this blog to be both a log of things I make and a way to get more practice writing. You never know, it might even help me on a j*b applicat**n one day.</p>
 <h2 id="the-website">
   The website
   <a class="heading-link" href="#the-website">
@@ -210,7 +208,77 @@ I&rsquo;m also planning to start watching my Cosmos DVDs soon.</p>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
-<p>I&rsquo;ve started playing chess a bit more lately, mostly as a guest on <a href="https://chess.com"  class="external-link" target="_blank" rel="noopener">Chess.com</a> and on <a href="https://lichess.org"  class="external-link" target="_blank" rel="noopener">Lichess</a>. I&rsquo;ll try to use lichess&rsquo;s api to attach my current elo in this section of the page, since that seems like an interesting idea.</p>
+<div id="elo"></div>
+<p>I&rsquo;ve started playing chess a bit more lately, mostly as a guest on <a href="https://chess.com"  class="external-link" target="_blank" rel="noopener">Chess.com</a> and on <a href="https://lichess.org"  class="external-link" target="_blank" rel="noopener">Lichess</a>. I&rsquo;ll used lichess&rsquo;s api to attach my current elo in this section of the page, since that seemed like a fun way to provide motivation to improve my chess abilities.</p>
+<h2 id="code">
+  Code
+  <a class="heading-link" href="#code">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Here&rsquo;s my Github contribution chart so far:
+<br>
+<br></p>
+<center><img style = "scale: 1.3" class = "contrib-chart" src="http://ghchart.rshah.org/readabilityLOL" alt="My github contributions chart"></center>
+<!-- js goes below -->
+<script>
+let elo_container = document.getElementById("elo")
+let wca_container = document.getElementById("wca")
+
+//curl --location 'https://raw.githubusercontent.com/robiningelbrecht/wca-rest-api/master/api/persons.json'
+async function getData() {
+  const url = 'https://lichess.org/api/user/JimKram';
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+
+    const result = await response.json();
+    return result
+  } catch (error) {
+    console.error(error.message);
+  }
+}
+
+getData().then((promisedata) => {
+  perfs = promisedata["perfs"]
+  console.log(promisedata)
+  elo_container.innerHTML = `
+  Games played: ${perfs["bullet"]["games"]+perfs["blitz"]["games"]+perfs["rapid"]["games"]}
+  <p>
+  Ratings: Bullet: ${perfs["bullet"]["rating"]}, Blitz: ${perfs["blitz"]["rating"]}, Rapid: ${perfs["rapid"]["rating"]}
+  `
+
+  /*
+  `
+<div style="border-bottom: 3px solid #ffffff; margin-bottom: 1em;">Lichess</div>
+<table>
+  <tr>
+    <th></th>
+    <th>Bullet</th>
+    <th>Blitz</th>
+    <th>Rapid</th>
+  </tr>
+  <tr>
+    <th>Games</th>
+    <td>${perfs["bullet"]["games"]}</td>
+    <td>${perfs["blitz"]["games"]}</td>
+    <td>${perfs["rapid"]["games"]}</td>
+  </tr>
+  <tr>
+    <th>Rating</th>
+    <td>${perfs["bullet"]["rating"]}</td>
+    <td>${perfs["blitz"]["rating"]}</td>
+    <td>${perfs["rapid"]["rating"]}</td>
+  </tr>
+</table>
+  `
+*/
+})
+
+</script>
 
   </article>
 </section>

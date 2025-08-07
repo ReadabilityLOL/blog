@@ -9,7 +9,7 @@ name = "Joshua Anand"
     mainSections = ["post"]
     intro = true
     headline = '''glitched.tech'''
-    info = '''# Welcome to my blog!'''
+    info = '''## Welcome to glitched.tech!'''
     github = "https://github.com/readabilityLOL"
     email = "kramningevidence@gmail.com"
     rss = true
@@ -38,10 +38,6 @@ name = "now"
 url = "/page/now/"
 weight = 3
 
-[[menu.main]]
-name = "about"
-url = "/page/about/"
-weight = 4
 
 #[[menu.main]]
 #name = "contact"

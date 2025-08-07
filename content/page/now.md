@@ -6,6 +6,10 @@ description = "What I'm doing now"
 
 Last updated: 2025-08-06
 
+## Who are you, anyway?
+
+I’m Josh, a high schooler who decided last year to start a blog. I’m interested in technology, old games, and books. When I’m not wasting my time mindlessly doomscrolling on Reddit, I’m usually reading a book or trying to teach myself something, like how to make a blog or how to design a wallet in Freecad. I like making things, and I intend this blog to be both a log of things I make and a way to get more practice writing. You never know, it might even help me on a j*b applicat**n one day.
+
 ## The website
 I'm going to try to update this site around once every two weeks. If I don't, just send me an angry email or something, and I'll be sure to disregard it completely.
 
@@ -37,4 +41,81 @@ I've also been practicing German a bit, using [Clozemaster](https://clozemaster.
 Finally, I'm also learning a bit of [Game Theory](https://en.wikipedia.org/wiki/Game_theory), since that's a pretty cool subject. I'm currently using William Spaniel's excellent [Game Theory 101](https://www.youtube.com/playlist?list=PLKI1h_nAkaQoDzI4xDIXzx6U2ergFmedo) course, and taking notes in [Obsidian](https://obsidian.md).
 
 ## Chess
-I've started playing chess a bit more lately, mostly as a guest on [Chess.com](https://chess.com) and on [Lichess](https://lichess.org). I'll try to use lichess's api to attach my current elo in this section of the page, since that seems like an interesting idea.
+<div id="elo"></div>
+
+I've started playing chess a bit more lately, mostly as a guest on [Chess.com](https://chess.com) and on [Lichess](https://lichess.org). I'll used lichess's api to attach my current elo in this section of the page, since that seemed like a fun way to provide motivation to improve my chess abilities.
+
+## Code
+Here's my Github contribution chart so far:
+<br>
+<br>
+
+<center><img style = "scale: 1.3" class = "contrib-chart" src="http://ghchart.rshah.org/readabilityLOL" alt="My github contributions chart"></center>
+
+
+
+
+
+
+
+<!-- js goes below -->
+
+<script>
+let elo_container = document.getElementById("elo")
+let wca_container = document.getElementById("wca")
+
+//curl --location 'https://raw.githubusercontent.com/robiningelbrecht/wca-rest-api/master/api/persons.json'
+async function getData() {
+  const url = 'https://lichess.org/api/user/JimKram';
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+
+    const result = await response.json();
+    return result
+  } catch (error) {
+    console.error(error.message);
+  }
+}
+
+getData().then((promisedata) => {
+  perfs = promisedata["perfs"]
+  console.log(promisedata)
+  elo_container.innerHTML = `
+  Games played: ${perfs["bullet"]["games"]+perfs["blitz"]["games"]+perfs["rapid"]["games"]}
+  <p>
+  Ratings: Bullet: ${perfs["bullet"]["rating"]}, Blitz: ${perfs["blitz"]["rating"]}, Rapid: ${perfs["rapid"]["rating"]}
+  `
+
+  /*
+  `
+<div style="border-bottom: 3px solid #ffffff; margin-bottom: 1em;">Lichess</div>
+<table>
+  <tr>
+    <th></th>
+    <th>Bullet</th>
+    <th>Blitz</th>
+    <th>Rapid</th>
+  </tr>
+  <tr>
+    <th>Games</th>
+    <td>${perfs["bullet"]["games"]}</td>
+    <td>${perfs["blitz"]["games"]}</td>
+    <td>${perfs["rapid"]["games"]}</td>
+  </tr>
+  <tr>
+    <th>Rating</th>
+    <td>${perfs["bullet"]["rating"]}</td>
+    <td>${perfs["blitz"]["rating"]}</td>
+    <td>${perfs["rapid"]["rating"]}</td>
+  </tr>
+</table>
+  `
+*/
+})
+
+</script>
+
+

@@ -108,6 +108,13 @@
     </item>
     <item>
       <title></title>
+      <link>/page/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/page/about/</guid>
+      <description>&lt;h1 id=&#34;who-am-i&#34;&gt;&#xA;  Who am I?&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#who-am-i&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;I’m Josh, a high schooler who decided last year to start a blog. I’m interested in technology, old games, and books. When I’m not wasting my time mindlessly doomscrolling on Reddit, I’m usually reading a book or trying to teach myself something, like how to make a blog or how to design a wallet in Freecad. I like making things, and I intend this blog to be both a log of things I make and a way to get more practice writing. You never know, it might even help me on a j*b applicat**n one day.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>/page/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/page/project/</guid>
@@ -118,7 +125,7 @@
       <link>/page/now/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/page/now/</guid>
-      <description>&lt;p&gt;Last updated: 2025-08-06&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-website&#34;&gt;&#xA;  The website&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#the-website&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m going to try to update this site around once every two weeks. If I don&amp;rsquo;t, just send me an angry email or something, and I&amp;rsquo;ll be sure to disregard it completely.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-im-readinglistening-to&#34;&gt;&#xA;  What I&amp;rsquo;m reading/listening to&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#what-im-readinglistening-to&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;I just finished listening to Penguin Audio&amp;rsquo;s adaptation of &lt;a href=&#34;https://bookwyrm.social/book/21745/s/reaper-man&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reaper Man&lt;/a&gt; by Terry Pratchett. I really love Penguin&amp;rsquo;s adaptations of discworld and this book was no different. I&amp;rsquo;m also currently reading &lt;a href=&#34;https://bookwyrm.social/book/154/s/the-tipping-point&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Tipping Point&lt;/a&gt; by Malcolm Gladwell for a summer assignment and &lt;a href=&#34;https://bookwyrm.social/book/269459/s/rise-and-kill-first-the-secret-history-of-israels-targeted-assassinations&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rise and Kill First&lt;/a&gt; by Ronen Bergman because I saw a Reddit comment talking about it and figured it sounded interesting.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Last updated: 2025-08-06&lt;/p&gt;&#xA;&lt;h2 id=&#34;who-are-you-anyway&#34;&gt;&#xA;  Who are you, anyway?&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#who-are-you-anyway&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;I’m Josh, a high schooler who decided last year to start a blog. I’m interested in technology, old games, and books. When I’m not wasting my time mindlessly doomscrolling on Reddit, I’m usually reading a book or trying to teach myself something, like how to make a blog or how to design a wallet in Freecad. I like making things, and I intend this blog to be both a log of things I make and a way to get more practice writing. You never know, it might even help me on a j*b applicat**n one day.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
