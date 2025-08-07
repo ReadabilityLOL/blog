@@ -1,4 +1,4 @@
-baseurl = "/"
+baseURL = "https://glitched.tech"
 theme = ["hugo-coder","hugo-github-calendar"]
 title = "Glitched"
 

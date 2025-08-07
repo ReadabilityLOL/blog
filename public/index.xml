@@ -2,129 +2,129 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Glitched</title>
-    <link>/</link>
+    <link>https://glitched.tech/</link>
     <description>Recent content on Glitched</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 05 Aug 2025 20:59:01 +0000</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://glitched.tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adding comments to this site</title>
-      <link>/addingcomments/</link>
+      <link>https://glitched.tech/addingcomments/</link>
       <pubDate>Tue, 05 Aug 2025 20:59:01 +0000</pubDate>
-      <guid>/addingcomments/</guid>
+      <guid>https://glitched.tech/addingcomments/</guid>
       <description>&lt;h1 id=&#34;intro&#34;&gt;&#xA;  Intro&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#intro&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve had this blog for around one and a half years, and while it is true that I keep abandoning it for months at a time, I think I should still try to make it as good as possible. According to Cloudflare, I get around 70 unique visitors a day. I&amp;rsquo;m almost 100% certain that these are all bots, but there is a slim chance that some of you reading this are in fact human. Because of that, I figured that now would be a good time to add comments to my blog.&lt;/p&gt;</description>
     </item>
     <item>
       <title>In which I get a Windows XP machine</title>
-      <link>/windowsxp/</link>
+      <link>https://glitched.tech/windowsxp/</link>
       <pubDate>Fri, 01 Aug 2025 18:40:22 +0000</pubDate>
-      <guid>/windowsxp/</guid>
-      <description>&lt;audio id=&#34;page-sound&#34; autoplay=True&gt;&#xA;    &lt;source src=&#34;/audio-effects/xp.mp3&#34;&gt;&#xA;&lt;/audio&gt;&#xA;&lt;script&gt;&#xA;  var audio = document.getElementById(&#34;page-sound&#34;);&#xA;  audio.volume = 0.1;&#xA;&lt;/script&gt;&#xA;&lt;h2 id=&#34;intro&#34;&gt;&#xA;  Intro&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#intro&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Recently, I recieved an old Windows XP machine. I was pretty excited to use it, but I will admit that it sat around in my garage for a week or two before I brought it inside. I wasn&amp;rsquo;t too sure what I could do with an old machine like that, but I figured I could have some fun with it. I decided that, if nothing else, I could at least play some games on it.&lt;/p&gt;</description>
+      <guid>https://glitched.tech/windowsxp/</guid>
+      <description>&lt;audio id=&#34;page-sound&#34; autoplay=True&gt;&#xA;    &lt;source src=&#34;https://glitched.tech/audio-effects/xp.mp3&#34;&gt;&#xA;&lt;/audio&gt;&#xA;&lt;script&gt;&#xA;  var audio = document.getElementById(&#34;page-sound&#34;);&#xA;  audio.volume = 0.1;&#xA;&lt;/script&gt;&#xA;&lt;h2 id=&#34;intro&#34;&gt;&#xA;  Intro&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#intro&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Recently, I recieved an old Windows XP machine. I was pretty excited to use it, but I will admit that it sat around in my garage for a week or two before I brought it inside. I wasn&amp;rsquo;t too sure what I could do with an old machine like that, but I figured I could have some fun with it. I decided that, if nothing else, I could at least play some games on it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>FAIL rss</title>
-      <link>/project/failrss/</link>
+      <link>https://glitched.tech/project/failrss/</link>
       <pubDate>Sun, 05 Jan 2025 02:13:50 +0000</pubDate>
-      <guid>/project/failrss/</guid>
+      <guid>https://glitched.tech/project/failrss/</guid>
       <description>&lt;h2 id=&#34;about&#34;&gt;&#xA;  About&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#about&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;This is a little rss feed I made to teach myself flask. Currently, it can&amp;rsquo;t save your feeds past a single session because I had to make them temporary files for Vercel, but in the future, I&amp;rsquo;ll try to store feeds in cookies instead.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Lying Fortune Cookies</title>
-      <link>/lady-liberty-and-lying-fortune-cookies/</link>
+      <link>https://glitched.tech/lady-liberty-and-lying-fortune-cookies/</link>
       <pubDate>Sat, 27 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>/lady-liberty-and-lying-fortune-cookies/</guid>
+      <guid>https://glitched.tech/lady-liberty-and-lying-fortune-cookies/</guid>
       <description>&lt;h1 id=&#34;fortune-cookies&#34;&gt;&#xA;  Fortune Cookies&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#fortune-cookies&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;I went to a Chinese restaurant yesterday, and got a fortune cookie that actually contained a fortune. This cookie didn&amp;rsquo;t have any of that &amp;ldquo;Smile, and you will be happier&amp;rdquo; fortunes. This thing was a real fortune. It said &amp;ldquo;The next meal you eat will be your best&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;Later that day, I went to a mexican restaurant, which may not even have qualified for my 500th best meal.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Podcasts and Pyraminx</title>
-      <link>/podcasts-and-pyraminx/</link>
+      <link>https://glitched.tech/podcasts-and-pyraminx/</link>
       <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>/podcasts-and-pyraminx/</guid>
+      <guid>https://glitched.tech/podcasts-and-pyraminx/</guid>
       <description>&lt;h1 id=&#34;podcasts&#34;&gt;&#xA;  Podcasts&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#podcasts&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Its summer time in the US, and that means one thing. No school! Now, I consider myself a fairly responsible highschooler. I don&amp;rsquo;t spend too much time doomscrolling Reddit. I don&amp;rsquo;t lie on a couch, playing fortnite for eight hours at a time. I don&amp;rsquo;t even have Tiktok. I do have one &lt;em&gt;minor&lt;/em&gt; fault however. As I am &lt;em&gt;slightly&lt;/em&gt; lacking in the &amp;ldquo;Wanna hang out at my house tomorrow&amp;rdquo; kind of friends, I have to entertain myself.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wallet, version 1</title>
-      <link>/project/walletv1/</link>
+      <link>https://glitched.tech/project/walletv1/</link>
       <pubDate>Sat, 01 Jun 2024 16:09:57 -0400</pubDate>
-      <guid>/project/walletv1/</guid>
-      <description>&lt;img title=&#34;Behold!&#34; alt=&#34;An image of the wallet&#34; src=&#34;/img/wallet1.jpg&#34;&gt;&#xA;&lt;p&gt;A 3d printed wallet I made. I made it in Freecad, which took too many hours of my life. It comes in two parts and requires an elastic band to hold it together. &lt;a href=&#34;https://github.com/readabilitylol/wallet&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Here&amp;rsquo;s the Github link&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>https://glitched.tech/project/walletv1/</guid>
+      <description>&lt;img title=&#34;Behold!&#34; alt=&#34;An image of the wallet&#34; src=&#34;https://glitched.tech/img/wallet1.jpg&#34;&gt;&#xA;&lt;p&gt;A 3d printed wallet I made. I made it in Freecad, which took too many hours of my life. It comes in two parts and requires an elastic band to hold it together. &lt;a href=&#34;https://github.com/readabilitylol/wallet&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Here&amp;rsquo;s the Github link&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A response to the issues raised by the honourable Doctor John Smith</title>
-      <link>/ratresponse/</link>
+      <link>https://glitched.tech/ratresponse/</link>
       <pubDate>Thu, 30 May 2024 19:27:07 -0400</pubDate>
-      <guid>/ratresponse/</guid>
+      <guid>https://glitched.tech/ratresponse/</guid>
       <description>&lt;p&gt;May 30, 2024&#xA;&lt;br&gt;&#xA;&lt;br&gt;&#xA;&lt;br&gt;&#xA;&lt;br&gt;&#xA;Dr. John Smith&lt;br&gt;&#xA;Extinct, Inc&lt;br&gt;&#xA;1600 Maryland Avenue&lt;br&gt;&#xA;Boring, Oregon 97009&lt;/p&gt;&#xA;&lt;br&gt;&#xA;Dear Mr. Smith&#xA;&lt;p&gt;We have been informed about some of your concerns regarding the safety of our food. I would like to inform you that we strive to make our food digestible by the vast majority of those who consume it and agree that public safety should be a priority in any company. In this letter, I hope to address all of your points about our food safety and edibility.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The time travel problem</title>
-      <link>/thetimetravelproblem/</link>
+      <link>https://glitched.tech/thetimetravelproblem/</link>
       <pubDate>Wed, 29 May 2024 17:41:44 -0400</pubDate>
-      <guid>/thetimetravelproblem/</guid>
+      <guid>https://glitched.tech/thetimetravelproblem/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;&#xA;  Introduction&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;This post, despite its name, is not about the feasibility of time travel. This post is, rather, about a common theory dealing with time travel paradoxes. People often claim that if someone time travelled to kill Hitler, for example, his parent would adopt, or someone else would come to power, and kill the six million people in an equivalent scenario. I believe that this frankly isn&amp;rsquo;t true. &lt;strong&gt;Brief Disclaimer: This is my opinion. I could be wrong&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Terminus</title>
-      <link>/project/terminus/</link>
+      <link>https://glitched.tech/project/terminus/</link>
       <pubDate>Tue, 26 Mar 2024 02:13:50 +0000</pubDate>
-      <guid>/project/terminus/</guid>
+      <guid>https://glitched.tech/project/terminus/</guid>
       <description>&lt;h2 id=&#34;about&#34;&gt;&#xA;  About&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#about&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Terminus is a terminal theme for Hugo. I built it for &lt;a href=&#34;https://blog.glitched.tech&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;my own site&lt;/a&gt;, but you can use it for your site If you want to. I built this in my spare time to teach myself, so if anything is broken, don&amp;rsquo;t hesitate to tell me or fix it and give me a pull request.&lt;/p&gt;&#xA;&lt;h2 id=&#34;install&#34;&gt;&#xA;  Install&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#install&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Enter your themes directory&lt;/p&gt;</description>
     </item>
     <item>
       <title>Analysis and results of the second sheep war</title>
-      <link>/thesecondsheepwar-2024-02-20/</link>
+      <link>https://glitched.tech/thesecondsheepwar-2024-02-20/</link>
       <pubDate>Wed, 21 Feb 2024 01:11:23 +0000</pubDate>
-      <guid>/thesecondsheepwar-2024-02-20/</guid>
+      <guid>https://glitched.tech/thesecondsheepwar-2024-02-20/</guid>
       <description>&lt;h1 id=&#34;tensions-rise&#34;&gt;&#xA;  Tensions rise&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#tensions-rise&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;After the first human-sheep war, tensions seemed to die down between the two species. By the year 2053, trade began between the sheep and the humans. The moose had control of Canada and the northern U.S, the emus controlled australia, and the sheep had what remained of what was agreed on by the sixth treaty of Paris. As trade emerged, humans began to see sheep as potential allies instead of threats, as shown by the rising popularity of vegetarianism. In fact, the sheep began diplomatic relations with the humans, and began lowering tariffs on goods. Tensions, however, began to emerge as radicalized humans began to plot to take back the land that they used to own. This was largely instigated by the pigs, who had recieved nothing from the sixth treaty of Paris, and wanted revenge and land. They hoped to begin another war and conquer what remained after. Tensions began to grow, especially after an ambassador from NATO sent a sheep a blanket as a present, a grave insult in their culture. To add insult to injury, the ambassador was not reprimanded for his conduct. Finally, in the year 2060, anti-sheep riots broke out in the Netherlands, Wales, and Russia. This had vast consequences on sheep opinions of humans, and the sheep began to arm for war. Unknown to the humans, the sheep base of operations in Sealand had still not been disarmed, and weapons of mass destruction had been shipped there. At the same time, the humans began arming up, preparing for war. Potatoes to began being produced on industrial scales, and the entire industrial might of east Asia was being utilized to make weapons.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A brief retelling of the first human-sheep war</title>
-      <link>/firsthumansheepwar-2024-02-19/</link>
+      <link>https://glitched.tech/firsthumansheepwar-2024-02-19/</link>
       <pubDate>Mon, 19 Feb 2024 23:30:41 +0000</pubDate>
-      <guid>/firsthumansheepwar-2024-02-19/</guid>
+      <guid>https://glitched.tech/firsthumansheepwar-2024-02-19/</guid>
       <description>&lt;h1 id=&#34;events-leading-to-the-beginning-of-the-war&#34;&gt;&#xA;  Events leading to the beginning of the war&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#events-leading-to-the-beginning-of-the-war&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;The first human-sheep war began on August 31, 2032. Humanity, who had enslaved the sheep for thousands of years, had grown complacent, and was not aware of the threat posed by the sheep, considering them to be stupid animals. Unbeknownst to them, the sheep had gathered under the leadership of an unknown sheep. By the year 2030, the sheep revolution had grown, and weapons had been stockpiled, as well as an armada of ships created in the Municipality of Sealand. By December 2031, there was enough momentum in the movement that the sheep were able to begin the revolution. They waited for the opportune moment, which came in August, after the second Potato famine, which occured after a scientist named George Smith tampered with viruses that damaged the potato industry. As three-fifth&amp;rsquo;s of the world&amp;rsquo;s human population was in danger, the leaders of the sheep decided it was time to attack. They began attacks in countries with a high sheep to human ratio, such as the Falkland Islands and New Zealand. Both areas collapsed without much resistance, and as they had low geopolitical significance, the collapse of both areas was unnoticed for several month, allowing the sheep to setup a base of operations in New Zealand. The sheep began communication with potential allies, like the moose in Canada, the pigs in Russia, and the Emus in Australia.&lt;/p&gt;</description>
     </item>
     <item>
       <title>An analysis of third grade culture</title>
-      <link>/thirdgradeculture-2024-02-17/</link>
+      <link>https://glitched.tech/thirdgradeculture-2024-02-17/</link>
       <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>/thirdgradeculture-2024-02-17/</guid>
+      <guid>https://glitched.tech/thirdgradeculture-2024-02-17/</guid>
       <description>&lt;h1 id=&#34;introduction-to-the-third-grader&#34;&gt;&#xA;  Introduction to the third grader&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction-to-the-third-grader&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;A common misconception regarding the third grader is that this group of people is a mere subclass of the elementary schooler. This, however, is a mistake, as the group known as the third grader is in fact more different from other groups than a subclass could rightly be. This group of people can once again be divided into male and female, each with their distinct characteristics. The male and female groups, while often existing in the same locations, tend to keep apart from each other and often scorn those who make contact with the other group. Due to these divisions, this article will be adressing the male portion of the class known as third-graders, as they are different enough to merit different articles about each.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My First Post</title>
-      <link>/thesecondfirstpost-2024-02-16/</link>
+      <link>https://glitched.tech/thesecondfirstpost-2024-02-16/</link>
       <pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>/thesecondfirstpost-2024-02-16/</guid>
+      <guid>https://glitched.tech/thesecondfirstpost-2024-02-16/</guid>
       <description>&lt;h1 id=&#34;intro-to-this-blog&#34;&gt;&#xA;  Intro to this blog&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#intro-to-this-blog&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Basically, I made this site in order to put on words what I&amp;rsquo;m currently thinking. If this sounds a little broad, it&amp;rsquo;s because it is. For example, if a certain ChatGPT prompt, such as&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Give a speech written by a sheep propaganda person looking to start a sheep uprising in the theme of the french revolution and end humanity except as slaves to the sheep regime but mention all humans as evil oppressors and dont mention the french revolution but a past sheep revolution&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>/page/contact/</link>
+      <link>https://glitched.tech/page/contact/</link>
       <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
-      <guid>/page/contact/</guid>
+      <guid>https://glitched.tech/page/contact/</guid>
       <description>## Contact&#xA;&#xA;Email: &lt;givespamhere7@gmail.com&gt;  &#xA;Github: &lt;https://github.com/readabilityLOL&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>/page/about/</link>
+      <link>https://glitched.tech/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/page/about/</guid>
+      <guid>https://glitched.tech/page/about/</guid>
       <description>&lt;h1 id=&#34;who-am-i&#34;&gt;&#xA;  Who am I?&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#who-am-i&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;I’m Josh, a high schooler who decided last year to start a blog. I’m interested in technology, old games, and books. When I’m not wasting my time mindlessly doomscrolling on Reddit, I’m usually reading a book or trying to teach myself something, like how to make a blog or how to design a wallet in Freecad. I like making things, and I intend this blog to be both a log of things I make and a way to get more practice writing. You never know, it might even help me on a j*b applicat**n one day.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>/page/project/</link>
+      <link>https://glitched.tech/page/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/page/project/</guid>
+      <guid>https://glitched.tech/page/project/</guid>
       <description>&lt;h1 id=&#34;my-projects&#34;&gt;&#xA;  My Projects&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#my-projects&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://addons.mozilla.org/en-US/firefox/addon/josh-s-dark-theme/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Josh&amp;rsquo;s dark theme&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/ReadabilityLOL/Python-text-editor&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python text editor&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/readabilityLOL/FAIL&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FailRSS&lt;/a&gt;, &lt;a href=&#34;https://failrss.glitched.tech&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Site link&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/readabilityLOL/Terminus&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Terminus&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/ReadabilityLOL/wallet&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wallet&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>What I&#39;m doing right now</title>
-      <link>/page/now/</link>
+      <link>https://glitched.tech/page/now/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/page/now/</guid>
+      <guid>https://glitched.tech/page/now/</guid>
       <description>&lt;p&gt;Last updated: 2025-08-06&lt;/p&gt;&#xA;&lt;h2 id=&#34;who-are-you-anyway&#34;&gt;&#xA;  Who are you, anyway?&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#who-are-you-anyway&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;I’m Josh, a high schooler who decided last year to start a blog. I’m interested in technology, old games, and books. When I’m not wasting my time mindlessly doomscrolling on Reddit, I’m usually reading a book or trying to teach myself something, like how to make a blog or how to design a wallet in Freecad. I like making things, and I intend this blog to be both a log of things I make and a way to get more practice writing. You never know, it might even help me on a j*b applicat**n one day.&lt;/p&gt;</description>
     </item>
   </channel>

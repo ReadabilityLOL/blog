@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Glitched</title>
-    <link>/project/</link>
+    <link>https://glitched.tech/project/</link>
     <description>Recent content on Glitched</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 05 Jan 2025 02:13:50 +0000</lastBuildDate>
-    <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://glitched.tech/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FAIL rss</title>
-      <link>/project/failrss/</link>
+      <link>https://glitched.tech/project/failrss/</link>
       <pubDate>Sun, 05 Jan 2025 02:13:50 +0000</pubDate>
-      <guid>/project/failrss/</guid>
+      <guid>https://glitched.tech/project/failrss/</guid>
       <description>&lt;h2 id=&#34;about&#34;&gt;&#xA;  About&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#about&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;This is a little rss feed I made to teach myself flask. Currently, it can&amp;rsquo;t save your feeds past a single session because I had to make them temporary files for Vercel, but in the future, I&amp;rsquo;ll try to store feeds in cookies instead.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wallet, version 1</title>
-      <link>/project/walletv1/</link>
+      <link>https://glitched.tech/project/walletv1/</link>
       <pubDate>Sat, 01 Jun 2024 16:09:57 -0400</pubDate>
-      <guid>/project/walletv1/</guid>
-      <description>&lt;img title=&#34;Behold!&#34; alt=&#34;An image of the wallet&#34; src=&#34;/img/wallet1.jpg&#34;&gt;&#xA;&lt;p&gt;A 3d printed wallet I made. I made it in Freecad, which took too many hours of my life. It comes in two parts and requires an elastic band to hold it together. &lt;a href=&#34;https://github.com/readabilitylol/wallet&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Here&amp;rsquo;s the Github link&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>https://glitched.tech/project/walletv1/</guid>
+      <description>&lt;img title=&#34;Behold!&#34; alt=&#34;An image of the wallet&#34; src=&#34;https://glitched.tech/img/wallet1.jpg&#34;&gt;&#xA;&lt;p&gt;A 3d printed wallet I made. I made it in Freecad, which took too many hours of my life. It comes in two parts and requires an elastic band to hold it together. &lt;a href=&#34;https://github.com/readabilitylol/wallet&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Here&amp;rsquo;s the Github link&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Terminus</title>
-      <link>/project/terminus/</link>
+      <link>https://glitched.tech/project/terminus/</link>
       <pubDate>Tue, 26 Mar 2024 02:13:50 +0000</pubDate>
-      <guid>/project/terminus/</guid>
+      <guid>https://glitched.tech/project/terminus/</guid>
       <description>&lt;h2 id=&#34;about&#34;&gt;&#xA;  About&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#about&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Terminus is a terminal theme for Hugo. I built it for &lt;a href=&#34;https://blog.glitched.tech&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;my own site&lt;/a&gt;, but you can use it for your site If you want to. I built this in my spare time to teach myself, so if anything is broken, don&amp;rsquo;t hesitate to tell me or fix it and give me a pull request.&lt;/p&gt;&#xA;&lt;h2 id=&#34;install&#34;&gt;&#xA;  Install&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#install&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Enter your themes directory&lt;/p&gt;</description>
     </item>
   </channel>
