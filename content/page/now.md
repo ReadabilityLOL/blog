@@ -21,7 +21,7 @@ A friend recently coerced me into watching the Star Wars original and prequel tr
 I'm also planning to start watching my Cosmos DVDs soon.
 
 ## What I'm working on right now
-I'm currently working on a few projects right now. First off, I'm working on a text editor for Windows XP. My first log for that should be out soon. I'm also working on creating a website for a friend, which may have been a bad decision on his part, given my history with website design. 
+I'm currently working on a few projects right now. First off, I'm working on a [notes app for Windows XP](/makinganotesapp1). My first log for that should be out soon. I'm also working on creating a website for a friend, which may have been a bad decision on his part, given my history with website design. 
 
 I'm also currently taking Health over the summer at my school, since I figured it would take up unnecessary time during the school year. I don't really regret the decision, even though it takes up 2 hours each day, because I wasn't doing anything with those hours anyway.
 

@@ -2,7 +2,7 @@
 title = 'Making a Notes App for Windows XP: part 0'
 date = 2025-08-03T17:02:33Z
 draft = false
-tags = ['windows xp','code']
+tags = ['windows xp', 'notes-app', 'code']
 description = "I begin work on a notes app for windows xp"
 +++
 
