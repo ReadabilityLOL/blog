@@ -1,7 +1,7 @@
 +++
 title = 'Making a Notes App for Windows XP: part 0'
 date = 2025-08-03T17:02:33Z
-draft = true
+draft = false
 tags = ['windows xp','code']
 description = "I begin work on a notes app for windows xp"
 +++
@@ -21,4 +21,14 @@ description = "I begin work on a notes app for windows xp"
 ## Intro
 The other day, as detailed in [a previous post](/windowsxp), I revieved a windows xp machine. I had some fun playing with it, and I played a bit of DOOM and Halo. Recently, though, I wondered to myself if I could develop my own app within the limitations of Windows XP. After all, how hard could it possibly be? [A lot of people](https://archive.org/details/cd-roms) have made apps for Windows XP, after all. I actually made quite a bit of progress on the app before I decided to start documenting it, so this post is meant to display all the stuff I already got done.
 
-Here's a first look at the app as it is right now. Note that my notes app can't precisely take notes right now, given that it can't read files, parse anything other than plain and italic text, or even edit text. I just made a minimal parser and text display.
+## The app
+
+Here's a first look at the app as it is right now. Note that my notes can't actually take notes right now, given that it can't read files, parse anything other than plain and italic text, or even edit text. I just made a minimal parser and text display.
+
+![An image of my notes app version 1, just a tkinter window with some plain and italics text](/images/setup.png "My notes app, version 1")
+
+I'm developing it using IDLE and just running it in xp, nothing really special here.
+
+![An image of my editing setup: 2 windows with IDLE open, and another one with program output](/images/setup.png "My editing setup")
+
+
