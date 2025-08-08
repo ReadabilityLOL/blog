@@ -25,7 +25,7 @@ The other day, as detailed in [a previous post](/windowsxp), I revieved a window
 
 Here's a first look at the app as it is right now. Note that my notes can't actually take notes right now, given that it can't read files, parse anything other than plain and italic text, or even edit text. I just made a minimal parser and text display.
 
-![An image of my notes app version 1, just a tkinter window with some plain and italics text](/images/setup.png "My notes app, version 1")
+![An image of my notes app version 1, just a tkinter window with some plain and italics text](/images/editorv1.png "My notes app, version 1")
 
 I'm developing it using IDLE and just running it in xp, nothing really special here.
 
