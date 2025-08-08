@@ -4,7 +4,7 @@ author = "Joshua Anand"
 description = "What I'm doing now"
 +++
 
-Last updated: 2025-08-07
+Last updated: 2025-08-08
 
 ## Who are you, anyway?
 
