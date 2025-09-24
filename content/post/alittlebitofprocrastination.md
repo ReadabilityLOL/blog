@@ -1,5 +1,5 @@
 +++ 
-draft = true
+draft = false
 date = 2025-09-23T20:41:56Z
 title = "We do a little procrastinating"
 description = "In which I attempt to follow a schedule for a day, and instead end up reading Harry Potter and the Methods of Rationality"
