@@ -4,7 +4,7 @@ author = "Joshua Anand"
 description = "What I'm doing now"
 +++
 
-Last updated: 2025-09-23
+Last updated: 2025-09-25
 
 ## Who are you, anyway?
 
@@ -14,7 +14,7 @@ I’m Josh, a high schooler who decided last year to start a blog. I’m interes
 I'm going to try to update this site around once every two weeks. If I don't, just send me an angry email or something, and I'll be sure to disregard it completely.
 
 ## What I'm reading/listening to
-I recently finished reading Mort, by Terry Pratchett, which was the only book of Discworld I hadn't read yet. I'm currently rereading the books in random order now each night before bed, since I like doing some light reading each night. I'm also reading Don Quixote by Miguel de Cervantes in free periods at school and theoretically reading SPQR by Mary Beard in my free time, though the amount of tasks I have to do always expands to fill that free time.
+I recently finished reading Mort, by Terry Pratchett, which was the only book of Discworld I hadn't read yet. I'm currently rereading the books in random order now each night before bed, since I like doing some light reading each night. I'm also reading Don Quixote by Miguel de Cervantes in free periods at school and theoretically reading SPQR by Mary Beard in my free time, though the amount of tasks I have to do always expands to fill that free time. I'm also reading Harry Potter and the Methods of rationality, as mentioned in [a previous post](/alittlebitofprocrastination).
 
 ## What I'm watching
 I'm not really currently watching anything except Bills games and random Youtube videos.
@@ -37,6 +37,8 @@ I've been doing Anki reviews every day for the last 36 days, which probably mean
 I've been working on SAT prep, and that's going fine, apart from my apparent lack of aptitude with basic math. I keep reversing the sign on terms in equations and messing up basic arithmetic. I've got to work on that.
 
 I've got to start working on learning Haskell again, and I'm thinking of making a few small projects just to keep my programming skills sharp (or less dull).
+
+I've been trying to learn some note taking skills, but we'll see how that goes. I hear obsidian is good, so I'll probably consolidate my notes there.
 
 
 ## Chess
