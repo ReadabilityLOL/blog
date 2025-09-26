@@ -2,7 +2,6 @@
 draft = false
 title = ""
 show_dates = false
-date = "2017-02-09T19:33:35-08:00"
 description = ""
 slug = ""
 authors = []
@@ -14,9 +13,11 @@ series = []
 
 # Notes
 
-This is the collection of all the notes I've published so far:
+This is the collection of all the notes I've published so far, maybe you'll find them useful:
 - [Science]({{< ref "Science" >}})
 - [Math]({{< ref "Math" >}})
 - [Tech]({{< ref "Tech" >}})
 - [English]({{< ref "English" >}})
+- [Social Studies]({{< ref "Social Studies" >}})
+- [German]({{< ref "German" >}})
 - [Misc]({{< ref "Misc" >}})

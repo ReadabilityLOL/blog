@@ -2,60 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Glitched</title>
-    <link>https://glitched.tech/notes/</link>
+    <link>http://localhost:1313/notes/</link>
     <description>Recent content on Glitched</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://glitched.tech/notes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://glitched.tech/notes/english/</link>
+      <link>http://localhost:1313/notes/english/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://glitched.tech/notes/english/</guid>
-      <description>&lt;h1 id=&#34;english&#34;&gt;&#xA;  English&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#english&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Here are all of the english notes I&amp;rsquo;ve made:&lt;/p&gt;</description>
+      <guid>http://localhost:1313/notes/english/</guid>
+      <description>&lt;h1 id=&#34;english&#34;&gt;&#xA;  English&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#english&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Here are all of the english notes I&amp;rsquo;ve made:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/notes/everythings-an-argument-chapter-1/&#34; &gt;Everything&amp;rsquo;s an argument chapter 1&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://glitched.tech/notes/math/</link>
+      <link>http://localhost:1313/notes/everythings-an-argument-chapter-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://glitched.tech/notes/math/</guid>
+      <guid>http://localhost:1313/notes/everythings-an-argument-chapter-1/</guid>
+      <description>&lt;h1 id=&#34;everythings-an-argument-chapter-1&#34;&gt;&#xA;  Everything&amp;rsquo;s an argument, chapter 1&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#everythings-an-argument-chapter-1&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Hello&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/notes/german/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/german/</guid>
+      <description>&lt;h1 id=&#34;german&#34;&gt;&#xA;  German&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#german&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Here are all of the notes I&amp;rsquo;ve made about German:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/notes/math/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/math/</guid>
       <description>&lt;h1 id=&#34;math&#34;&gt;&#xA;  Math&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#math&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Here are all of the math notes I&amp;rsquo;ve made:&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://glitched.tech/notes/misc/</link>
+      <link>http://localhost:1313/notes/misc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://glitched.tech/notes/misc/</guid>
+      <guid>http://localhost:1313/notes/misc/</guid>
       <description>&lt;h1 id=&#34;miscellaneous&#34;&gt;&#xA;  Miscellaneous&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#miscellaneous&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Here are all of my uncategorized notes:&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://glitched.tech/notes/science/</link>
+      <link>http://localhost:1313/notes/science/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://glitched.tech/notes/science/</guid>
+      <guid>http://localhost:1313/notes/science/</guid>
       <description>&lt;h1 id=&#34;science&#34;&gt;&#xA;  Science&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#science&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Here are all of the science notes I&amp;rsquo;ve made:&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://glitched.tech/notes/tech/</link>
+      <link>http://localhost:1313/notes/social-studies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://glitched.tech/notes/tech/</guid>
+      <guid>http://localhost:1313/notes/social-studies/</guid>
+      <description>&lt;h1 id=&#34;social-studies&#34;&gt;&#xA;  Social Studies&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#social-studies&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Here are all of the social studies notes I&amp;rsquo;ve made:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/notes/tech/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/tech/</guid>
       <description>&lt;h1 id=&#34;tech&#34;&gt;&#xA;  Tech&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#tech&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Here are all of the notes I&amp;rsquo;ve made for technology:&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://glitched.tech/notes/templates/post/</link>
+      <link>http://localhost:1313/notes/templates/post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://glitched.tech/notes/templates/post/</guid>
+      <guid>http://localhost:1313/notes/templates/post/</guid>
       <description>&lt;p&gt;+++&#xA;draft = true&#xA;date = &amp;quot;&amp;quot;&#xA;title = &amp;quot;&amp;quot;&#xA;description = &amp;quot;&amp;quot;&#xA;slug = &amp;quot;&amp;quot;&#xA;authors = []&#xA;tags = []&#xA;categories = []&#xA;externalLink = &amp;quot;&amp;quot;&#xA;series = []&#xA;+++&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://glitched.tech/notes/untitled/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://glitched.tech/notes/untitled/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>
