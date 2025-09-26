@@ -12,8 +12,9 @@ externalLink = ""
 series = []
 +++
 
-These are all the notes I've taken so far:
+# Notes
 
+This is the collection of all the notes I've published so far:
 - [Science]({{< ref "Science" >}})
 - [Math]({{< ref "Math" >}})
 - [Tech]({{< ref "Tech" >}})
