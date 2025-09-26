@@ -12,7 +12,7 @@ externalLink = ""
 series = []
 +++
 
-These are all the notes I've taken so far:
+## This is the collection of all the notes I've published so far:
 
 - [[Science]]
 - [[Math]]
