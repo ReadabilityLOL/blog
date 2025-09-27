@@ -14,19 +14,23 @@ I’m Josh, a high schooler who decided last year to start a blog. I’m interes
 I'm going to try to update this site around once every two weeks. If I don't, just send me an angry email or something, and I'll be sure to disregard it completely.
 
 ## What I'm reading/listening to
-I recently finished reading Mort, by Terry Pratchett, which was the only book of Discworld I hadn't read yet. I'm currently rereading the books in random order now each night before bed, since I like doing some light reading each night. I'm also reading Don Quixote by Miguel de Cervantes in free periods at school and theoretically reading SPQR by Mary Beard in my free time, though the amount of tasks I have to do always expands to fill that free time. I'm also reading Harry Potter and the Methods of rationality, as mentioned in [a previous post](/alittlebitofprocrastination).
+I recently finished reading Mort, by Terry Pratchett, which was the only book of Discworld I hadn't read yet. I'm currently rereading the books in random order now each night before bed, since I like doing some light reading each night. I'm also reading Don Quixote by Miguel de Cervantes in free periods at school and theoretically reading SPQR by Mary Beard in my free time, though the amount of tasks I have to do always expands to fill that free time, as per [Parkinson's Law](https://wikipedia.org/wiki/Parkinson's_law). I'm also reading Harry Potter and the Methods of rationality, as mentioned in [a previous post](/alittlebitofprocrastination).
 
 ## What I'm watching
 I'm not really currently watching anything except Bills games and random Youtube videos.
 
 ## What I'm working on right now
-I'm currently working on a few projects right now. First off, I'm working on a [notes app for Windows XP](/makinganotesapp1). My first log for that should be out soon. I'm also working on creating a website for a friend, which may have been a bad decision on his part, given my history with website design. 
+I'm currently working on a few projects right now. First off, I'm working on a [notes app for Windows XP](/makinganotesapp1).  I'm also working on creating a website for a friend, which may have been a bad decision on his part, given my history with website design. 
 
 I started working on my DnD campaign for school with a friend. We decided on which system we'll use, which is proabably a good first step. We've decided to use [sw5e](https://sw5e.com) as our system, because it seemed like fun, and we both have some star wars knowledge from the movies and from playing KOTOR.
 
 I've come up with a routine for exercising, and it seems to be going well so far. Its basically just a full body workout 3x a week. I should probably start doing some cardio though. 
 
 I finished working on the Genelab for High Schooler's capstone project with a group, and we actually managed to make it to the next round. Now we just have to write a research proposal
+
+I'm also trying to publish my notes on this website, in the probably futile hope that this will inspire me to take better notes.
+
+Finally, I'm memorizing the book of Galatians for a bible quizzing competition.
 
 ## What I'm learning
 
