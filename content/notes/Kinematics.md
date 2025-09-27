@@ -1,0 +1,22 @@
+# Kinematics
+## Some terms
+- Scalar
+	- A directionless quantity, magnitude only
+		- Speed
+		- Distance
+- Vector
+	- A quantity with direction and magnitude
+		- Velocity
+		- Acceleration
+		- Displacement
+- Displacement
+	- Difference between final and initial positions
+	- $\Delta d = d_f-d_{i}$
+- Velocity
+	- Change in position over time
+	- Average velocity ($\bar{v}$)
+	- $\bar{v}=\frac{d}{t}$
+	- $\bar{v}=\frac{v_f+v_i}{2}$
+- Acceleration
+	- Change in velocity over time
+	- $a=\frac{\Delta v}{\Delta t}$
