@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "English.md",
+                "file": "Everything's an argument chapter 4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "English"
+              "title": "Everything's an argument chapter 4"
             }
           }
         ],
@@ -98,74 +98,7 @@
   "right": {
     "id": "aec8a5cb3bc02148",
     "type": "split",
-    "children": [
-      {
-        "id": "dbafe9683b39bc9f",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d43f39d9fe2d038f",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks"
-            }
-          },
-          {
-            "id": "97327db3d44e36fe",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links"
-            }
-          },
-          {
-            "id": "bb48b1d174d3ada0",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
-            }
-          },
-          {
-            "id": "061b175d31ee0e1e",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline"
-            }
-          }
-        ]
-      }
-    ],
+    "children": [],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
@@ -184,14 +117,23 @@
   "active": "10cb435ed5b4c066",
   "lastOpenFiles": [
     "Everything's an argument chapter 1.md",
-    "_index.md",
+    "Everything's an argument chapter 4.md",
     "English.md",
+    "_index.md",
+    "German.md",
+    "Tech.md",
+    "Misc",
+    "German",
+    "Social Studies",
+    "Tech",
+    "Math",
+    "Science",
+    "English",
+    "categories",
     "Untitled 1.md",
     "Social Studies.md",
     "Science.md",
     "Math.md",
-    "German.md",
-    "Tech.md",
     "Misc.md",
     "templates/post.md",
     "templates.md",
