@@ -4,7 +4,13 @@ author = "Joshua Anand"
 description = "What I'm doing now"
 +++
 
-Last updated: 2025-09-25
+<style>
+date{
+    display: none;
+}
+</style>
+
+Last updated: 2025-12-02
 
 ## Who are you, anyway?
 
@@ -20,35 +26,34 @@ I recently finished reading Mort, by Terry Pratchett, which was the only book of
 I'm not really currently watching anything except Bills games and random Youtube videos.
 
 ## What I'm working on right now
-I'm currently working on a few projects right now. First off, I'm working on a [notes app for Windows XP](/makinganotesapp1).  I'm also working on creating a website for a friend, which may have been a bad decision on his part, given my history with website design. 
+I'm currently working on a few projects right now. First off, I'm working on a [notes app for Windows XP](/makinganotesapp1).  
 
-I started working on my DnD campaign for school with a friend. We decided on which system we'll use, which is proabably a good first step. We've decided to use [sw5e](https://sw5e.com) as our system, because it seemed like fun, and we both have some star wars knowledge from the movies and from playing KOTOR.
+My friend and I have DMed a couple sessions now, and it seems to be going well with Star Wars 5e. The main issue I think is that we haven't read the rulebook yet.
 
-I've come up with a routine for exercising, and it seems to be going well so far. Its basically just a full body workout 3x a week. I should probably start doing some cardio though. 
+I'm still exercising, but since I exercise in the mornings, I'm reliant on waking up early, which is not my strong suit.
 
-I finished working on the Genelab for High Schooler's capstone project with a group, and we actually managed to make it to the next round. Now we just have to write a research proposal
+My group for gl4hs managed to make it past the research writing phase! Now we're going to present at ASGSR on December 6th.
 
-I'm also trying to publish my notes on this website, in the probably futile hope that this will inspire me to take better notes.
+I published my notes online, but it didn't help my quality of notes at all.
 
-Finally, I'm memorizing the book of Galatians for a bible quizzing competition.
+Finally, I'm memorizing the book of Ephesians for a bible quizzing competition.
 
 ## What I'm learning
 
-As with many of my plans, a lot of the things I wanted to do over the summer failed to materialize. A few of my habits did remain though, which was probably survival of the fittest or something. *Note to self: Fix my time management problems*
+I've neglected my anki cards for a few days now, and they've piled up to around 300. I should do them soon.
 
-I've been doing Anki reviews every day for the last 36 days, which probably means I've turned it into a sustainable habit. I review around 100 cards a day, which range from Bible verses to the countries of the world. I've also, as previously mentioned, begun exercising consistently, which is nice. I try to wake up at 5:20 and get it done. 
-
-I've been working on SAT prep, and that's going fine, apart from my apparent lack of aptitude with basic math. I keep reversing the sign on terms in equations and messing up basic arithmetic. I've got to work on that.
-
-I've got to start working on learning Haskell again, and I'm thinking of making a few small projects just to keep my programming skills sharp (or less dull).
-
-I've been trying to learn some note taking skills, but we'll see how that goes. I hear obsidian is good, so I'll probably consolidate my notes there.
+I took the SAT for the first time last month, and I managed to get a 1510, praise God. I'm going to take it again, though. 1600 or bust!
 
 
 ## Chess
 <div id="elo"></div>
 
 I've started playing chess a bit more lately, mostly as a guest on [Chess.com](https://chess.com) and on [Lichess](https://lichess.org). I used lichess's api to attach my current elo in this section of the page, since that seemed like a fun way to provide motivation to improve my chess abilities.
+
+## Hive
+
+I recently got into playing [Hive](https://gen42.com/product/hive), which is a cool board game played with hexagonal tiles and no actual board. I 3d printed some pieces for it and have been playing with my friends recently.
+
 
 ## Code
 Here's my Github contribution chart so far:

@@ -7,3 +7,6 @@
 [submodule "themes/hugo-github-calendar"]
 	path = themes/hugo-github-calendar
 	url = https://github.com/totoroot/hugo-github-calendar.git
+[submodule "themes/retro"]
+	path = themes/retro
+	url = https://github.com/readabilitylol/retro

@@ -1,5 +1,5 @@
 baseURL = "https://glitched.tech"
-theme = ["hugo-coder","hugo-github-calendar"]
+theme = ["retro"]
 title = "Glitched"
 
 [author]

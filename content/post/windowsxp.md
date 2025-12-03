@@ -6,6 +6,7 @@ tags = ['windows xp','games']
 description = "I recieve a Windows XP machine and install some software on it"
 +++
 
+<!--
 <audio id="page-sound" autoplay=True>
     <source src="/audio-effects/xp.mp3">
 </audio>
@@ -14,6 +15,7 @@ description = "I recieve a Windows XP machine and install some software on it"
   var audio = document.getElementById("page-sound");
   audio.volume = 0.1;
 </script>
+-->
 
 ## Intro
 

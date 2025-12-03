@@ -2,120 +2,180 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://glitched.tech/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-02-02T04:14:54-08:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/post/</loc>
+    <loc>http://localhost:1313/doom/</loc>
+    <lastmod>2025-12-01T22:06:33+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2025-11-30T17:58:01+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/badappleonrenasight/</loc>
+    <lastmod>2025-11-30T17:58:01+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/letsmakeahugotheme/</loc>
+    <lastmod>2025-10-06T20:57:54+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/procrastination/</loc>
     <lastmod>2025-09-23T20:41:56+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/tags/procrastination/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-09-23T20:41:56+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/tags/</loc>
+    <loc>http://localhost:1313/alittlebitofprocrastination/</loc>
     <lastmod>2025-09-23T20:41:56+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/alittlebitofprocrastination/</loc>
-    <lastmod>2025-09-23T20:41:56+00:00</lastmod>
+    <loc>http://localhost:1313/cucumiform/</loc>
+    <lastmod>2025-08-29T00:35:30+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/addingcomments/</loc>
+    <loc>http://localhost:1313/tags/halo-1/</loc>
+    <lastmod>2025-08-28T00:10:41+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/very-long-loading-screens/</loc>
+    <lastmod>2025-08-28T00:10:41+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/rants/</loc>
+    <lastmod>2025-08-28T00:10:41+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/windows/</loc>
+    <lastmod>2025-08-28T00:10:41+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/addingcomments/</loc>
     <lastmod>2025-08-05T20:59:01+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/page/</loc>
+    <loc>http://localhost:1313/page/stats/</loc>
     <lastmod>2025-08-05T00:15:18+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/tags/code/</loc>
+    <loc>http://localhost:1313/page/</loc>
+    <lastmod>2025-08-05T00:15:18+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/code/</loc>
     <lastmod>2025-08-03T17:02:33+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/makinganotesapp1/</loc>
+    <loc>http://localhost:1313/makinganotesapp1/</loc>
     <lastmod>2025-08-03T17:02:33+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/tags/notes-app/</loc>
+    <loc>http://localhost:1313/tags/notes-app/</loc>
     <lastmod>2025-08-03T17:02:33+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/tags/windows-xp/</loc>
+    <loc>http://localhost:1313/tags/windows-xp/</loc>
     <lastmod>2025-08-03T17:02:33+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/tags/games/</loc>
+    <loc>http://localhost:1313/tags/games/</loc>
     <lastmod>2025-08-01T18:40:22+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/windowsxp/</loc>
+    <loc>http://localhost:1313/windowsxp/</loc>
     <lastmod>2025-08-01T18:40:22+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/project/</loc>
+    <loc>http://localhost:1313/project/</loc>
     <lastmod>2025-01-05T02:13:50+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/project/failrss/</loc>
+    <loc>http://localhost:1313/project/failrss/</loc>
     <lastmod>2025-01-05T02:13:50+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/lady-liberty-and-lying-fortune-cookies/</loc>
+    <loc>http://localhost:1313/lady-liberty-and-lying-fortune-cookies/</loc>
     <lastmod>2024-07-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/podcasts-and-pyraminx/</loc>
+    <loc>http://localhost:1313/podcasts-and-pyraminx/</loc>
     <lastmod>2024-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/project/walletv1/</loc>
+    <loc>http://localhost:1313/hello/</loc>
+    <lastmod>2024-06-01T17:05:14-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/apis/</loc>
+    <lastmod>2024-06-01T17:04:53-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/project/walletv1/</loc>
     <lastmod>2024-06-01T16:09:57-04:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/ratresponse/</loc>
+    <loc>http://localhost:1313/ratresponse/</loc>
     <lastmod>2024-05-30T19:27:07-04:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/thetimetravelproblem/</loc>
+    <loc>http://localhost:1313/thetimetravelproblem/</loc>
     <lastmod>2024-05-29T17:41:44-04:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/project/terminus/</loc>
+    <loc>http://localhost:1313/complaintaboutenglish/</loc>
+    <lastmod>2024-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/writegooder-2024-05-09/</loc>
+    <lastmod>2024-05-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/project/terminus/</loc>
     <lastmod>2024-03-26T02:13:50+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/thesecondsheepwar-2024-02-20/</loc>
+    <loc>http://localhost:1313/thesecondsheepwar-2024-02-20/</loc>
     <lastmod>2024-02-21T01:11:23+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/firsthumansheepwar-2024-02-19/</loc>
+    <loc>http://localhost:1313/firsthumansheepwar-2024-02-19/</loc>
     <lastmod>2024-02-19T23:30:41+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/thirdgradeculture-2024-02-17/</loc>
+    <loc>http://localhost:1313/thirdgradeculture-2024-02-17/</loc>
     <lastmod>2024-02-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/thesecondfirstpost-2024-02-16/</loc>
+    <loc>http://localhost:1313/thesecondfirstpost-2024-02-16/</loc>
     <lastmod>2024-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/page/contact/</loc>
+    <loc>http://localhost:1313/tags/blue/</loc>
+    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/green/</loc>
+    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/post-3/</loc>
+    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/red/</loc>
+    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/post-2/</loc>
+    <lastmod>2023-02-15T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/post-1/</loc>
+    <lastmod>2023-01-15T09:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2023-01-01T08:30:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/page/verify/</loc>
     <lastmod>2015-04-03T02:13:50+00:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/notes/</loc>
+    <loc>http://localhost:1313/notes/</loc>
   </url><url>
-    <loc>https://glitched.tech/notes/apush-unit-2/</loc>
+    <loc>http://localhost:1313/notes/apush-unit-2/</loc>
   </url><url>
-    <loc>https://glitched.tech/notes/english/</loc>
+    <loc>http://localhost:1313/notes/english/</loc>
   </url><url>
-    <loc>https://glitched.tech/notes/everythings-an-argument-chapter-1/</loc>
+    <loc>http://localhost:1313/notes/everythings-an-argument-chapter-1/</loc>
   </url><url>
-    <loc>https://glitched.tech/notes/everythings-an-argument-chapter-4/</loc>
+    <loc>http://localhost:1313/notes/everythings-an-argument-chapter-4/</loc>
   </url><url>
-    <loc>https://glitched.tech/notes/german/</loc>
+    <loc>http://localhost:1313/notes/german/</loc>
   </url><url>
-    <loc>https://glitched.tech/notes/kinematics/</loc>
+    <loc>http://localhost:1313/notes/kinematics/</loc>
   </url><url>
-    <loc>https://glitched.tech/notes/math/</loc>
+    <loc>http://localhost:1313/notes/math/</loc>
   </url><url>
-    <loc>https://glitched.tech/notes/misc/</loc>
+    <loc>http://localhost:1313/notes/misc/</loc>
   </url><url>
-    <loc>https://glitched.tech/notes/physics/</loc>
+    <loc>http://localhost:1313/notes/physics/</loc>
   </url><url>
-    <loc>https://glitched.tech/notes/problem-solving-in-physics/</loc>
+    <loc>http://localhost:1313/notes/problem-solving-in-physics/</loc>
   </url><url>
-    <loc>https://glitched.tech/notes/science/</loc>
+    <loc>http://localhost:1313/notes/science/</loc>
   </url><url>
-    <loc>https://glitched.tech/notes/social-studies/</loc>
+    <loc>http://localhost:1313/notes/social-studies/</loc>
   </url><url>
-    <loc>https://glitched.tech/notes/tech/</loc>
+    <loc>http://localhost:1313/notes/tech/</loc>
   </url><url>
-    <loc>https://glitched.tech/notes/templates/post/</loc>
+    <loc>http://localhost:1313/notes/templates/post/</loc>
   </url><url>
-    <loc>https://glitched.tech/page/about/</loc>
+    <loc>http://localhost:1313/page/about/</loc>
   </url><url>
-    <loc>https://glitched.tech/page/project/</loc>
+    <loc>http://localhost:1313/page/project/</loc>
   </url><url>
-    <loc>https://glitched.tech/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://glitched.tech/page/now/</loc>
+    <loc>http://localhost:1313/page/now/</loc>
   </url>
 </urlset>

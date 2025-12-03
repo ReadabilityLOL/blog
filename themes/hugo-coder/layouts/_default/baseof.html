@@ -25,7 +25,10 @@
 <body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
   {{ partial "float" . }}
   <main class="wrapper">
+    <div class="top">
     {{ partial "header.html" . }}
+    </div>
+
 
     <div class="content">
       {{ block "content" . }}{{ end }}
