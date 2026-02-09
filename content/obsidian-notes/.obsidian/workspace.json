@@ -60,6 +60,42 @@
             }
           },
           {
+            "id": "a2ae1e78d31839af",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.4"
+            }
+          },
+          {
+            "id": "a4b01e541320a82d",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.5"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.5"
+            }
+          },
+          {
+            "id": "5ffd9583101c6613",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.7"
+            }
+          },
+          {
             "id": "d212ed9e7ad5a2e3",
             "type": "leaf",
             "state": {
@@ -102,7 +138,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -251,7 +287,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "a053423b95acc80a",
+  "active": "5ffd9583101c6613",
   "lastOpenFiles": [
     "APUSH Unit 2.md",
     "Social Studies.md",

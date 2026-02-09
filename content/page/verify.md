@@ -12,10 +12,12 @@ Github: <https://github.com/readabilityLOL>
 Discord: <https://discordapp.com/users/895429111873433630>  
 Mastodon: <https://mastodon.social/@supreme_leadr>  
 
-## Gaming
+## Games
 Steam: <https://steamcommunity.com/profiles/76561199730632106/>
+Backstabbr: <https://www.backstabbr.com/member/2b937ea3940a4d96a27fdc5554a70f3c>
 
 ## Reading
+Goodreads: <https://www.goodreads.com/user/show/195827318-supreme-leader>
 
 
 ## Other sites
