@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Glitched</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://glitched.tech/tags/</link>
     <description>Recent content in Tags on Glitched</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 23 Sep 2025 20:41:56 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://glitched.tech/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Procrastination</title>
-      <link>http://localhost:1313/tags/procrastination/</link>
+      <link>https://glitched.tech/tags/procrastination/</link>
       <pubDate>Tue, 23 Sep 2025 20:41:56 +0000</pubDate>
-      <guid>http://localhost:1313/tags/procrastination/</guid>
+      <guid>https://glitched.tech/tags/procrastination/</guid>
       <description></description>
     </item>
     <item>
       <title>Code</title>
-      <link>http://localhost:1313/tags/code/</link>
+      <link>https://glitched.tech/tags/code/</link>
       <pubDate>Sun, 03 Aug 2025 17:02:33 +0000</pubDate>
-      <guid>http://localhost:1313/tags/code/</guid>
+      <guid>https://glitched.tech/tags/code/</guid>
       <description></description>
     </item>
     <item>
       <title>Notes-App</title>
-      <link>http://localhost:1313/tags/notes-app/</link>
+      <link>https://glitched.tech/tags/notes-app/</link>
       <pubDate>Sun, 03 Aug 2025 17:02:33 +0000</pubDate>
-      <guid>http://localhost:1313/tags/notes-app/</guid>
+      <guid>https://glitched.tech/tags/notes-app/</guid>
       <description></description>
     </item>
     <item>
       <title>Windows Xp</title>
-      <link>http://localhost:1313/tags/windows-xp/</link>
+      <link>https://glitched.tech/tags/windows-xp/</link>
       <pubDate>Sun, 03 Aug 2025 17:02:33 +0000</pubDate>
-      <guid>http://localhost:1313/tags/windows-xp/</guid>
+      <guid>https://glitched.tech/tags/windows-xp/</guid>
       <description></description>
     </item>
     <item>
       <title>Games</title>
-      <link>http://localhost:1313/tags/games/</link>
+      <link>https://glitched.tech/tags/games/</link>
       <pubDate>Fri, 01 Aug 2025 18:40:22 +0000</pubDate>
-      <guid>http://localhost:1313/tags/games/</guid>
+      <guid>https://glitched.tech/tags/games/</guid>
       <description></description>
     </item>
     <item>
       <title>Blue</title>
-      <link>http://localhost:1313/tags/blue/</link>
+      <link>https://glitched.tech/tags/blue/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/blue/</guid>
+      <guid>https://glitched.tech/tags/blue/</guid>
       <description></description>
     </item>
     <item>
       <title>Green</title>
-      <link>http://localhost:1313/tags/green/</link>
+      <link>https://glitched.tech/tags/green/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/green/</guid>
+      <guid>https://glitched.tech/tags/green/</guid>
       <description></description>
     </item>
     <item>
       <title>Red</title>
-      <link>http://localhost:1313/tags/red/</link>
+      <link>https://glitched.tech/tags/red/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/red/</guid>
+      <guid>https://glitched.tech/tags/red/</guid>
       <description></description>
     </item>
   </channel>

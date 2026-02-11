@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Code on Glitched</title>
-    <link>http://localhost:1313/tags/code/</link>
+    <link>https://glitched.tech/tags/code/</link>
     <description>Recent content in Code on Glitched</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 03 Aug 2025 17:02:33 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://glitched.tech/tags/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Making a Notes App for Windows XP: part 0</title>
-      <link>http://localhost:1313/makinganotesapp1/</link>
+      <link>https://glitched.tech/makinganotesapp1/</link>
       <pubDate>Sun, 03 Aug 2025 17:02:33 +0000</pubDate>
-      <guid>http://localhost:1313/makinganotesapp1/</guid>
-      <description>&lt;audio id=&#34;page-sound&#34; autoplay=True&gt;&#xA;    &lt;source src=&#34;http://localhost:1313/audio-effects/xp.mp3&#34;&gt;&#xA;&lt;/audio&gt;&#xA;&lt;script&gt;&#xA;  var audio = document.getElementById(&#34;page-sound&#34;);&#xA;  audio.volume = 0.1;&#xA;&lt;/script&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;em&gt;NOTE:&lt;/em&gt;&lt;/strong&gt;  This post is more of a project log than a tutorial on how to make a notes app for windows xp. I will try to document my progress as I go along, but its important to note that I may skip steps if I feel they are trivial, and while my code will be put on Github, I might not always state the exact logic behind specific sections of it.&lt;/p&gt;</description>
+      <guid>https://glitched.tech/makinganotesapp1/</guid>
+      <description>&lt;audio id=&#34;page-sound&#34; autoplay=True&gt;&#xA;    &lt;source src=&#34;https://glitched.tech/audio-effects/xp.mp3&#34;&gt;&#xA;&lt;/audio&gt;&#xA;&lt;script&gt;&#xA;  var audio = document.getElementById(&#34;page-sound&#34;);&#xA;  audio.volume = 0.1;&#xA;&lt;/script&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;em&gt;NOTE:&lt;/em&gt;&lt;/strong&gt;  This post is more of a project log than a tutorial on how to make a notes app for windows xp. I will try to document my progress as I go along, but its important to note that I may skip steps if I feel they are trivial, and while my code will be put on Github, I might not always state the exact logic behind specific sections of it.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

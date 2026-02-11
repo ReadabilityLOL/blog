@@ -2,6 +2,7 @@
 title = "What I'm doing right now"
 author = "Joshua Anand"
 description = "What I'm doing now"
+nocomments = true
 +++
 
 <style>
@@ -20,33 +21,25 @@ I’m Josh, a high schooler who decided last year to start a blog. I’m interes
 I'm going to try to update this site around once every two weeks. If I don't, just send me an angry email or something, and I'll be sure to disregard it completely.
 
 ## What I'm reading/listening to
-I recently finished reading Mort, by Terry Pratchett, which was the only book of Discworld I hadn't read yet. I'm currently rereading the books in random order now each night before bed, since I like doing some light reading each night. I'm also reading Don Quixote by Miguel de Cervantes in free periods at school and theoretically reading SPQR by Mary Beard in my free time, though the amount of tasks I have to do always expands to fill that free time, as per [Parkinson's Law](https://wikipedia.org/wiki/Parkinson's_law). I'm also reading Harry Potter and the Methods of rationality, as mentioned in [a previous post](/alittlebitofprocrastination).
+I'm currently rereading Discworld in order of books available at my library, and have picked up *The Science of Discworld*. I'm also reading *Starship Troopers* by Robert A. Heinlein, *This Inevitable Ruin* by Matt Dinniman, and *The Good Virus* by Tom Ireland.
 
 ## What I'm watching
-I'm not really currently watching anything except Bills games and random Youtube videos.
+I've been trying to watch through Agatha Christie's *Hercule Poirot Mysteries*, though I've gotten a bit sidetracked due to homework.
 
 ## What I'm working on right now
 I'm currently working on a few projects right now. First off, I'm working on a [notes app for Windows XP](/makinganotesapp1).  
 
-My friend and I have DMed a couple sessions now, and it seems to be going well with Star Wars 5e. The main issue I think is that we haven't read the rulebook yet.
+My friend and I have been DMing for a while now, and it seems like we're not the best at the whole planning business. Hopefully we'll improve.
 
 I'm still exercising, but since I exercise in the mornings, I'm reliant on waking up early, which is not my strong suit.
 
-My group for gl4hs managed to make it past the research writing phase! Now we're going to present at ASGSR on December 6th.
+My group for gl4hs presented at ASGSR, and now we're planning to submit a research paper.
 
-I published my notes online, but it didn't help my quality of notes at all.
-
-Finally, I'm memorizing the book of Ephesians for a bible quizzing competition.
-
-## What I'm learning
-
-I've neglected my anki cards for a few days now, and they've piled up to around 300. I should do them soon.
-
-I took the SAT for the first time last month, and I managed to get a 1510, praise God. I'm going to take it again, though. 1600 or bust!
+Finally, I'm memorizing the book of Philippians for a bible quizzing competition.
 
 
 ## Chess
-<div id="elo"></div>
+<div class = "section" id="elo"></div>
 
 I've started playing chess a bit more lately, mostly as a guest on [Chess.com](https://chess.com) and on [Lichess](https://lichess.org). I used lichess's api to attach my current elo in this section of the page, since that seemed like a fun way to provide motivation to improve my chess abilities.
 
@@ -60,7 +53,9 @@ Here's my Github contribution chart so far:
 <br>
 <br>
 
+<div class = "section" style = "padding-left:15%; padding-right:15%;">
 <center><img style = "scale: 1.3" class = "contrib-chart" src="http://ghchart.rshah.org/readabilityLOL" alt="My github contributions chart"></center>
+</div>
 
 
 <!-- js goes below -->

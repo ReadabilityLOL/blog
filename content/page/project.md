@@ -2,6 +2,7 @@
 title = ""
 author = "Joshua Anand"
 description = "A list of projects I've made"
+nocomments = true
 +++
 
 

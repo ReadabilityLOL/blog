@@ -2,269 +2,269 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Welcome to my website! on Glitched</title>
-    <link>http://localhost:1313/</link>
+    <link>https://glitched.tech/</link>
     <description>Recent content in Welcome to my website! on Glitched</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 30 Nov 2025 17:58:01 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://glitched.tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>In which I play Bad Apple on a Renasight advertisement device</title>
-      <link>http://localhost:1313/badappleonrenasight/</link>
+      <link>https://glitched.tech/badappleonrenasight/</link>
       <pubDate>Sun, 30 Nov 2025 17:58:01 +0000</pubDate>
-      <guid>http://localhost:1313/badappleonrenasight/</guid>
+      <guid>https://glitched.tech/badappleonrenasight/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;I recently got this device from Renasight, which appears to be some kidney screening service or something. I wasn&amp;rsquo;t really interested in the product, my kidneys are fine, thank you very much, but the device itself is pretty interesting. It&amp;rsquo;s basically just an mp4 player wrapped in advertisements, and I wanted to see how easy it was to say, change the video inside to a different mp4. It turned out to be disappointingly easy. The device had a USB-C port on it, and I just plugged it into my computer and added the mp4 files I wanted.&lt;/p&gt;</description>
     </item>
     <item>
       <title>We do a little procrastinating</title>
-      <link>http://localhost:1313/alittlebitofprocrastination/</link>
+      <link>https://glitched.tech/alittlebitofprocrastination/</link>
       <pubDate>Tue, 23 Sep 2025 20:41:56 +0000</pubDate>
-      <guid>http://localhost:1313/alittlebitofprocrastination/</guid>
+      <guid>https://glitched.tech/alittlebitofprocrastination/</guid>
       <description>&lt;h2 id=&#34;begin-anecdote&#34;&gt;Begin anecdote&lt;/h2&gt;&#xA;&lt;p&gt;I attempted to make a schedule today, which I felt very proud about. I started off by working on some SAT prep, then I did my social studies homework, and even started a physics assignment. That was the point at which everything derailed.&lt;/p&gt;&#xA;&lt;p&gt;I randomly found about about &lt;a href=&#34;https://hpmor.com&#34;&gt;Harry Potter and the Methods of Rationality&lt;/a&gt;, which is basically a Harry Potter fanfic except that he&amp;rsquo;s raised by a scientist instead. I haven&amp;rsquo;t even read Harry Potter, and I loved it, which was problematic due to the fact that I was planning on being productive today. I read like 39 chapters of it today, and, in my defense, also worked on some more homework, but with &lt;em&gt;significantly&lt;/em&gt; less efficiency and quality than normal.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Adding comments to this site</title>
-      <link>http://localhost:1313/addingcomments/</link>
+      <link>https://glitched.tech/addingcomments/</link>
       <pubDate>Tue, 05 Aug 2025 20:59:01 +0000</pubDate>
-      <guid>http://localhost:1313/addingcomments/</guid>
+      <guid>https://glitched.tech/addingcomments/</guid>
       <description>&lt;h1 id=&#34;intro&#34;&gt;Intro&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve had this blog for around one and a half years, and while it is true that I keep abandoning it for months at a time, I think I should still try to make it as good as possible. According to Cloudflare, I get around 70 unique visitors a day. I&amp;rsquo;m almost 100% certain that these are all bots, but there is a slim chance that some of you reading this are in fact human. Because of that, I figured that now would be a good time to add comments to my blog.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Making a Notes App for Windows XP: part 0</title>
-      <link>http://localhost:1313/makinganotesapp1/</link>
+      <link>https://glitched.tech/makinganotesapp1/</link>
       <pubDate>Sun, 03 Aug 2025 17:02:33 +0000</pubDate>
-      <guid>http://localhost:1313/makinganotesapp1/</guid>
-      <description>&lt;audio id=&#34;page-sound&#34; autoplay=True&gt;&#xA;    &lt;source src=&#34;http://localhost:1313/audio-effects/xp.mp3&#34;&gt;&#xA;&lt;/audio&gt;&#xA;&lt;script&gt;&#xA;  var audio = document.getElementById(&#34;page-sound&#34;);&#xA;  audio.volume = 0.1;&#xA;&lt;/script&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;em&gt;NOTE:&lt;/em&gt;&lt;/strong&gt;  This post is more of a project log than a tutorial on how to make a notes app for windows xp. I will try to document my progress as I go along, but its important to note that I may skip steps if I feel they are trivial, and while my code will be put on Github, I might not always state the exact logic behind specific sections of it.&lt;/p&gt;</description>
+      <guid>https://glitched.tech/makinganotesapp1/</guid>
+      <description>&lt;audio id=&#34;page-sound&#34; autoplay=True&gt;&#xA;    &lt;source src=&#34;https://glitched.tech/audio-effects/xp.mp3&#34;&gt;&#xA;&lt;/audio&gt;&#xA;&lt;script&gt;&#xA;  var audio = document.getElementById(&#34;page-sound&#34;);&#xA;  audio.volume = 0.1;&#xA;&lt;/script&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;em&gt;NOTE:&lt;/em&gt;&lt;/strong&gt;  This post is more of a project log than a tutorial on how to make a notes app for windows xp. I will try to document my progress as I go along, but its important to note that I may skip steps if I feel they are trivial, and while my code will be put on Github, I might not always state the exact logic behind specific sections of it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>In which I get a Windows XP machine</title>
-      <link>http://localhost:1313/windowsxp/</link>
+      <link>https://glitched.tech/windowsxp/</link>
       <pubDate>Fri, 01 Aug 2025 18:40:22 +0000</pubDate>
-      <guid>http://localhost:1313/windowsxp/</guid>
-      <description>&lt;!--&#xA;&lt;audio id=&#34;page-sound&#34; autoplay=True&gt;&#xA;    &lt;source src=&#34;http://localhost:1313/audio-effects/xp.mp3&#34;&gt;&#xA;&lt;/audio&gt;&#xA;&#xA;&lt;script&gt;&#xA;  var audio = document.getElementById(&#34;page-sound&#34;);&#xA;  audio.volume = 0.1;&#xA;&lt;/script&gt;&#xA;--&gt;&#xA;&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;Recently, I recieved an old Windows XP machine. I was pretty excited to use it, but I will admit that it sat around in my garage for a week or two before I brought it inside. I wasn&amp;rsquo;t too sure what I could do with an old machine like that, but I figured I could have some fun with it. I decided that, if nothing else, I could at least play some games on it.&lt;/p&gt;</description>
+      <guid>https://glitched.tech/windowsxp/</guid>
+      <description>&lt;!--&#xA;&lt;audio id=&#34;page-sound&#34; autoplay=True&gt;&#xA;    &lt;source src=&#34;https://glitched.tech/audio-effects/xp.mp3&#34;&gt;&#xA;&lt;/audio&gt;&#xA;&#xA;&lt;script&gt;&#xA;  var audio = document.getElementById(&#34;page-sound&#34;);&#xA;  audio.volume = 0.1;&#xA;&lt;/script&gt;&#xA;--&gt;&#xA;&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;Recently, I recieved an old Windows XP machine. I was pretty excited to use it, but I will admit that it sat around in my garage for a week or two before I brought it inside. I wasn&amp;rsquo;t too sure what I could do with an old machine like that, but I figured I could have some fun with it. I decided that, if nothing else, I could at least play some games on it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>FAIL rss</title>
-      <link>http://localhost:1313/project/failrss/</link>
+      <link>https://glitched.tech/project/failrss/</link>
       <pubDate>Sun, 05 Jan 2025 02:13:50 +0000</pubDate>
-      <guid>http://localhost:1313/project/failrss/</guid>
+      <guid>https://glitched.tech/project/failrss/</guid>
       <description>&lt;h2 id=&#34;about&#34;&gt;About&lt;/h2&gt;&#xA;&lt;p&gt;This is a little rss feed I made to teach myself flask. Currently, it can&amp;rsquo;t save your feeds past a single session because I had to make them temporary files for Vercel, but in the future, I&amp;rsquo;ll try to store feeds in cookies instead.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Lying Fortune Cookies</title>
-      <link>http://localhost:1313/lady-liberty-and-lying-fortune-cookies/</link>
+      <link>https://glitched.tech/lady-liberty-and-lying-fortune-cookies/</link>
       <pubDate>Sat, 27 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/lady-liberty-and-lying-fortune-cookies/</guid>
+      <guid>https://glitched.tech/lady-liberty-and-lying-fortune-cookies/</guid>
       <description>&lt;h1 id=&#34;fortune-cookies&#34;&gt;Fortune Cookies&lt;/h1&gt;&#xA;&lt;p&gt;I went to a Chinese restaurant yesterday, and got a fortune cookie that actually contained a fortune. This cookie didn&amp;rsquo;t have any of that &amp;ldquo;Smile, and you will be happier&amp;rdquo; fortunes. This thing was a real fortune. It said &amp;ldquo;The next meal you eat will be your best&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;Later that day, I went to a mexican restaurant, which may not even have qualified for my 500th best meal.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Podcasts and Pyraminx</title>
-      <link>http://localhost:1313/podcasts-and-pyraminx/</link>
+      <link>https://glitched.tech/podcasts-and-pyraminx/</link>
       <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/podcasts-and-pyraminx/</guid>
+      <guid>https://glitched.tech/podcasts-and-pyraminx/</guid>
       <description>&lt;h1 id=&#34;podcasts&#34;&gt;Podcasts&lt;/h1&gt;&#xA;&lt;p&gt;Its summer time in the US, and that means one thing. No school! Now, I consider myself a fairly responsible highschooler. I don&amp;rsquo;t spend too much time doomscrolling Reddit. I don&amp;rsquo;t lie on a couch, playing fortnite for eight hours at a time. I don&amp;rsquo;t even have Tiktok. I do have one &lt;em&gt;minor&lt;/em&gt; fault however. As I am &lt;em&gt;slightly&lt;/em&gt; lacking in the &amp;ldquo;Wanna hang out at my house tomorrow&amp;rdquo; kind of friends, I have to entertain myself.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wallet, version 1</title>
-      <link>http://localhost:1313/project/walletv1/</link>
+      <link>https://glitched.tech/project/walletv1/</link>
       <pubDate>Sat, 01 Jun 2024 16:09:57 -0400</pubDate>
-      <guid>http://localhost:1313/project/walletv1/</guid>
-      <description>&lt;img title=&#34;Behold!&#34; alt=&#34;An image of the wallet&#34; src=&#34;http://localhost:1313/img/wallet1.jpg&#34;&gt;&#xA;&lt;p&gt;A 3d printed wallet I made. I made it in Freecad, which took too many hours of my life. It comes in two parts and requires an elastic band to hold it together. &lt;a href=&#34;https://github.com/readabilitylol/wallet&#34;&gt;Here&amp;rsquo;s the Github link&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>https://glitched.tech/project/walletv1/</guid>
+      <description>&lt;img title=&#34;Behold!&#34; alt=&#34;An image of the wallet&#34; src=&#34;https://glitched.tech/img/wallet1.jpg&#34;&gt;&#xA;&lt;p&gt;A 3d printed wallet I made. I made it in Freecad, which took too many hours of my life. It comes in two parts and requires an elastic band to hold it together. &lt;a href=&#34;https://github.com/readabilitylol/wallet&#34;&gt;Here&amp;rsquo;s the Github link&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A response to the issues raised by the honourable Doctor John Smith</title>
-      <link>http://localhost:1313/ratresponse/</link>
+      <link>https://glitched.tech/ratresponse/</link>
       <pubDate>Thu, 30 May 2024 19:27:07 -0400</pubDate>
-      <guid>http://localhost:1313/ratresponse/</guid>
+      <guid>https://glitched.tech/ratresponse/</guid>
       <description>&lt;p&gt;May 30, 2024&#xA;&lt;br&gt;&#xA;&lt;br&gt;&#xA;&lt;br&gt;&#xA;&lt;br&gt;&#xA;Dr. John Smith&lt;br&gt;&#xA;Extinct, Inc&lt;br&gt;&#xA;1600 Maryland Avenue&lt;br&gt;&#xA;Boring, Oregon 97009&lt;/p&gt;&#xA;&lt;br&gt;&#xA;Dear Mr. Smith&#xA;&lt;p&gt;We have been informed about some of your concerns regarding the safety of our food. I would like to inform you that we strive to make our food digestible by the vast majority of those who consume it and agree that public safety should be a priority in any company. In this letter, I hope to address all of your points about our food safety and edibility.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The time travel problem</title>
-      <link>http://localhost:1313/thetimetravelproblem/</link>
+      <link>https://glitched.tech/thetimetravelproblem/</link>
       <pubDate>Wed, 29 May 2024 17:41:44 -0400</pubDate>
-      <guid>http://localhost:1313/thetimetravelproblem/</guid>
+      <guid>https://glitched.tech/thetimetravelproblem/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;This post, despite its name, is not about the feasibility of time travel. This post is, rather, about a common theory dealing with time travel paradoxes. People often claim that if someone time travelled to kill Hitler, for example, his parent would adopt, or someone else would come to power, and kill the six million people in an equivalent scenario. I believe that this frankly isn&amp;rsquo;t true. &lt;strong&gt;Brief Disclaimer: This is my opinion. I could be wrong&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Terminus</title>
-      <link>http://localhost:1313/project/terminus/</link>
+      <link>https://glitched.tech/project/terminus/</link>
       <pubDate>Tue, 26 Mar 2024 02:13:50 +0000</pubDate>
-      <guid>http://localhost:1313/project/terminus/</guid>
+      <guid>https://glitched.tech/project/terminus/</guid>
       <description>&lt;h2 id=&#34;about&#34;&gt;About&lt;/h2&gt;&#xA;&lt;p&gt;Terminus is a terminal theme for Hugo. I built it for &lt;a href=&#34;https://blog.glitched.tech&#34;&gt;my own site&lt;/a&gt;, but you can use it for your site If you want to. I built this in my spare time to teach myself, so if anything is broken, don&amp;rsquo;t hesitate to tell me or fix it and give me a pull request.&lt;/p&gt;&#xA;&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Enter your themes directory&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Run this command&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone https://github.com/readabilityLOL/terminus.git themes/terminus&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Analysis and results of the second sheep war</title>
-      <link>http://localhost:1313/thesecondsheepwar-2024-02-20/</link>
+      <link>https://glitched.tech/thesecondsheepwar-2024-02-20/</link>
       <pubDate>Wed, 21 Feb 2024 01:11:23 +0000</pubDate>
-      <guid>http://localhost:1313/thesecondsheepwar-2024-02-20/</guid>
+      <guid>https://glitched.tech/thesecondsheepwar-2024-02-20/</guid>
       <description>&lt;h1 id=&#34;tensions-rise&#34;&gt;Tensions rise&lt;/h1&gt;&#xA;&lt;p&gt;After the first human-sheep war, tensions seemed to die down between the two species. By the year 2053, trade began between the sheep and the humans. The moose had control of Canada and the northern U.S, the emus controlled australia, and the sheep had what remained of what was agreed on by the sixth treaty of Paris. As trade emerged, humans began to see sheep as potential allies instead of threats, as shown by the rising popularity of vegetarianism. In fact, the sheep began diplomatic relations with the humans, and began lowering tariffs on goods. Tensions, however, began to emerge as radicalized humans began to plot to take back the land that they used to own. This was largely instigated by the pigs, who had recieved nothing from the sixth treaty of Paris, and wanted revenge and land. They hoped to begin another war and conquer what remained after. Tensions began to grow, especially after an ambassador from NATO sent a sheep a blanket as a present, a grave insult in their culture. To add insult to injury, the ambassador was not reprimanded for his conduct. Finally, in the year 2060, anti-sheep riots broke out in the Netherlands, Wales, and Russia. This had vast consequences on sheep opinions of humans, and the sheep began to arm for war. Unknown to the humans, the sheep base of operations in Sealand had still not been disarmed, and weapons of mass destruction had been shipped there. At the same time, the humans began arming up, preparing for war. Potatoes to began being produced on industrial scales, and the entire industrial might of east Asia was being utilized to make weapons.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A brief retelling of the first human-sheep war</title>
-      <link>http://localhost:1313/firsthumansheepwar-2024-02-19/</link>
+      <link>https://glitched.tech/firsthumansheepwar-2024-02-19/</link>
       <pubDate>Mon, 19 Feb 2024 23:30:41 +0000</pubDate>
-      <guid>http://localhost:1313/firsthumansheepwar-2024-02-19/</guid>
+      <guid>https://glitched.tech/firsthumansheepwar-2024-02-19/</guid>
       <description>&lt;h1 id=&#34;events-leading-to-the-beginning-of-the-war&#34;&gt;Events leading to the beginning of the war&lt;/h1&gt;&#xA;&lt;p&gt;The first human-sheep war began on August 31, 2032. Humanity, who had enslaved the sheep for thousands of years, had grown complacent, and was not aware of the threat posed by the sheep, considering them to be stupid animals. Unbeknownst to them, the sheep had gathered under the leadership of an unknown sheep. By the year 2030, the sheep revolution had grown, and weapons had been stockpiled, as well as an armada of ships created in the Municipality of Sealand. By December 2031, there was enough momentum in the movement that the sheep were able to begin the revolution. They waited for the opportune moment, which came in August, after the second Potato famine, which occured after a scientist named George Smith tampered with viruses that damaged the potato industry. As three-fifth&amp;rsquo;s of the world&amp;rsquo;s human population was in danger, the leaders of the sheep decided it was time to attack. They began attacks in countries with a high sheep to human ratio, such as the Falkland Islands and New Zealand. Both areas collapsed without much resistance, and as they had low geopolitical significance, the collapse of both areas was unnoticed for several month, allowing the sheep to setup a base of operations in New Zealand. The sheep began communication with potential allies, like the moose in Canada, the pigs in Russia, and the Emus in Australia.&lt;/p&gt;</description>
     </item>
     <item>
       <title>An analysis of third grade culture</title>
-      <link>http://localhost:1313/thirdgradeculture-2024-02-17/</link>
+      <link>https://glitched.tech/thirdgradeculture-2024-02-17/</link>
       <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/thirdgradeculture-2024-02-17/</guid>
+      <guid>https://glitched.tech/thirdgradeculture-2024-02-17/</guid>
       <description>&lt;h1 id=&#34;introduction-to-the-third-grader&#34;&gt;Introduction to the third grader&lt;/h1&gt;&#xA;&lt;p&gt;A common misconception regarding the third grader is that this group of people is a mere subclass of the elementary schooler. This, however, is a mistake, as the group known as the third grader is in fact more different from other groups than a subclass could rightly be. This group of people can once again be divided into male and female, each with their distinct characteristics. The male and female groups, while often existing in the same locations, tend to keep apart from each other and often scorn those who make contact with the other group. Due to these divisions, this article will be adressing the male portion of the class known as third-graders, as they are different enough to merit different articles about each.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My First Post</title>
-      <link>http://localhost:1313/thesecondfirstpost-2024-02-16/</link>
+      <link>https://glitched.tech/thesecondfirstpost-2024-02-16/</link>
       <pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/thesecondfirstpost-2024-02-16/</guid>
+      <guid>https://glitched.tech/thesecondfirstpost-2024-02-16/</guid>
       <description>&lt;h1 id=&#34;intro-to-this-blog&#34;&gt;Intro to this blog&lt;/h1&gt;&#xA;&lt;p&gt;Basically, I made this site in order to put on words what I&amp;rsquo;m currently thinking. If this sounds a little broad, it&amp;rsquo;s because it is. For example, if a certain ChatGPT prompt, such as&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Give a speech written by a sheep propaganda person looking to start a sheep uprising in the theme of the french revolution and end humanity except as slaves to the sheep regime but mention all humans as evil oppressors and dont mention the french revolution but a past sheep revolution&lt;/p&gt;</description>
     </item>
     <item>
       <title>Post 3</title>
-      <link>http://localhost:1313/posts/post-3/</link>
+      <link>https://glitched.tech/posts/post-3/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/post-3/</guid>
+      <guid>https://glitched.tech/posts/post-3/</guid>
       <description>&lt;p&gt;Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Post 2</title>
-      <link>http://localhost:1313/posts/post-2/</link>
+      <link>https://glitched.tech/posts/post-2/</link>
       <pubDate>Wed, 15 Feb 2023 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/post-2/</guid>
+      <guid>https://glitched.tech/posts/post-2/</guid>
       <description>&lt;p&gt;Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.&lt;/p&gt;&#xA;&lt;p&gt;Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia. Velit id fugiat occaecat do tempor. Sit officia Lorem aliquip eu deserunt consectetur. Aute proident deserunt in nulla aliquip dolore ipsum Lorem ut cupidatat consectetur sit sint laborum. Esse cupidatat sit sint sunt tempor exercitation deserunt. Labore dolor duis laborum est do nisi ut veniam dolor et nostrud nostrud.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Post 1</title>
-      <link>http://localhost:1313/posts/post-1/</link>
+      <link>https://glitched.tech/posts/post-1/</link>
       <pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/post-1/</guid>
+      <guid>https://glitched.tech/posts/post-1/</guid>
       <description>&lt;p&gt;Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.&lt;/p&gt;&#xA;&lt;p&gt;Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea. Anim ut duis sunt nisi. Culpa cillum sit voluptate voluptate eiusmod dolor. Enim nisi Lorem ipsum irure est excepteur voluptate eu in enim nisi. Nostrud ipsum Lorem anim sint labore consequat do.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Where I&#39;m at</title>
-      <link>http://localhost:1313/page/verify/</link>
+      <link>https://glitched.tech/page/verify/</link>
       <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
-      <guid>http://localhost:1313/page/verify/</guid>
+      <guid>https://glitched.tech/page/verify/</guid>
       <description>&lt;h2 id=&#34;contact&#34;&gt;Contact&lt;/h2&gt;&#xA;&lt;p&gt;Email: &lt;a href=&#34;mailto:givespamhere7@gmail.com&#34;&gt;givespamhere7@gmail.com&lt;/a&gt;&lt;br&gt;&#xA;Github: &lt;a href=&#34;https://github.com/readabilityLOL&#34;&gt;https://github.com/readabilityLOL&lt;/a&gt;&lt;br&gt;&#xA;Discord: &lt;a href=&#34;https://discordapp.com/users/895429111873433630&#34;&gt;https://discordapp.com/users/895429111873433630&lt;/a&gt;&lt;br&gt;&#xA;Mastodon: &lt;a href=&#34;https://mastodon.social/@supreme_leadr&#34;&gt;https://mastodon.social/@supreme_leadr&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;games&#34;&gt;Games&lt;/h2&gt;&#xA;&lt;p&gt;Steam: &lt;a href=&#34;https://steamcommunity.com/profiles/76561199730632106/&#34;&gt;https://steamcommunity.com/profiles/76561199730632106/&lt;/a&gt;&lt;br&gt;&#xA;Backstabbr: &lt;a href=&#34;https://www.backstabbr.com/member/2b937ea3940a4d96a27fdc5554a70f3c&#34;&gt;https://www.backstabbr.com/member/2b937ea3940a4d96a27fdc5554a70f3c&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;reading&#34;&gt;Reading&lt;/h2&gt;&#xA;&lt;p&gt;Goodreads: &lt;a href=&#34;https://www.goodreads.com/user/show/195827318-supreme-leader&#34;&gt;https://www.goodreads.com/user/show/195827318-supreme-leader&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/apush-unit-2/</link>
+      <link>https://glitched.tech/notes/apush-unit-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/apush-unit-2/</guid>
+      <guid>https://glitched.tech/notes/apush-unit-2/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Disclaimer: These are really bad notes&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;current-colonial-holdings&#34;&gt;Current colonial holdings&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Spanish:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Florida&lt;/li&gt;&#xA;&lt;li&gt;South America&lt;/li&gt;&#xA;&lt;li&gt;Central America&lt;/li&gt;&#xA;&lt;li&gt;Caribbean&lt;/li&gt;&#xA;&lt;li&gt;Southwest North America&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;French:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Canada&lt;/li&gt;&#xA;&lt;li&gt;Other parts&lt;/li&gt;&#xA;&lt;li&gt;Lost most of it by 1763&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Dutch:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Modern day NYC area&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;Even old New York was once New Amsterdam&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Small colonies because the Dutch were religiously tolerant, so nobody felt the need to leave&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;England:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The main focus of this unit, expand on later&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Colonies are made because of Mercantilism&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Countries want silver, gold, a new market to sell stuff in&lt;/li&gt;&#xA;&lt;li&gt;Colonies provide these things&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;types-of-english-colonies&#34;&gt;Types of English Colonies&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Charter colonies&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Monarch grants land to a group of shareholders (Joint stock companies)&lt;/li&gt;&#xA;&lt;li&gt;Ex. Virginia&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Proprietary colonies&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Land granted to an individual, free to rule as they want to&lt;/li&gt;&#xA;&lt;li&gt;Ex. Maryland, Pennsylvania&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Royal Colonies&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Directly ruled by the monarch&lt;/li&gt;&#xA;&lt;li&gt;King appoints governor&lt;/li&gt;&#xA;&lt;li&gt;8 of the 13 colonies are these&lt;/li&gt;&#xA;&lt;li&gt;Ex. New York, Massachusetts&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;colonies-of-britain&#34;&gt;Colonies of Britain&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Roanoke&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Technically the first colony, but disappeared&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Jamestown&#xA;&lt;ul&gt;&#xA;&lt;li&gt;First permanent colony&lt;/li&gt;&#xA;&lt;li&gt;Most people died at first&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Too little food&lt;/li&gt;&#xA;&lt;li&gt;Very cold&lt;/li&gt;&#xA;&lt;li&gt;Conflicts with Native Americans&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Saved by John &lt;strong&gt;Rolfe&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Introduced tobacco&lt;/li&gt;&#xA;&lt;li&gt;Cash crops&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Cash crops led to need for labor&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Indentured Servitude&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Contract for 4-7 years of work in exchange for a ride across the Atlantic&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;British did not use Natives for labor&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;House of Burgesses&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Early representative Government&lt;/li&gt;&#xA;&lt;li&gt;Landowning men above 17 years old voted for burgesses (Representatives) for each county&lt;/li&gt;&#xA;&lt;li&gt;Governor was appointed by the house, but later changed to King of England&amp;rsquo;s nominee&lt;/li&gt;&#xA;&lt;li&gt;George Washington served as one of these&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Problems&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Tobacco destroys farmland&lt;/li&gt;&#xA;&lt;li&gt;Colonists move into Native territory&lt;/li&gt;&#xA;&lt;li&gt;More labor demand&lt;/li&gt;&#xA;&lt;li&gt;Tensions with Natives&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Anglo-Powhatan wars&#xA;&lt;ul&gt;&#xA;&lt;li&gt;1st war ends with Pocahontas, John Rolfe marriage&lt;/li&gt;&#xA;&lt;li&gt;Massacre of 1622 starts a new war&lt;/li&gt;&#xA;&lt;li&gt;Powhatans destroyed by 1646&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Bacon&amp;rsquo;s rebellion&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Class struggle between tidewater gentry and backcountry farmers&lt;/li&gt;&#xA;&lt;li&gt;Bacon burns down Jamestown&lt;/li&gt;&#xA;&lt;li&gt;Britain intervenes&lt;/li&gt;&#xA;&lt;li&gt;Governor Berkeley kicked out&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;End of indentured servitude, beginning of African slave usage&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Maryland&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Founded by Lord Baltimore&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Act of Toleration&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Religious freedom for Christians&lt;/li&gt;&#xA;&lt;li&gt;Not for Non-Christians&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Relied on tobacco&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Middle colonies&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Ethnically diverse&lt;/li&gt;&#xA;&lt;li&gt;Breadbasket&lt;/li&gt;&#xA;&lt;li&gt;Semi-religiously tolerant&lt;/li&gt;&#xA;&lt;li&gt;NY and NJ once belonged to Netherlands&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Annexed by Britain&lt;/li&gt;&#xA;&lt;li&gt;Very diverse&lt;/li&gt;&#xA;&lt;li&gt;Allowed Jews&lt;/li&gt;&#xA;&lt;li&gt;Cared about money, not religion&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Delaware&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Founded by William Penn&lt;/li&gt;&#xA;&lt;li&gt;Close with Pennsylvania&lt;/li&gt;&#xA;&lt;li&gt;Tobacco&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Pennsylvania&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Quakers&lt;/li&gt;&#xA;&lt;li&gt;Friendly w/ Natives&lt;/li&gt;&#xA;&lt;li&gt;Religious Freedom&lt;/li&gt;&#xA;&lt;li&gt;Liberal political ideals: Charter of Liberties&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;New England&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Puritans&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Religious&lt;/li&gt;&#xA;&lt;li&gt;Wanted to purify Church of England&lt;/li&gt;&#xA;&lt;li&gt;Tight-Knit&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Mixed Economy&lt;/li&gt;&#xA;&lt;li&gt;Plymouth&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Mayflower&lt;/li&gt;&#xA;&lt;li&gt;Wanted to go to Jamestown, missed by a bit&lt;/li&gt;&#xA;&lt;li&gt;Mayflower Compact&#xA;&lt;ul&gt;&#xA;&lt;li&gt;First Self-Government ideas&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Literal, Strict Bible interpretation&lt;/li&gt;&#xA;&lt;li&gt;Hard labor -&amp;gt; Salvation&lt;/li&gt;&#xA;&lt;li&gt;Direct Democracy in Churches&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Almost theocracy&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Harvard, Yale&lt;/li&gt;&#xA;&lt;li&gt;William Bradford&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Massachusetts Bay&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;ldquo;City on a Hill&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;Founded by John Winthrop&lt;/li&gt;&#xA;&lt;li&gt;No religious freedom&lt;/li&gt;&#xA;&lt;li&gt;Church membership needed for politics&lt;/li&gt;&#xA;&lt;li&gt;Boston was the capital&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Rhode Island&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Roger Williams questioned Puritan Leadership&lt;/li&gt;&#xA;&lt;li&gt;Separation of Church, State&lt;/li&gt;&#xA;&lt;li&gt;Complete Religious freedom&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Anne Hutchinson&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Wanted women preachers&lt;/li&gt;&#xA;&lt;li&gt;Wanted personal connection for heaven, not good works&lt;/li&gt;&#xA;&lt;li&gt;Banished, killed by Native Americans&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Connecticut&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Thomas Hooker thought Mass Bay was &lt;strong&gt;not strict enough&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Fundamental Orders of Connecticut&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Property, church membership needed to vote&lt;/li&gt;&#xA;&lt;li&gt;First written constitution in America&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Native American wars&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pequot wars&#xA;&lt;ul&gt;&#xA;&lt;li&gt;New England wipes out Pequot tribe&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;New England Confederation&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Puritan alliance of defense against natives&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;King Philip&amp;rsquo;s war&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Not his actual name&lt;/li&gt;&#xA;&lt;li&gt;Last major Native resistance to New England colonists&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Salem witch trials&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Groupthink&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Southern colonies&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Carolinas&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Tobacco&lt;/li&gt;&#xA;&lt;li&gt;Split in 1712 due to agriculture differences&#xA;&lt;ul&gt;&#xA;&lt;li&gt;NC had less slavery, smaller tobacco farms&lt;/li&gt;&#xA;&lt;li&gt;SC had cash crops, slavery&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Catawba tribe wiped out&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Georgia&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Founded by James Oglethorpe&lt;/li&gt;&#xA;&lt;li&gt;Rice plantations&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Barbados&#xA;&lt;ul&gt;&#xA;&lt;li&gt;British West Indies&lt;/li&gt;&#xA;&lt;li&gt;Lucrative for British&lt;/li&gt;&#xA;&lt;li&gt;Harsh treatment of slaves&lt;/li&gt;&#xA;&lt;li&gt;Sugar plantations&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Racial Social structure&lt;/li&gt;&#xA;&lt;li&gt;Male dominated&lt;/li&gt;&#xA;&lt;li&gt;Status based on land ownership&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;slavery-in-the-colonies&#34;&gt;Slavery in the colonies&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Triangular Trade&#xA;&lt;ul&gt;&#xA;&lt;li&gt;3 part route of slaves and goods from Europe to Africa to Caribbean, colonies&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Middle Passage&#xA;&lt;ul&gt;&#xA;&lt;li&gt;3rd leg of triangular trade&lt;/li&gt;&#xA;&lt;li&gt;Harsh journey for slaves&lt;/li&gt;&#xA;&lt;li&gt;2 million slaves died here&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Slave culture&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Gullah&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Secret language&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Blended religious practices&lt;/li&gt;&#xA;&lt;li&gt;Struggle to maintain culture&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Stono Rebellion&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Led to chattel slavery&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;the-great-awakening&#34;&gt;The Great Awakening&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Influx of religious fervor in the colonies&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Religious fervor was fading&lt;/li&gt;&#xA;&lt;li&gt;Half Way Covenant&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Could be church member without conversion experience&lt;/li&gt;&#xA;&lt;li&gt;Children could be baptized&lt;/li&gt;&#xA;&lt;li&gt;Strict Puritans did not like this&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Newspapers brought ideas over from England&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Methodism&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Focus on personal conversion&lt;/li&gt;&#xA;&lt;li&gt;Itinerancy&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Preachers traveled around&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Open air preaching&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Very dramatic&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;George Whitefield, Johnathan Edwards were preachers&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Old Lights&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Traditionalists&lt;/li&gt;&#xA;&lt;li&gt;Educated preachers&lt;/li&gt;&#xA;&lt;li&gt;Class system in church&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;New Lights&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Emotional Preachers&lt;/li&gt;&#xA;&lt;li&gt;Converted ministry&lt;/li&gt;&#xA;&lt;li&gt;No class system in church&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Led to new universities&lt;/li&gt;&#xA;&lt;li&gt;Religion enters south&lt;/li&gt;&#xA;&lt;li&gt;Methodists, Baptists form&lt;/li&gt;&#xA;&lt;li&gt;Calls for separation of Church and State&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;relationship-with-britain&#34;&gt;Relationship with Britain&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Salutary Neglect: Britain didn&amp;rsquo;t really care what went on in the colonies until 1754&lt;/li&gt;&#xA;&lt;li&gt;Navigation acts of 1660&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Mercantilist policies by England&lt;/li&gt;&#xA;&lt;li&gt;Only trade with England&lt;/li&gt;&#xA;&lt;li&gt;Led to smuggling&lt;/li&gt;&#xA;&lt;li&gt;Woolen act&#xA;&lt;ul&gt;&#xA;&lt;li&gt;No exporting wool, sheep&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Molasses Act&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Tax on molasses, sugar, rum&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Dominion of New England&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Union of British colonies in North America&lt;/li&gt;&#xA;&lt;li&gt;Tried to end smuggling&lt;/li&gt;&#xA;&lt;li&gt;Failed miserably&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Colonial Governments&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Loosely British Controlled&lt;/li&gt;&#xA;&lt;li&gt;House of Burgesses&lt;/li&gt;&#xA;&lt;li&gt;Mayflower Compact&lt;/li&gt;&#xA;&lt;li&gt;Fundamental Orders of Connecticut&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Peter Zenger Case&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Supported freedom of the press&lt;/li&gt;&#xA;&lt;li&gt;Caused by enlightenment ideas&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Education in the colonies&#xA;&lt;ul&gt;&#xA;&lt;li&gt;New England had a lot&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;class-struggles&#34;&gt;Class Struggles&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Eastern Elites vs Backcountry Farmers&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Bacon&amp;rsquo;s rebellion&lt;/li&gt;&#xA;&lt;li&gt;Paxton Boys&#xA;&lt;ul&gt;&#xA;&lt;li&gt;600 armed men march on PA legislature, appeased&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;North Carolina Regulators&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Demanded equal representation&lt;/li&gt;&#xA;&lt;li&gt;Defeated&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!---&#xA;Anki Notes&#xA;TARGET DECK: Literally Everything::05 Social Studies::APUSH&#xA;START&#xA;Basic&#xA;What is the term for England&#39;s way of managing the colonies? &#xA;Back: Salutary Neglect&#xA;ID: 1759619236823&#xA;END&#xA;&#xA;START&#xA;Basic&#xA;What was the first written constitution in the American colonies? &#xA;Back: The Fundamental orders of Connecticut&#xA;ID: 1759619894951&#xA;END&#xA;&#xA;START&#xA;Basic&#xA;What led to the end of indentured servitude and the beginning of slavery in the colonies? &#xA;Back: Bacon&#39;s rebellion&#xA;ID: 1759619894986&#xA;END&#xA;--&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/english/</link>
+      <link>https://glitched.tech/notes/english/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/english/</guid>
-      <description>&lt;h1 id=&#34;english&#34;&gt;English&lt;/h1&gt;&#xA;&lt;p&gt;Here are all of the notes I&amp;rsquo;ve made on English:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/notes/everythings-an-argument-chapter-1/&#34;&gt;Everything&amp;rsquo;s an argument chapter 1&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/notes/everythings-an-argument-chapter-4/&#34;&gt;Everything&amp;rsquo;s an argument chapter 4&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <guid>https://glitched.tech/notes/english/</guid>
+      <description>&lt;h1 id=&#34;english&#34;&gt;English&lt;/h1&gt;&#xA;&lt;p&gt;Here are all of the notes I&amp;rsquo;ve made on English:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://glitched.tech/notes/everythings-an-argument-chapter-1/&#34;&gt;Everything&amp;rsquo;s an argument chapter 1&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://glitched.tech/notes/everythings-an-argument-chapter-4/&#34;&gt;Everything&amp;rsquo;s an argument chapter 4&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/everythings-an-argument-chapter-1/</link>
+      <link>https://glitched.tech/notes/everythings-an-argument-chapter-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/everythings-an-argument-chapter-1/</guid>
+      <guid>https://glitched.tech/notes/everythings-an-argument-chapter-1/</guid>
       <description>&lt;h1 id=&#34;everythings-an-argument-chapter-1&#34;&gt;Everything&amp;rsquo;s an argument, chapter 1&lt;/h1&gt;&#xA;&lt;h2 id=&#34;everythings-an-argument&#34;&gt;Everything&amp;rsquo;s an argument&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Everything we do is a statement in some way&#xA;&lt;ul&gt;&#xA;&lt;li&gt;What we choose to wear&lt;/li&gt;&#xA;&lt;li&gt;Who we associate with&lt;/li&gt;&#xA;&lt;li&gt;What we believe&lt;/li&gt;&#xA;&lt;li&gt;Maybe language itself is inherently argumentative&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;types-and-purposes-of-arguments&#34;&gt;Types and purposes of arguments&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Arguments about winning&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Law, politics&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Clear goal - Win election, court case&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Invitational arguments&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Seek to find common ground, settle disagreements&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Arguments to convince&#xA;&lt;ul&gt;&#xA;&lt;li&gt;To convince the undecided to support you&lt;/li&gt;&#xA;&lt;li&gt;Not to beat those already convinced to the other side&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Arguments to persuade&#xA;&lt;ul&gt;&#xA;&lt;li&gt;About winning a point&lt;/li&gt;&#xA;&lt;li&gt;Convince the opposition&lt;/li&gt;&#xA;&lt;li&gt;Make people vote for you&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Arguments to explore&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Think about society&lt;/li&gt;&#xA;&lt;li&gt;Explore something puzzling&lt;/li&gt;&#xA;&lt;li&gt;No clear opponent&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Arguments to make decisions&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Strongly linked with exploratory arguments&lt;/li&gt;&#xA;&lt;li&gt;Explore the problem and come up with a decision&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Arguments to meditate/pray&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Hope for change&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Academic arguments&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Just an argument held to academic standards&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Arguments about the past&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Forensic arguments&lt;/li&gt;&#xA;&lt;li&gt;Analyse evidence, witnesses&lt;/li&gt;&#xA;&lt;li&gt;Used in business, government, academia&lt;/li&gt;&#xA;&lt;li&gt;Dispute claims and present evidence&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Arguments about the future&#xA;&lt;ul&gt;&#xA;&lt;li&gt;What should happen in the future?&lt;/li&gt;&#xA;&lt;li&gt;Relies on precedent, past events&lt;/li&gt;&#xA;&lt;li&gt;Extrapolates the past&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Arguments about the present&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Argue about contemporary values&lt;/li&gt;&#xA;&lt;li&gt;Explore culture&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;kinds-of-arguments&#34;&gt;Kinds of arguments&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Arguments of fact&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;Did&lt;/em&gt; the event happen?&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;Is&lt;/em&gt; the ocean being polluted?&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;Is&lt;/em&gt; it our fault?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Arguments about the nature of things&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Are fetuses &lt;em&gt;human beings&lt;/em&gt;?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Arguments about quality&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Is the car &lt;em&gt;good&lt;/em&gt;?&lt;/li&gt;&#xA;&lt;li&gt;Involves measurement against a standard&lt;/li&gt;&#xA;&lt;li&gt;This reminds me of Zen and the Art of Motorcycle maintenance&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Arguments about what actions should be taken&#xA;&lt;ul&gt;&#xA;&lt;li&gt;What is the problem?&lt;/li&gt;&#xA;&lt;li&gt;What should we &lt;em&gt;do&lt;/em&gt; to fix it?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;appealing-to-the-audience&#34;&gt;Appealing to the audience&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Emotion: Pathos&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Use happiness, anger, fear to convince audiences to take action&lt;/li&gt;&#xA;&lt;li&gt;Show images, use stories&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Character: Ethos&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Show credibility, personal involvement&lt;/li&gt;&#xA;&lt;li&gt;Show good motives&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Logic: Logos&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Use evidence to reinforce a point&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/everythings-an-argument-chapter-4/</link>
+      <link>https://glitched.tech/notes/everythings-an-argument-chapter-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/everythings-an-argument-chapter-4/</guid>
+      <guid>https://glitched.tech/notes/everythings-an-argument-chapter-4/</guid>
       <description>&lt;h1 id=&#34;everythings-an-argument-chapter-4&#34;&gt;Everything&amp;rsquo;s an argument chapter 4&lt;/h1&gt;&#xA;&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Logos is the portion of arguments based on:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Facts&lt;/li&gt;&#xA;&lt;li&gt;Evidence&lt;/li&gt;&#xA;&lt;li&gt;Reason&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;It&amp;rsquo;s not always based on hard evidence&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Reasoning, etc&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;providing-hard-evidence&#34;&gt;Providing Hard Evidence&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;People like evidence more than reasoning&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pictures of missile tests&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;smoking gun&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;data&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Helps back up claims&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Some caveats:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Make sure evidence is reliable&lt;/li&gt;&#xA;&lt;li&gt;Watch for how topics are framed&lt;/li&gt;&#xA;&lt;li&gt;Remember that bad evidence often gets circulated&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Antivax&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Obama is a Muslim&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;Flat Earth&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;using-statistics&#34;&gt;Using Statistics&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;ldquo;Figures lie and liars figure&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;Numbers have to be interpreted&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Crime rate fell by 10%!&lt;/li&gt;&#xA;&lt;li&gt;Crime rate only fell by 10%&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;surveyspolls&#34;&gt;Surveys/Polls&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Biggest type of statistics used&lt;/li&gt;&#xA;&lt;li&gt;Very persuasive&#xA;&lt;ul&gt;&#xA;&lt;li&gt;72% of Americans support it&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Always scrutinize these:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Who commissioned the poll?&lt;/li&gt;&#xA;&lt;li&gt;Who was surveyed?&lt;/li&gt;&#xA;&lt;li&gt;When was the poll made?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;testimonies-and-narratives&#34;&gt;Testimonies and narratives&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Use testimonies to support claims&lt;/li&gt;&#xA;&lt;li&gt;I feel like this strays into the land of pathos, but whatever I guess.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;reason-and-common-sense&#34;&gt;Reason and Common sense&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sometimes, you don&amp;rsquo;t have hard evidence&lt;/li&gt;&#xA;&lt;li&gt;Use logic to draw conclusions&lt;/li&gt;&#xA;&lt;li&gt;Includes syllogisms:&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;All human beings are mortal&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/german/</link>
+      <link>https://glitched.tech/notes/german/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/german/</guid>
+      <guid>https://glitched.tech/notes/german/</guid>
       <description>&lt;h1 id=&#34;german&#34;&gt;German&lt;/h1&gt;&#xA;&lt;p&gt;Here are all of the notes I&amp;rsquo;ve made about German:&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/kinematics/</link>
+      <link>https://glitched.tech/notes/kinematics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/kinematics/</guid>
+      <guid>https://glitched.tech/notes/kinematics/</guid>
       <description>&lt;h1 id=&#34;kinematics&#34;&gt;Kinematics&lt;/h1&gt;&#xA;&lt;h2 id=&#34;some-terms&#34;&gt;Some terms&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Scalar&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A directionless quantity, magnitude only&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Speed&lt;/li&gt;&#xA;&lt;li&gt;Distance&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Vector&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A quantity with direction and magnitude&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Velocity&lt;/li&gt;&#xA;&lt;li&gt;Acceleration&lt;/li&gt;&#xA;&lt;li&gt;Displacement&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Displacement&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Difference between final and initial positions&lt;/li&gt;&#xA;&lt;li&gt;$\Delta d = d_f-d_{i}$&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Velocity&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Change in position over time&lt;/li&gt;&#xA;&lt;li&gt;Average velocity ($\bar{v}$)&lt;/li&gt;&#xA;&lt;li&gt;$\bar{v}=\frac{d}{t}$&lt;/li&gt;&#xA;&lt;li&gt;$\bar{v}=\frac{v_f+v_i}{2}$&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Acceleration&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Change in velocity over time&lt;/li&gt;&#xA;&lt;li&gt;$a=\frac{\Delta v}{\Delta t}$&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/math/</link>
+      <link>https://glitched.tech/notes/math/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/math/</guid>
+      <guid>https://glitched.tech/notes/math/</guid>
       <description>&lt;h1 id=&#34;math&#34;&gt;Math&lt;/h1&gt;&#xA;&lt;p&gt;Here are all of the math notes I&amp;rsquo;ve made:&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/misc/</link>
+      <link>https://glitched.tech/notes/misc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/misc/</guid>
+      <guid>https://glitched.tech/notes/misc/</guid>
       <description>&lt;h1 id=&#34;miscellaneous&#34;&gt;Miscellaneous&lt;/h1&gt;&#xA;&lt;p&gt;Here are all of my uncategorized notes:&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/physics/</link>
+      <link>https://glitched.tech/notes/physics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/physics/</guid>
-      <description>&lt;p&gt;Here are all the notes I&amp;rsquo;ve taken in Physics:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/notes/problem-solving-in-physics/&#34;&gt;Problem Solving in Physics&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/notes/kinematics/&#34;&gt;Kinematics&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <guid>https://glitched.tech/notes/physics/</guid>
+      <description>&lt;p&gt;Here are all the notes I&amp;rsquo;ve taken in Physics:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://glitched.tech/notes/problem-solving-in-physics/&#34;&gt;Problem Solving in Physics&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://glitched.tech/notes/kinematics/&#34;&gt;Kinematics&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/problem-solving-in-physics/</link>
+      <link>https://glitched.tech/notes/problem-solving-in-physics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/problem-solving-in-physics/</guid>
+      <guid>https://glitched.tech/notes/problem-solving-in-physics/</guid>
       <description>&lt;h1 id=&#34;problem-solving-steps-in-physics&#34;&gt;Problem Solving steps in Physics&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-read-the-problem-carefully&#34;&gt;1. Read the problem carefully&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Don&amp;rsquo;t get tripped up and miss a value or what you&amp;rsquo;re trying to solve&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2-draw-a-diagram-of-the-problem&#34;&gt;2. Draw a diagram of the problem&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;This helps you visualize the problem (duh)&lt;/li&gt;&#xA;&lt;li&gt;Makes you less likely to mess up&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;3-write-down-all-given-information&#34;&gt;3. Write down all given information&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;You need to know what you have in order to solve the problem&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;4-find-what-equation-you-need&#34;&gt;4. Find what equation you need&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Look it up in the reference table&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;5-substitute-in-values&#34;&gt;5. Substitute in values&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pretty self explanatory, imo&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;6-solve-the-equation&#34;&gt;6. Solve the equation&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;What are you waiting for? Just solve it.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/science/</link>
+      <link>https://glitched.tech/notes/science/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/science/</guid>
-      <description>&lt;h1 id=&#34;science&#34;&gt;Science&lt;/h1&gt;&#xA;&lt;p&gt;Here are all of the science notes I&amp;rsquo;ve made:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/notes/physics/&#34;&gt;Physics&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <guid>https://glitched.tech/notes/science/</guid>
+      <description>&lt;h1 id=&#34;science&#34;&gt;Science&lt;/h1&gt;&#xA;&lt;p&gt;Here are all of the science notes I&amp;rsquo;ve made:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://glitched.tech/notes/physics/&#34;&gt;Physics&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/social-studies/</link>
+      <link>https://glitched.tech/notes/social-studies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/social-studies/</guid>
-      <description>&lt;h1 id=&#34;social-studies&#34;&gt;Social Studies&lt;/h1&gt;&#xA;&lt;p&gt;Here are all of the social studies notes I&amp;rsquo;ve made:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/notes/apush-unit-2/&#34;&gt;APUSH Unit 2&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <guid>https://glitched.tech/notes/social-studies/</guid>
+      <description>&lt;h1 id=&#34;social-studies&#34;&gt;Social Studies&lt;/h1&gt;&#xA;&lt;p&gt;Here are all of the social studies notes I&amp;rsquo;ve made:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://glitched.tech/notes/apush-unit-2/&#34;&gt;APUSH Unit 2&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/tech/</link>
+      <link>https://glitched.tech/notes/tech/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/tech/</guid>
+      <guid>https://glitched.tech/notes/tech/</guid>
       <description>&lt;h1 id=&#34;tech&#34;&gt;Tech&lt;/h1&gt;&#xA;&lt;p&gt;Here are all of the notes I&amp;rsquo;ve made for technology:&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/notes/templates/post/</link>
+      <link>https://glitched.tech/notes/templates/post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/templates/post/</guid>
+      <guid>https://glitched.tech/notes/templates/post/</guid>
       <description>&lt;p&gt;+++&#xA;draft = true&#xA;date = &amp;quot;&amp;quot;&#xA;title = &amp;quot;&amp;quot;&#xA;description = &amp;quot;&amp;quot;&#xA;slug = &amp;quot;&amp;quot;&#xA;authors = []&#xA;tags = []&#xA;categories = []&#xA;externalLink = &amp;quot;&amp;quot;&#xA;series = []&#xA;+++&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/page/about/</link>
+      <link>https://glitched.tech/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/page/about/</guid>
+      <guid>https://glitched.tech/page/about/</guid>
       <description>&lt;h1 id=&#34;who-am-i&#34;&gt;Who am I?&lt;/h1&gt;&#xA;&lt;p&gt;I’m Josh, a high schooler who decided last year to start a blog. I’m interested in technology, old games, and books. When I’m not wasting my time mindlessly doomscrolling on Reddit, I’m usually reading a book or trying to teach myself something, like how to make a blog or how to design a wallet in Freecad. I like making things, and I intend this blog to be both a log of things I make and a way to get more practice writing. You never know, it might even help me on a j*b applicat**n one day.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/page/project/</link>
+      <link>https://glitched.tech/page/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/page/project/</guid>
+      <guid>https://glitched.tech/page/project/</guid>
       <description>&lt;h1 id=&#34;my-projects&#34;&gt;My Projects&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://addons.mozilla.org/en-US/firefox/addon/josh-s-dark-theme/&#34;&gt;Josh&amp;rsquo;s dark theme&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/ReadabilityLOL/Python-text-editor&#34;&gt;Python text editor&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/readabilityLOL/FAIL&#34;&gt;FailRSS&lt;/a&gt;, &lt;a href=&#34;https://failrss.glitched.tech&#34;&gt;Site link&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/readabilityLOL/Terminus&#34;&gt;Terminus&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/ReadabilityLOL/wallet&#34;&gt;Wallet&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>What I&#39;m doing right now</title>
-      <link>http://localhost:1313/page/now/</link>
+      <link>https://glitched.tech/page/now/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/page/now/</guid>
+      <guid>https://glitched.tech/page/now/</guid>
       <description>&lt;style&gt;&#xA;date{&#xA;    display: none;&#xA;}&#xA;&lt;/style&gt;&#xA;&lt;p&gt;Last updated: 2025-12-02&lt;/p&gt;&#xA;&lt;h2 id=&#34;who-are-you-anyway&#34;&gt;Who are you, anyway?&lt;/h2&gt;&#xA;&lt;p&gt;I’m Josh, a high schooler who decided last year to start a blog. I’m interested in technology, old games, and books. When I’m not wasting my time mindlessly doomscrolling on Reddit, I’m usually reading a book or trying to teach myself something, like how to make a blog or how to design a wallet in Freecad. I like making things, and I intend this blog to be both a log of things I make and a way to get more practice writing. You never know, it might even help me on a j*b applicat**n one day.&lt;/p&gt;</description>
     </item>
   </channel>
