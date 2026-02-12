@@ -3,6 +3,8 @@ title = 'Adding comments to this site'
 date = 2025-08-05T20:59:01Z
 draft = false
 descrition = "I decide to give users the ability to comment on this site. After some thinking, I decide on using Giscus for this."
+
+tags = ["development"]
 +++
 
 # Intro
