@@ -6,8 +6,15 @@
     <description>Recent content in Welcome to my website! on Glitched</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 30 Nov 2025 17:58:01 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Feb 2026 16:53:07 -0500</lastBuildDate>
     <atom:link href="https://glitched.tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Removing comments from this site</title>
+      <link>https://glitched.tech/nomorecomments/</link>
+      <pubDate>Fri, 13 Feb 2026 16:53:07 -0500</pubDate>
+      <guid>https://glitched.tech/nomorecomments/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;After a few months having comments on this site, I have now decided to remove them. This is because my github account was temporarily suspended, probably because I kept reloading comments and having giscus load over and over. This broke a lot of stuff, including cloudflare, which couldn&amp;rsquo;t connect to my github repo. Because of this, I have removed comment from my site until I find a new solution or can guarantee that I won&amp;rsquo;t manage to do this again sometime.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>In which I play Bad Apple on a Renasight advertisement device</title>
       <link>https://glitched.tech/badappleonrenasight/</link>
