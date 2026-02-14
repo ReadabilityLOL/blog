@@ -87,12 +87,14 @@
             "id": "5ffd9583101c6613",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.11.7"
+                "file": "Everything's an argument chapter 4.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.7"
+              "icon": "lucide-file",
+              "title": "Everything's an argument chapter 4"
             }
           },
           {
@@ -289,15 +291,15 @@
   },
   "active": "5ffd9583101c6613",
   "lastOpenFiles": [
+    "Everything's an argument chapter 1.md",
     "APUSH Unit 2.md",
+    "Everything's an argument chapter 4.md",
     "Social Studies.md",
     "Physics.md",
     "Kinematics.md",
     "Problem Solving in Physics.md",
     "Science.md",
     "_index.md",
-    "Everything's an argument chapter 4.md",
-    "Everything's an argument chapter 1.md",
     "English.md",
     "German.md",
     "Tech.md",

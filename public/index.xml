@@ -51,13 +51,6 @@
       <description>&lt;!--&#xA;&lt;audio id=&#34;page-sound&#34; autoplay=True&gt;&#xA;    &lt;source src=&#34;https://glitched.tech/audio-effects/xp.mp3&#34;&gt;&#xA;&lt;/audio&gt;&#xA;&#xA;&lt;script&gt;&#xA;  var audio = document.getElementById(&#34;page-sound&#34;);&#xA;  audio.volume = 0.1;&#xA;&lt;/script&gt;&#xA;--&gt;&#xA;&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;Recently, I recieved an old Windows XP machine. I was pretty excited to use it, but I will admit that it sat around in my garage for a week or two before I brought it inside. I wasn&amp;rsquo;t too sure what I could do with an old machine like that, but I figured I could have some fun with it. I decided that, if nothing else, I could at least play some games on it.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>FAIL rss</title>
-      <link>https://glitched.tech/project/failrss/</link>
-      <pubDate>Sun, 05 Jan 2025 02:13:50 +0000</pubDate>
-      <guid>https://glitched.tech/project/failrss/</guid>
-      <description>&lt;h2 id=&#34;about&#34;&gt;About&lt;/h2&gt;&#xA;&lt;p&gt;This is a little rss feed I made to teach myself flask. Currently, it can&amp;rsquo;t save your feeds past a single session because I had to make them temporary files for Vercel, but in the future, I&amp;rsquo;ll try to store feeds in cookies instead.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Lying Fortune Cookies</title>
       <link>https://glitched.tech/lady-liberty-and-lying-fortune-cookies/</link>
       <pubDate>Sat, 27 Jul 2024 00:00:00 +0000</pubDate>
@@ -72,13 +65,6 @@
       <description>&lt;h1 id=&#34;podcasts&#34;&gt;Podcasts&lt;/h1&gt;&#xA;&lt;p&gt;Its summer time in the US, and that means one thing. No school! Now, I consider myself a fairly responsible highschooler. I don&amp;rsquo;t spend too much time doomscrolling Reddit. I don&amp;rsquo;t lie on a couch, playing fortnite for eight hours at a time. I don&amp;rsquo;t even have Tiktok. I do have one &lt;em&gt;minor&lt;/em&gt; fault however. As I am &lt;em&gt;slightly&lt;/em&gt; lacking in the &amp;ldquo;Wanna hang out at my house tomorrow&amp;rdquo; kind of friends, I have to entertain myself.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Wallet, version 1</title>
-      <link>https://glitched.tech/project/walletv1/</link>
-      <pubDate>Sat, 01 Jun 2024 16:09:57 -0400</pubDate>
-      <guid>https://glitched.tech/project/walletv1/</guid>
-      <description>&lt;img title=&#34;Behold!&#34; alt=&#34;An image of the wallet&#34; src=&#34;https://glitched.tech/img/wallet1.jpg&#34;&gt;&#xA;&lt;p&gt;A 3d printed wallet I made. I made it in Freecad, which took too many hours of my life. It comes in two parts and requires an elastic band to hold it together. &lt;a href=&#34;https://github.com/readabilitylol/wallet&#34;&gt;Here&amp;rsquo;s the Github link&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>A response to the issues raised by the honourable Doctor John Smith</title>
       <link>https://glitched.tech/ratresponse/</link>
       <pubDate>Thu, 30 May 2024 19:27:07 -0400</pubDate>
@@ -91,13 +77,6 @@
       <pubDate>Wed, 29 May 2024 17:41:44 -0400</pubDate>
       <guid>https://glitched.tech/thetimetravelproblem/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;This post, despite its name, is not about the feasibility of time travel. This post is, rather, about a common theory dealing with time travel paradoxes. People often claim that if someone time travelled to kill Hitler, for example, his parent would adopt, or someone else would come to power, and kill the six million people in an equivalent scenario. I believe that this frankly isn&amp;rsquo;t true. &lt;strong&gt;Brief Disclaimer: This is my opinion. I could be wrong&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Terminus</title>
-      <link>https://glitched.tech/project/terminus/</link>
-      <pubDate>Tue, 26 Mar 2024 02:13:50 +0000</pubDate>
-      <guid>https://glitched.tech/project/terminus/</guid>
-      <description>&lt;h2 id=&#34;about&#34;&gt;About&lt;/h2&gt;&#xA;&lt;p&gt;Terminus is a terminal theme for Hugo. I built it for &lt;a href=&#34;https://blog.glitched.tech&#34;&gt;my own site&lt;/a&gt;, but you can use it for your site If you want to. I built this in my spare time to teach myself, so if anything is broken, don&amp;rsquo;t hesitate to tell me or fix it and give me a pull request.&lt;/p&gt;&#xA;&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Enter your themes directory&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Run this command&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone https://github.com/readabilityLOL/terminus.git themes/terminus&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Analysis and results of the second sheep war</title>
@@ -266,6 +245,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://glitched.tech/page/project/</guid>
       <description>&lt;h1 id=&#34;my-projects&#34;&gt;My Projects&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://addons.mozilla.org/en-US/firefox/addon/josh-s-dark-theme/&#34;&gt;Josh&amp;rsquo;s dark theme&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/ReadabilityLOL/Python-text-editor&#34;&gt;Python text editor&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/readabilityLOL/FAIL&#34;&gt;FailRSS&lt;/a&gt;, &lt;a href=&#34;https://failrss.glitched.tech&#34;&gt;Site link&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/readabilityLOL/Terminus&#34;&gt;Terminus&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/ReadabilityLOL/wallet&#34;&gt;Wallet&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://glitched.tech/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://glitched.tech/project/</guid>
+      <description></description>
     </item>
     <item>
       <title>What I&#39;m doing right now</title>
