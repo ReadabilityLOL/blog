@@ -2,46 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Glitched</title>
-    <link>http://localhost:1313/page/</link>
+    <link>https://glitched.tech/page/</link>
     <description>Recent content in Pages on Glitched</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Aug 2025 00:15:18 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>http://localhost:1313/page/stats/</link>
-      <pubDate>Tue, 05 Aug 2025 00:15:18 +0000</pubDate>
-      <guid>http://localhost:1313/page/stats/</guid>
-      <description>&lt;style&gt;&#xA;.about{&#xA;  width:200%;&#xA;}&#xA;.contrib-chart{&#xA;  /*border: 3px solid white;*/&#xA;  transform: translate(0px, 2ch);&#xA;  scale: 1.5;&#xA;  contain: layout;&#xA;  margin-left: 10%;&#xA;}&#xA;&#xA;/*&#xA;.stats-label:before,&#xA;.stats-label:after {&#xA;    content: &#34;&#34;;&#xA;    flex: 1 1;&#xA;    border-bottom: 2px solid #ffffff;&#xA;    margin: auto;&#xA;}&#xA;*/&#xA;&#xA;.stats-label {&#xA;  margin: 0 auto;&#xA;  /*display: flex;&#xA;  flex-direction: row;*/&#xA;}&#xA;&#xA;.stats-container {&#xA;  margin-top: 15ch;&#xA;  display: flex;&#xA;  flex-wrap: wrap;&#xA;}&#xA;&#xA;.stat {&#xA;  border-radius: 2px;&#xA;  border: 3px solid #ffffff;&#xA;  flex: 20%;&#xA;}&#xA;&#xA;table{&#xA;  border: 3px solid #ffffff;&#xA;  margin-bottom:1em;&#xA;}&#xA;&#xA;th, td{&#xA;  width:25%;&#xA;  text-align: center;&#xA;}&#xA;&#xA;&lt;/style&gt;&#xA;&#xA;&lt;center&gt;&lt;h1 class=&#34;stats-label&#34;&gt;My stats&lt;/h1&gt;&lt;/center&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3&gt; Github contributions&#xA;&lt;center&gt;&lt;img class = &#34;contrib-chart&#34; src=&#34;http://ghchart.rshah.org/readabilityLOL&#34; alt=&#34;My github contributions chart&#34;&gt;&lt;/center&gt;&#xA;&#xA;&lt;center class = &#34;stats-container&#34;&gt;&#xA;&lt;div id = &#34;wca&#34; class = &#34;wca stat&#34;&gt; my wca 3x3 pr here &lt;/div&gt;&#xA;&lt;div id = &#34;elo&#34; class = &#34;stat&#34;&gt; lichess stats here &lt;/div&gt;&#xA;&lt;/center&gt;&#xA;&#xA;&lt;script&gt;&#xA;let elo_container = document.getElementById(&#34;elo&#34;)&#xA;let wca_container = document.getElementById(&#34;wca&#34;)&#xA;&#xA;//curl --location &#39;https://raw.githubusercontent.com/robiningelbrecht/wca-rest-api/master/api/persons.json&#39;&#xA;async function getData() {&#xA;  const url = &#39;https://lichess.org/api/user/JimKram&#39;;&#xA;  try {&#xA;    const response = await fetch(url);&#xA;    if (!response.ok) {&#xA;      throw new Error(`Response status: ${response.status}`);&#xA;    }&#xA;&#xA;    const result = await response.json();&#xA;    return result&#xA;  } catch (error) {&#xA;    console.error(error.message);&#xA;  }&#xA;}&#xA;&#xA;getData().then((promisedata) =&gt; {&#xA;  perfs = promisedata[&#34;perfs&#34;]&#xA;  console.log(promisedata)&#xA;  elo_container.innerHTML = `&#xA;&lt;div style=&#34;border-bottom: 3px solid #ffffff; margin-bottom: 1em;&#34;&gt;Lichess&lt;/div&gt;&#xA;&lt;table&gt;&#xA;  &lt;tr&gt;&#xA;    &lt;th&gt;&lt;/th&gt;&#xA;    &lt;th&gt;Bullet&lt;/th&gt;&#xA;    &lt;th&gt;Blitz&lt;/th&gt;&#xA;    &lt;th&gt;Rapid&lt;/th&gt;&#xA;  &lt;/tr&gt;&#xA;  &lt;tr&gt;&#xA;    &lt;th&gt;Games&lt;/th&gt;&#xA;    &lt;td&gt;${perfs[&#34;bullet&#34;][&#34;games&#34;]}&lt;/td&gt;&#xA;    &lt;td&gt;${perfs[&#34;blitz&#34;][&#34;games&#34;]}&lt;/td&gt;&#xA;    &lt;td&gt;${perfs[&#34;rapid&#34;][&#34;games&#34;]}&lt;/td&gt;&#xA;  &lt;/tr&gt;&#xA;  &lt;tr&gt;&#xA;    &lt;th&gt;Rating&lt;/th&gt;&#xA;    &lt;td&gt;${perfs[&#34;bullet&#34;][&#34;rating&#34;]}&lt;/td&gt;&#xA;    &lt;td&gt;${perfs[&#34;blitz&#34;][&#34;rating&#34;]}&lt;/td&gt;&#xA;    &lt;td&gt;${perfs[&#34;rapid&#34;][&#34;rating&#34;]}&lt;/td&gt;&#xA;  &lt;/tr&gt;&#xA;&lt;/table&gt;&#xA;  `&#xA;})&#xA;&#xA;wca_container.innerHTML = `&#xA;&lt;div style=&#34;border-bottom: 3px solid #ffffff; margin-bottom: 1em;&#34;&gt;Cubing&lt;/div&gt;&#xA;&lt;table&gt;&#xA;  &lt;tr&gt;&#xA;    &lt;th&gt;&lt;/th&gt;&#xA;    &lt;th&gt;3x3&lt;/th&gt;&#xA;    &lt;th&gt;4x4&lt;/th&gt;&#xA;    &lt;th&gt;Skewb&lt;/th&gt;&#xA;  &lt;/tr&gt;&#xA;  &lt;tr&gt;&#xA;    &lt;th&gt;Single&lt;/th&gt;&#xA;    &lt;td&gt;${17.68}&lt;/td&gt;&#xA;    &lt;td&gt;${&#34;n/a&#34;}&lt;/td&gt;&#xA;    &lt;td&gt;${19.95}&lt;/td&gt;&#xA;  &lt;/tr&gt;&#xA;  &lt;tr&gt;&#xA;    &lt;th&gt;Ao12&lt;/th&gt;&#xA;    &lt;td&gt;${23.01}&lt;/td&gt;&#xA;    &lt;td&gt;${&#34;n/a&#34;}&lt;/td&gt;&#xA;    &lt;td&gt;${24.28}&lt;/td&gt;&#xA;  &lt;/tr&gt;&#xA;&lt;/table&gt;`&#xA;&#xA;&lt;/script&gt;</description>
-    </item>
+    <lastBuildDate>Fri, 03 Apr 2015 02:13:50 +0000</lastBuildDate>
+    <atom:link href="https://glitched.tech/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Where I&#39;m at</title>
-      <link>http://localhost:1313/page/verify/</link>
+      <link>https://glitched.tech/page/verify/</link>
       <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
-      <guid>http://localhost:1313/page/verify/</guid>
+      <guid>https://glitched.tech/page/verify/</guid>
       <description>&lt;h2 id=&#34;contact&#34;&gt;Contact&lt;/h2&gt;&#xA;&lt;p&gt;Email: &lt;a href=&#34;mailto:givespamhere7@gmail.com&#34;&gt;givespamhere7@gmail.com&lt;/a&gt;&lt;br&gt;&#xA;Github: &lt;a href=&#34;https://github.com/readabilityLOL&#34;&gt;https://github.com/readabilityLOL&lt;/a&gt;&lt;br&gt;&#xA;Discord: &lt;a href=&#34;https://discordapp.com/users/895429111873433630&#34;&gt;https://discordapp.com/users/895429111873433630&lt;/a&gt;&lt;br&gt;&#xA;Mastodon: &lt;a href=&#34;https://mastodon.social/@supreme_leadr&#34;&gt;https://mastodon.social/@supreme_leadr&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;games&#34;&gt;Games&lt;/h2&gt;&#xA;&lt;p&gt;Steam: &lt;a href=&#34;https://steamcommunity.com/profiles/76561199730632106/&#34;&gt;https://steamcommunity.com/profiles/76561199730632106/&lt;/a&gt;&lt;br&gt;&#xA;Backstabbr: &lt;a href=&#34;https://www.backstabbr.com/member/2b937ea3940a4d96a27fdc5554a70f3c&#34;&gt;https://www.backstabbr.com/member/2b937ea3940a4d96a27fdc5554a70f3c&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;reading&#34;&gt;Reading&lt;/h2&gt;&#xA;&lt;p&gt;Goodreads: &lt;a href=&#34;https://www.goodreads.com/user/show/195827318-supreme-leader&#34;&gt;https://www.goodreads.com/user/show/195827318-supreme-leader&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/page/about/</link>
+      <link>https://glitched.tech/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/page/about/</guid>
-      <description>&lt;h1 id=&#34;who-am-i&#34;&gt;Who am I?&lt;/h1&gt;&#xA;&lt;p&gt;I’m Josh, a high schooler who decided last year to start a blog. I’m interested in technology, old games, and books. When I’m not wasting my time mindlessly doomscrolling on Reddit, I’m usually reading a book or trying to teach myself something, like how to make a blog or how to design a wallet in Freecad. I like making things, and I intend this blog to be both a log of things I make and a way to get more practice writing. You never know, it might even help me on a j*b applicat**n one day.&lt;/p&gt;</description>
+      <guid>https://glitched.tech/page/about/</guid>
+      <description>&lt;h2 id=&#34;who-are-you-anyway&#34;&gt;Who are you, anyway?&lt;/h2&gt;&#xA;&lt;p&gt;I’m Josh, a high schooler who decided last year to start a blog. I’m interested in technology, old games, and books. When I’m not wasting my time mindlessly doomscrolling on Reddit, I’m usually reading a book or trying to teach myself something, like how to make a blog or how to design a wallet in Freecad. I like making things, and I intend this blog to be both a log of things I make and a way to get more practice writing.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/page/project/</link>
+      <link>https://glitched.tech/page/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/page/project/</guid>
+      <guid>https://glitched.tech/page/project/</guid>
       <description>&lt;h1 id=&#34;my-projects&#34;&gt;My Projects&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://addons.mozilla.org/en-US/firefox/addon/josh-s-dark-theme/&#34;&gt;Josh&amp;rsquo;s dark theme&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/ReadabilityLOL/Python-text-editor&#34;&gt;Python text editor&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/readabilityLOL/FAIL&#34;&gt;FailRSS&lt;/a&gt;, &lt;a href=&#34;https://failrss.glitched.tech&#34;&gt;Site link&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/readabilityLOL/Terminus&#34;&gt;Terminus&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/ReadabilityLOL/wallet&#34;&gt;Wallet&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>What I&#39;m doing right now</title>
-      <link>http://localhost:1313/page/now/</link>
+      <link>https://glitched.tech/page/now/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/page/now/</guid>
-      <description>&lt;style&gt;&#xA;date{&#xA;    display: none;&#xA;}&#xA;&lt;/style&gt;&#xA;&lt;p&gt;Last updated: 2026-02-10&lt;/p&gt;&#xA;&lt;h2 id=&#34;who-are-you-anyway&#34;&gt;Who are you, anyway?&lt;/h2&gt;&#xA;&lt;p&gt;I’m Josh, a high schooler who decided last year to start a blog. I’m interested in technology, old games, and books. When I’m not wasting my time mindlessly doomscrolling on Reddit, I’m usually reading a book or trying to teach myself something, like how to make a blog or how to design a wallet in Freecad. I like making things, and I intend this blog to be both a log of things I make and a way to get more practice writing. You never know, it might even help me on a j*b applicat**n one day.&lt;/p&gt;</description>
+      <guid>https://glitched.tech/page/now/</guid>
+      <description>&lt;style&gt;&#xA;date{&#xA;    display: none;&#xA;}&#xA;&lt;/style&gt;&#xA;&lt;p&gt;Last updated: 2026-02-14&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-website&#34;&gt;The website&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m going to try to update this site around once every two weeks. If I don&amp;rsquo;t, just send me an angry email or something, and I&amp;rsquo;ll be sure to disregard it completely.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-im-reading&#34;&gt;What I&amp;rsquo;m reading&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Discworld by Terry Pratchett&lt;/li&gt;&#xA;&lt;li&gt;Stranger in a Strange Land by Robert A. Heinlein&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;what-im-working-on-right-now&#34;&gt;What I&amp;rsquo;m working on right now&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Running (trying to anyways) a Star Wars 5e campaign with a friend&lt;/li&gt;&#xA;&lt;li&gt;Attempting to wake up early&lt;/li&gt;&#xA;&lt;li&gt;Submitting a research paper&lt;/li&gt;&#xA;&lt;li&gt;Memorizing Philippians for a competition&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;what-im-playing&#34;&gt;What I&amp;rsquo;m playing&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Chess&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gen42.com/product/hive&#34;&gt;Hive&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;chess&#34;&gt;Chess&lt;/h3&gt;&#xA;&lt;div class = &#34;section&#34; id=&#34;elo&#34;&gt;&lt;/div&gt;&#xA;&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s my Github contribution chart so far:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
