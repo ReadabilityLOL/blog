@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on Glitched</title>
+    <link>http://localhost:1313/tags/tutorial/</link>
+    <description>Recent content in Tutorial on Glitched</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 14 Feb 2026 22:17:24 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Let&#39;s make Conway&#39;s Game of Life in Python!</title>
+      <link>http://localhost:1313/gameoflife/</link>
+      <pubDate>Sat, 14 Feb 2026 22:17:24 -0500</pubDate>
+      <guid>http://localhost:1313/gameoflife/</guid>
+      <description>&lt;h2 id=&#34;what-is-conways-game-of-life&#34;&gt;What is Conway&amp;rsquo;s game of life?&lt;/h2&gt;&#xA;&lt;p&gt;Conway&amp;rsquo;s Game of Life is a simulation that runs on an infinite two dimensional grid. Each square in the grid can be in one of two states, dead or alive. On each turn, the cells interact with their neighbors, following a few rules.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Every living cell with less than two live neighbors dies because of underpopulation&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Every living cell with more than three neighbors dies because of overpopulation&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

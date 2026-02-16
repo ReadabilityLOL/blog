@@ -2,24 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Development on Glitched</title>
-    <link>https://glitched.tech/tags/development/</link>
+    <link>http://localhost:1313/tags/development/</link>
     <description>Recent content in Development on Glitched</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Feb 2026 16:53:07 -0500</lastBuildDate>
-    <atom:link href="https://glitched.tech/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Feb 2026 22:17:24 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Let&#39;s make Conway&#39;s Game of Life in Python!</title>
+      <link>http://localhost:1313/gameoflife/</link>
+      <pubDate>Sat, 14 Feb 2026 22:17:24 -0500</pubDate>
+      <guid>http://localhost:1313/gameoflife/</guid>
+      <description>&lt;h2 id=&#34;what-is-conways-game-of-life&#34;&gt;What is Conway&amp;rsquo;s game of life?&lt;/h2&gt;&#xA;&lt;p&gt;Conway&amp;rsquo;s Game of Life is a simulation that runs on an infinite two dimensional grid. Each square in the grid can be in one of two states, dead or alive. On each turn, the cells interact with their neighbors, following a few rules.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Every living cell with less than two live neighbors dies because of underpopulation&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Every living cell with more than three neighbors dies because of overpopulation&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Removing comments from this site</title>
-      <link>https://glitched.tech/nomorecomments/</link>
+      <link>http://localhost:1313/nomorecomments/</link>
       <pubDate>Fri, 13 Feb 2026 16:53:07 -0500</pubDate>
-      <guid>https://glitched.tech/nomorecomments/</guid>
+      <guid>http://localhost:1313/nomorecomments/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;After a few months having comments on this site, I have now decided to remove them. This is because my github account was temporarily suspended, probably because I kept reloading comments and having giscus load over and over. This broke a lot of stuff, including cloudflare, which couldn&amp;rsquo;t connect to my github repo. Because of this, I have removed comment from my site until I find a new solution or can guarantee that I won&amp;rsquo;t manage to do this again sometime.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Adding comments to this site</title>
-      <link>https://glitched.tech/addingcomments/</link>
+      <link>http://localhost:1313/addingcomments/</link>
       <pubDate>Tue, 05 Aug 2025 20:59:01 +0000</pubDate>
-      <guid>https://glitched.tech/addingcomments/</guid>
+      <guid>http://localhost:1313/addingcomments/</guid>
       <description>&lt;h1 id=&#34;intro&#34;&gt;Intro&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve had this blog for around one and a half years, and while it is true that I keep abandoning it for months at a time, I think I should still try to make it as good as possible. According to Cloudflare, I get around 70 unique visitors a day. I&amp;rsquo;m almost 100% certain that these are all bots, but there is a slim chance that some of you reading this are in fact human. Because of that, I figured that now would be a good time to add comments to my blog.&lt;/p&gt;</description>
     </item>
   </channel>

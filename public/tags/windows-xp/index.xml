@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows Xp on Glitched</title>
-    <link>https://glitched.tech/tags/windows-xp/</link>
+    <link>http://localhost:1313/tags/windows-xp/</link>
     <description>Recent content in Windows Xp on Glitched</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 03 Aug 2025 17:02:33 +0000</lastBuildDate>
-    <atom:link href="https://glitched.tech/tags/windows-xp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/windows-xp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Making a Notes App for Windows XP: part 0</title>
-      <link>https://glitched.tech/makinganotesapp1/</link>
+      <link>http://localhost:1313/makinganotesapp1/</link>
       <pubDate>Sun, 03 Aug 2025 17:02:33 +0000</pubDate>
-      <guid>https://glitched.tech/makinganotesapp1/</guid>
-      <description>&lt;audio id=&#34;page-sound&#34; autoplay=True&gt;&#xA;    &lt;source src=&#34;https://glitched.tech/audio-effects/xp.mp3&#34;&gt;&#xA;&lt;/audio&gt;&#xA;&lt;script&gt;&#xA;  var audio = document.getElementById(&#34;page-sound&#34;);&#xA;  audio.volume = 0.1;&#xA;&lt;/script&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;em&gt;NOTE:&lt;/em&gt;&lt;/strong&gt;  This post is more of a project log than a tutorial on how to make a notes app for windows xp. I will try to document my progress as I go along, but its important to note that I may skip steps if I feel they are trivial, and while my code will be put on Github, I might not always state the exact logic behind specific sections of it.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/makinganotesapp1/</guid>
+      <description>&lt;audio id=&#34;page-sound&#34; autoplay=True&gt;&#xA;    &lt;source src=&#34;http://localhost:1313/audio-effects/xp.mp3&#34;&gt;&#xA;&lt;/audio&gt;&#xA;&lt;script&gt;&#xA;  var audio = document.getElementById(&#34;page-sound&#34;);&#xA;  audio.volume = 0.1;&#xA;&lt;/script&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;em&gt;NOTE:&lt;/em&gt;&lt;/strong&gt;  This post is more of a project log than a tutorial on how to make a notes app for windows xp. I will try to document my progress as I go along, but its important to note that I may skip steps if I feel they are trivial, and while my code will be put on Github, I might not always state the exact logic behind specific sections of it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>In which I get a Windows XP machine</title>
-      <link>https://glitched.tech/windowsxp/</link>
+      <link>http://localhost:1313/windowsxp/</link>
       <pubDate>Fri, 01 Aug 2025 18:40:22 +0000</pubDate>
-      <guid>https://glitched.tech/windowsxp/</guid>
-      <description>&lt;!--&#xA;&lt;audio id=&#34;page-sound&#34; autoplay=True&gt;&#xA;    &lt;source src=&#34;https://glitched.tech/audio-effects/xp.mp3&#34;&gt;&#xA;&lt;/audio&gt;&#xA;&#xA;&lt;script&gt;&#xA;  var audio = document.getElementById(&#34;page-sound&#34;);&#xA;  audio.volume = 0.1;&#xA;&lt;/script&gt;&#xA;--&gt;&#xA;&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;Recently, I recieved an old Windows XP machine. I was pretty excited to use it, but I will admit that it sat around in my garage for a week or two before I brought it inside. I wasn&amp;rsquo;t too sure what I could do with an old machine like that, but I figured I could have some fun with it. I decided that, if nothing else, I could at least play some games on it.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/windowsxp/</guid>
+      <description>&lt;!--&#xA;&lt;audio id=&#34;page-sound&#34; autoplay=True&gt;&#xA;    &lt;source src=&#34;http://localhost:1313/audio-effects/xp.mp3&#34;&gt;&#xA;&lt;/audio&gt;&#xA;&#xA;&lt;script&gt;&#xA;  var audio = document.getElementById(&#34;page-sound&#34;);&#xA;  audio.volume = 0.1;&#xA;&lt;/script&gt;&#xA;--&gt;&#xA;&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;Recently, I recieved an old Windows XP machine. I was pretty excited to use it, but I will admit that it sat around in my garage for a week or two before I brought it inside. I wasn&amp;rsquo;t too sure what I could do with an old machine like that, but I figured I could have some fun with it. I decided that, if nothing else, I could at least play some games on it.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
