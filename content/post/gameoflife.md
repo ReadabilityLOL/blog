@@ -1,7 +1,7 @@
 +++
 title = "Let's make Conway's Game of Life in Python!"
 date = 2026-02-14T22:17:24-05:00
-draft = true
+draft = false
 tags = ["development","tutorial"]
 +++
 
@@ -74,9 +74,9 @@ While we're at it, why not make a function to make the printed list look nicer?
 
 ```python
 def prettyprint():
-    for x in gameArray:
-        for y in x:
-            print(y,end="")
+    for y in gameArray:
+        for x in y:
+            print(x,end="")
         print()
 ```
 
@@ -136,21 +136,21 @@ Now, let's move on to creating functions that check how many living and dead nei
 ```python
 def numNeighbors(x,y):
     number = 0
-    if isAlive(y-1,x-1):
+    if isAlive(x-1,y-1):
         number+=1
-    if isAlive(y-1,x)== 1:
+    if isAlive(x-1,y):
         number+=1
-    if isAlive(y-1,x+1)== 1:
+    if isAlive(x-1,y+1):
         number+=1
-    if isAlive(y,x-1)== 1:
+    if isAlive(x,y-1):
         number+=1
-    if isAlive(y,x+1)== 1:
+    if isAlive(x,y+1):
         number+=1
-    if isAlive(y+1,x-1)== 1:
+    if isAlive(x+1,y-1):
         number+=1
-    if isAlive(y+1,x)== 1:
+    if isAlive(x+1,y):
         number+=1
-    if isAlive(y+1,x+1)== 1:
+    if isAlive(x+1,y+1):
         number+=1
 
     return number
@@ -272,7 +272,232 @@ Now, to start our function. We'll call it `step`, and it will go cell by cell an
 ```python
 def step():
     gameArrayCopy = copy.deepcopy(gameArray)
-    for x in range(len(gameArray)):
-        for y in range(len(gameArray[x])):
-            
+    for y in range(len(gameArray)):
+        for x in range(len(gameArray[y])):
+            if isAlive(x,y):
+                if not (1 < numNeighbors(x,y) < 4):
+                    setDead(x,y,gameArrayCopy)
+            else:
+                if numNeighbors(x,y) == 3:
+                    setAlive(x,y,gameArrayCopy)
+    return gameArrayCopy
 ```
+
+Now, to test it out:
+
+```python
+gameArray = createGrid(5,7)
+populate()
+prettyprint()
+print()
+gameArray = step()
+prettyprint()
+```
+```bash
+0000010
+0000011
+0010000
+1101010
+1011000
+
+0000011
+0000011
+0110111
+1001100
+1011100
+```
+
+It works! Side note: I spent an hour debugging this because I switched x and y for the numNeighbors function.
+
+## Make it look a bit nicer
+
+Since we've finished the important bits, let's make this project look a bit nicer. First off, let's change `prettyprint` to use the unicode white and black vertical rectangles instead.
+
+```python
+def prettyprint():
+    for y in gameArray:
+        for x in y:
+            if x == 1:
+                print("▮", end="")
+            else:
+                print("▯", end="")
+        print()
+```
+
+Testing it again:
+
+```python
+gameArray = createGrid(5,7)
+populate()
+prettyprint()
+print()
+gameArray = step()
+prettyprint()
+```
+```bash
+▯▯▯▯▮▯▮
+▯▯▯▯▯▮▯
+▮▮▯▯▮▯▯
+▯▯▮▯▯▯▯
+▯▯▯▯▮▯▮
+
+▯▯▯▯▯▮▯
+▯▯▯▯▮▮▯
+▯▮▯▯▯▯▯
+▯▮▯▮▯▮▯
+▯▯▯▯▯▯▯
+```
+
+Looks nicer, doesn't it?
+
+Now, let's make a small user interface, nothing fancy, just something asking users to press enter to move forward a step.
+
+```python
+gameArray = createGrid(20,20)
+populate()
+
+print("\nWelcome to Conway's game of life! \n\n")
+while True:
+    print()
+    prettyprint()
+    value = input("\nPress enter to advance a step or type q to quit: ").strip()
+    if value == "":
+        gameArray = step()
+    elif value == "q" or "Q":
+        break
+    else:
+        print(f"Unknown input {value}. Accepted values are: <blank>, 'q', or 'Q'")
+
+```
+
+Trying it out:
+
+```bash
+
+Welcome to Conway's game of life!
+
+▯▯▯▯▯▮▯▯▯▮▮▯▯▯▯▯▮▮▯▮
+▯▯▮▯▯▯▯▯▯▮▯▮▮▮▮▯▯▮▯▯
+▯▮▯▮▯▯▯▯▯▮▮▯▯▮▯▮▯▯▯▯
+▮▯▮▯▮▯▮▯▯▮▯▯▮▯▯▯▯▮▯▯
+▯▯▯▮▯▯▯▯▯▯▮▯▮▯▯▯▮▯▯▮
+▯▯▮▯▯▮▯▮▯▯▯▯▮▯▮▯▯▮▮▯
+▯▯▮▯▯▮▯▯▯▯▮▯▯▯▯▯▮▮▮▯
+▯▮▮▮▯▯▯▯▮▯▮▮▯▯▮▯▯▯▮▮
+▯▯▯▮▯▯▯▯▯▯▮▯▯▮▮▮▯▯▮▯
+▮▯▮▯▮▯▯▯▯▯▯▮▯▯▯▯▯▯▯▮
+▯▮▯▯▯▯▯▮▯▯▯▮▮▮▯▯▯▯▯▯
+▯▯▯▯▯▮▯▯▮▯▮▯▮▮▯▯▯▮▯▮
+▮▯▮▯▯▯▯▮▯▮▯▮▯▮▮▯▮▯▮▯
+▯▯▯▯▯▯▮▯▮▮▮▯▮▯▯▯▯▮▮▮
+▯▯▯▮▯▮▮▯▯▯▮▯▯▮▯▯▯▯▯▯
+▯▯▮▯▯▯▯▯▮▮▯▮▯▮▯▮▯▮▮▮
+▯▯▮▮▮▯▮▯▯▯▯▮▯▮▯▯▯▯▯▯
+▯▮▯▯▯▮▯▮▯▯▯▯▮▮▯▯▯▯▯▯
+▯▯▮▯▮▯▯▮▯▯▮▯▯▯▮▯▯▯▮▯
+▯▯▯▯▯▮▯▯▯▮▯▯▯▯▮▮▯▯▮▯
+
+Press enter to advance a step or type q to quit: 
+
+▯▯▯▯▯▯▯▯▯▮▮▮▮▮▯▯▮▮▮▯
+▯▯▮▯▯▯▯▯▮▯▯▮▮▮▮▮▯▮▮▯
+▯▮▯▮▯▯▯▯▮▮▯▯▯▯▯▯▮▯▯▯
+▯▮▮▯▮▯▯▯▯▮▯▯▮▮▯▯▮▯▯▯
+▯▮▮▮▮▮▮▯▯▯▯▯▮▯▯▯▮▯▯▯
+▯▯▮▮▮▯▮▯▯▯▯▯▯▮▯▮▯▯▯▮
+▯▯▯▯▮▯▮▯▯▮▮▯▯▮▯▮▮▯▯▯
+▯▮▯▮▮▯▯▯▯▯▮▮▯▮▮▯▮▯▯▮
+▯▯▯▯▮▯▯▯▯▮▮▯▮▮▮▮▯▯▮▯
+▯▮▮▮▯▯▯▯▯▯▮▮▯▯▯▯▯▯▯▯
+▯▮▯▯▯▯▯▯▯▯▮▯▯▮▯▯▯▯▮▯
+▯▮▯▯▯▯▮▮▮▮▮▯▯▯▯▯▯▮▮▯
+▯▯▯▯▯▯▮▮▯▯▯▯▯▯▮▯▮▯▯▯
+▯▯▯▯▯▮▮▯▮▯▯▯▮▯▮▯▯▮▮▮
+▯▯▯▯▯▮▮▯▯▯▯▯▯▮▮▯▮▯▯▯
+▯▯▮▯▯▯▮▮▯▮▯▮▯▮▯▯▯▯▮▯
+▯▮▮▮▮▮▮▮▮▯▮▮▯▮▯▯▯▯▮▯
+▯▮▯▯▯▮▯▮▯▯▯▮▮▮▮▯▯▯▯▯
+▯▯▯▯▮▮▯▯▮▯▯▯▯▯▮▮▯▯▯▯
+▯▯▯▯▯▯▯▯▯▯▯▯▯▯▮▮▯▯▯▯
+
+Press enter to advance a step or type q to quit: quit
+```
+
+Last of all, let's let the user input the dimensions of the grid.
+
+```python
+print("\nWelcome to Conway's game of life!")
+
+validinput = False
+while not validinput:
+    try:
+        y = int(input("\nEnter the length of the grid: ").strip())
+        x = int(input("Enter the width of the grid: ").strip())
+        validinput = True
+    except KeyboardInterrupt:
+        quit()
+    except:
+        print("\ninvalid input, try again")
+
+gameArray = createGrid(y,x)
+
+populate()
+
+while True:
+    print()
+    prettyprint()
+    value = input("\nPress enter to advance a step or type q to quit: ").strip()
+    if value == "":
+        gameArray = step()
+    elif value in ("q", "Q"):
+        break
+    else:
+        print(f"Unknown input: '{value}'. Accepted values are: <blank>, 'q', or 'Q'")
+
+```
+```lisp
+
+Welcome to Conway's game of life!
+
+Enter the length of the grid: 7
+Enter the width of the grid: eight
+
+invalid input, try again
+
+Enter the length of the grid: 7
+Enter the width of the grid: 8
+
+▮▮▯▯▯▯▯▯
+▮▯▯▯▯▯▯▯
+▮▯▯▮▮▮▮▯
+▯▯▮▯▮▮▯▯
+▯▯▯▮▯▮▮▯
+▯▯▯▯▯▯▮▯
+▮▯▯▯▯▯▯▮
+
+Press enter to advance a step or type q to quit: 
+
+▮▮▯▯▯▯▯▯
+▮▯▯▯▮▮▯▯
+▯▮▯▮▯▯▮▯
+▯▯▮▯▯▯▯▯
+▯▯▯▮▯▯▮▯
+▯▯▯▯▯▮▮▮
+▯▯▯▯▯▯▯▯
+
+Press enter to advance a step or type q to quit: advance
+Unknown input: 'advance'. Accepted values are: <blank>, 'q', or 'Q'
+
+▮▮▯▯▯▯▯▯
+▮▯▯▯▮▮▯▯
+▯▮▯▮▯▯▮▯
+▯▯▮▯▯▯▯▯
+▯▯▯▮▯▯▮▯
+▯▯▯▯▯▮▮▮
+▯▯▯▯▯▯▯▯
+
+Press enter to advance a step or type q to quit: q
+```
+ ## All done?
+
+ That seems to be it for now. Thank's for reading this tutorial. My code for this project is on my [Github](https://github.com/ReadabilityLOL/Python-Implementation-of-Conway-s-Game-of-Life) Feel free to contact me if I messed something up.

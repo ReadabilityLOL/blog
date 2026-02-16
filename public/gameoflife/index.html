@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html class="scanlines" lang="en" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>Let&#39;s make Conway&#39;s Game of Life in Python! | Glitched</title>
 
-    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/main.min.a5066aeb32b2b43057a5a1c860dad9749651895834f2c4071cb36d08dc7aa813.css" integrity="sha256-pQZq6zKytDBXpaHIYNrZdJZRiVg08sQHHLNtCNx6qBM=" crossorigin="anonymous">
 
 
-      <script src="/js/main.js"></script>
+        <script src="/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
 
 <script src="https://kit.fontawesome.com/9f05d58ed6.js" crossorigin="anonymous"></script>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="b784ca14-ae7f-400a-ab68-c35fd54f8256"></script>
@@ -17,7 +17,7 @@
 </head>
 <body>
   <header>
-    <h1><center><a href="http://localhost:1313/">Glitched</a></center></h1>
+    <h1><center><a href="https://glitched.tech/">Glitched</a></center></h1>
 
 
   </header>
@@ -37,9 +37,9 @@ hr{
    
 <ul style="padding-left:0;">
    <li style="display: inline;">
-    <a href="http://localhost:1313/tags/development/">#development</a>
+    <a href="https://glitched.tech/tags/development/">#development</a>
   </li> <li style="display: inline;">
-    <a href="http://localhost:1313/tags/tutorial/">#tutorial</a>
+    <a href="https://glitched.tech/tags/tutorial/">#tutorial</a>
   </li></ul>
 
 
@@ -93,9 +93,9 @@ hr{
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> [([<span style="color:#ae81ff">0</span>] <span style="color:#f92672">*</span> width) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(length)]
 </span></span></code></pre></div><p>While we&rsquo;re at it, why not make a function to make the printed list look nicer?</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">prettyprint</span>():
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> gameArray:
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> x:
-</span></span><span style="display:flex;"><span>            print(y,end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> gameArray:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> y:
+</span></span><span style="display:flex;"><span>            print(x,end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
 </span></span><span style="display:flex;"><span>        print()
 </span></span></code></pre></div><p>Let&rsquo;s test it out!</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>prettyprint()
@@ -133,21 +133,21 @@ hr{
 <p>Now, let&rsquo;s move on to creating functions that check how many living and dead neighbors each square has.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">numNeighbors</span>(x,y):
 </span></span><span style="display:flex;"><span>    number <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> isAlive(y<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,x<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> isAlive(x<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,y<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
 </span></span><span style="display:flex;"><span>        number<span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> isAlive(y<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,x)<span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> isAlive(x<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,y):
 </span></span><span style="display:flex;"><span>        number<span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> isAlive(y<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,x<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> isAlive(x<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,y<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
 </span></span><span style="display:flex;"><span>        number<span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> isAlive(y,x<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> isAlive(x,y<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
 </span></span><span style="display:flex;"><span>        number<span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> isAlive(y,x<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> isAlive(x,y<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
 </span></span><span style="display:flex;"><span>        number<span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> isAlive(y<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>,x<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> isAlive(x<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>,y<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
 </span></span><span style="display:flex;"><span>        number<span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> isAlive(y<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>,x)<span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> isAlive(x<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>,y):
 </span></span><span style="display:flex;"><span>        number<span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> isAlive(y<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>,x<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> isAlive(x<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>,y<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
 </span></span><span style="display:flex;"><span>        number<span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> number
@@ -223,10 +223,199 @@ hr{
 </span></span></code></pre></div><p>Now, to start our function. We&rsquo;ll call it <code>step</code>, and it will go cell by cell and see which ones become alive and which ones die.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">step</span>():
 </span></span><span style="display:flex;"><span>    gameArrayCopy <span style="color:#f92672">=</span> copy<span style="color:#f92672">.</span>deepcopy(gameArray)
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(len(gameArray)):
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> range(len(gameArray[x])):
-</span></span><span style="display:flex;"><span>            
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> range(len(gameArray)):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(len(gameArray[y])):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> isAlive(x,y):
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">&lt;</span> numNeighbors(x,y) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">4</span>):
+</span></span><span style="display:flex;"><span>                    setDead(x,y,gameArrayCopy)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> numNeighbors(x,y) <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span>:
+</span></span><span style="display:flex;"><span>                    setAlive(x,y,gameArrayCopy)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> gameArrayCopy
+</span></span></code></pre></div><p>Now, to test it out:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>gameArray <span style="color:#f92672">=</span> createGrid(<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">7</span>)
+</span></span><span style="display:flex;"><span>populate()
+</span></span><span style="display:flex;"><span>prettyprint()
+</span></span><span style="display:flex;"><span>print()
+</span></span><span style="display:flex;"><span>gameArray <span style="color:#f92672">=</span> step()
+</span></span><span style="display:flex;"><span>prettyprint()
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ae81ff">0000010</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0000011</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0010000</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1101010</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1011000</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0000011</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0000011</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0110111</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1001100</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1011100</span>
+</span></span></code></pre></div><p>It works! Side note: I spent an hour debugging this because I switched x and y for the numNeighbors function.</p>
+<h2 id="make-it-look-a-bit-nicer">Make it look a bit nicer</h2>
+<p>Since we&rsquo;ve finished the important bits, let&rsquo;s make this project look a bit nicer. First off, let&rsquo;s change <code>prettyprint</code> to use the unicode white and black vertical rectangles instead.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">prettyprint</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> gameArray:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> y:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> x <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>                print(<span style="color:#e6db74">&#34;▮&#34;</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                print(<span style="color:#e6db74">&#34;▯&#34;</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>        print()
+</span></span></code></pre></div><p>Testing it again:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>gameArray <span style="color:#f92672">=</span> createGrid(<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">7</span>)
+</span></span><span style="display:flex;"><span>populate()
+</span></span><span style="display:flex;"><span>prettyprint()
+</span></span><span style="display:flex;"><span>print()
+</span></span><span style="display:flex;"><span>gameArray <span style="color:#f92672">=</span> step()
+</span></span><span style="display:flex;"><span>prettyprint()
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>▯▯▯▯▮▯▮
+</span></span><span style="display:flex;"><span>▯▯▯▯▯▮▯
+</span></span><span style="display:flex;"><span>▮▮▯▯▮▯▯
+</span></span><span style="display:flex;"><span>▯▯▮▯▯▯▯
+</span></span><span style="display:flex;"><span>▯▯▯▯▮▯▮
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>▯▯▯▯▯▮▯
+</span></span><span style="display:flex;"><span>▯▯▯▯▮▮▯
+</span></span><span style="display:flex;"><span>▯▮▯▯▯▯▯
+</span></span><span style="display:flex;"><span>▯▮▯▮▯▮▯
+</span></span><span style="display:flex;"><span>▯▯▯▯▯▯▯
+</span></span></code></pre></div><p>Looks nicer, doesn&rsquo;t it?</p>
+<p>Now, let&rsquo;s make a small user interface, nothing fancy, just something asking users to press enter to move forward a step.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>gameArray <span style="color:#f92672">=</span> createGrid(<span style="color:#ae81ff">20</span>,<span style="color:#ae81ff">20</span>)
+</span></span><span style="display:flex;"><span>populate()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Welcome to Conway&#39;s game of life! </span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>    print()
+</span></span><span style="display:flex;"><span>    prettyprint()
+</span></span><span style="display:flex;"><span>    value <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Press enter to advance a step or type q to quit: &#34;</span>)<span style="color:#f92672">.</span>strip()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> value <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;&#34;</span>:
+</span></span><span style="display:flex;"><span>        gameArray <span style="color:#f92672">=</span> step()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">elif</span> value <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;q&#34;</span> <span style="color:#f92672">or</span> <span style="color:#e6db74">&#34;Q&#34;</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Unknown input </span><span style="color:#e6db74">{</span>value<span style="color:#e6db74">}</span><span style="color:#e6db74">. Accepted values are: &lt;blank&gt;, &#39;q&#39;, or &#39;Q&#39;&#34;</span>)
+</span></span></code></pre></div><p>Trying it out:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Welcome to Conway<span style="color:#960050;background-color:#1e0010">&#39;</span>s game of life!
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>▯▯▯▯▯▮▯▯▯▮▮▯▯▯▯▯▮▮▯▮
+</span></span><span style="display:flex;"><span>▯▯▮▯▯▯▯▯▯▮▯▮▮▮▮▯▯▮▯▯
+</span></span><span style="display:flex;"><span>▯▮▯▮▯▯▯▯▯▮▮▯▯▮▯▮▯▯▯▯
+</span></span><span style="display:flex;"><span>▮▯▮▯▮▯▮▯▯▮▯▯▮▯▯▯▯▮▯▯
+</span></span><span style="display:flex;"><span>▯▯▯▮▯▯▯▯▯▯▮▯▮▯▯▯▮▯▯▮
+</span></span><span style="display:flex;"><span>▯▯▮▯▯▮▯▮▯▯▯▯▮▯▮▯▯▮▮▯
+</span></span><span style="display:flex;"><span>▯▯▮▯▯▮▯▯▯▯▮▯▯▯▯▯▮▮▮▯
+</span></span><span style="display:flex;"><span>▯▮▮▮▯▯▯▯▮▯▮▮▯▯▮▯▯▯▮▮
+</span></span><span style="display:flex;"><span>▯▯▯▮▯▯▯▯▯▯▮▯▯▮▮▮▯▯▮▯
+</span></span><span style="display:flex;"><span>▮▯▮▯▮▯▯▯▯▯▯▮▯▯▯▯▯▯▯▮
+</span></span><span style="display:flex;"><span>▯▮▯▯▯▯▯▮▯▯▯▮▮▮▯▯▯▯▯▯
+</span></span><span style="display:flex;"><span>▯▯▯▯▯▮▯▯▮▯▮▯▮▮▯▯▯▮▯▮
+</span></span><span style="display:flex;"><span>▮▯▮▯▯▯▯▮▯▮▯▮▯▮▮▯▮▯▮▯
+</span></span><span style="display:flex;"><span>▯▯▯▯▯▯▮▯▮▮▮▯▮▯▯▯▯▮▮▮
+</span></span><span style="display:flex;"><span>▯▯▯▮▯▮▮▯▯▯▮▯▯▮▯▯▯▯▯▯
+</span></span><span style="display:flex;"><span>▯▯▮▯▯▯▯▯▮▮▯▮▯▮▯▮▯▮▮▮
+</span></span><span style="display:flex;"><span>▯▯▮▮▮▯▮▯▯▯▯▮▯▮▯▯▯▯▯▯
+</span></span><span style="display:flex;"><span>▯▮▯▯▯▮▯▮▯▯▯▯▮▮▯▯▯▯▯▯
+</span></span><span style="display:flex;"><span>▯▯▮▯▮▯▯▮▯▯▮▯▯▯▮▯▯▯▮▯
+</span></span><span style="display:flex;"><span>▯▯▯▯▯▮▯▯▯▮▯▯▯▯▮▮▯▯▮▯
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Press enter to advance a step or type q to quit: 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>▯▯▯▯▯▯▯▯▯▮▮▮▮▮▯▯▮▮▮▯
+</span></span><span style="display:flex;"><span>▯▯▮▯▯▯▯▯▮▯▯▮▮▮▮▮▯▮▮▯
+</span></span><span style="display:flex;"><span>▯▮▯▮▯▯▯▯▮▮▯▯▯▯▯▯▮▯▯▯
+</span></span><span style="display:flex;"><span>▯▮▮▯▮▯▯▯▯▮▯▯▮▮▯▯▮▯▯▯
+</span></span><span style="display:flex;"><span>▯▮▮▮▮▮▮▯▯▯▯▯▮▯▯▯▮▯▯▯
+</span></span><span style="display:flex;"><span>▯▯▮▮▮▯▮▯▯▯▯▯▯▮▯▮▯▯▯▮
+</span></span><span style="display:flex;"><span>▯▯▯▯▮▯▮▯▯▮▮▯▯▮▯▮▮▯▯▯
+</span></span><span style="display:flex;"><span>▯▮▯▮▮▯▯▯▯▯▮▮▯▮▮▯▮▯▯▮
+</span></span><span style="display:flex;"><span>▯▯▯▯▮▯▯▯▯▮▮▯▮▮▮▮▯▯▮▯
+</span></span><span style="display:flex;"><span>▯▮▮▮▯▯▯▯▯▯▮▮▯▯▯▯▯▯▯▯
+</span></span><span style="display:flex;"><span>▯▮▯▯▯▯▯▯▯▯▮▯▯▮▯▯▯▯▮▯
+</span></span><span style="display:flex;"><span>▯▮▯▯▯▯▮▮▮▮▮▯▯▯▯▯▯▮▮▯
+</span></span><span style="display:flex;"><span>▯▯▯▯▯▯▮▮▯▯▯▯▯▯▮▯▮▯▯▯
+</span></span><span style="display:flex;"><span>▯▯▯▯▯▮▮▯▮▯▯▯▮▯▮▯▯▮▮▮
+</span></span><span style="display:flex;"><span>▯▯▯▯▯▮▮▯▯▯▯▯▯▮▮▯▮▯▯▯
+</span></span><span style="display:flex;"><span>▯▯▮▯▯▯▮▮▯▮▯▮▯▮▯▯▯▯▮▯
+</span></span><span style="display:flex;"><span>▯▮▮▮▮▮▮▮▮▯▮▮▯▮▯▯▯▯▮▯
+</span></span><span style="display:flex;"><span>▯▮▯▯▯▮▯▮▯▯▯▮▮▮▮▯▯▯▯▯
+</span></span><span style="display:flex;"><span>▯▯▯▯▮▮▯▯▮▯▯▯▯▯▮▮▯▯▯▯
+</span></span><span style="display:flex;"><span>▯▯▯▯▯▯▯▯▯▯▯▯▯▯▮▮▯▯▯▯
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Press enter to advance a step or type q to quit: quit
+</span></span></code></pre></div><p>Last of all, let&rsquo;s let the user input the dimensions of the grid.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Welcome to Conway&#39;s game of life!&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>validinput <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#f92672">not</span> validinput:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>        y <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Enter the length of the grid: &#34;</span>)<span style="color:#f92672">.</span>strip())
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Enter the width of the grid: &#34;</span>)<span style="color:#f92672">.</span>strip())
+</span></span><span style="display:flex;"><span>        validinput <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">KeyboardInterrupt</span>:
+</span></span><span style="display:flex;"><span>        quit()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">invalid input, try again&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>gameArray <span style="color:#f92672">=</span> createGrid(y,x)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>populate()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>    print()
+</span></span><span style="display:flex;"><span>    prettyprint()
+</span></span><span style="display:flex;"><span>    value <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Press enter to advance a step or type q to quit: &#34;</span>)<span style="color:#f92672">.</span>strip()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> value <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;&#34;</span>:
+</span></span><span style="display:flex;"><span>        gameArray <span style="color:#f92672">=</span> step()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">elif</span> value <span style="color:#f92672">in</span> (<span style="color:#e6db74">&#34;q&#34;</span>, <span style="color:#e6db74">&#34;Q&#34;</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Unknown input: &#39;</span><span style="color:#e6db74">{</span>value<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;. Accepted values are: &lt;blank&gt;, &#39;q&#39;, or &#39;Q&#39;&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Welcome to Conway<span style="color:#e6db74">&#39;s</span> game of life!
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Enter <span style="color:#66d9ef">the</span> <span style="color:#a6e22e">length</span> of <span style="color:#66d9ef">the</span> grid: <span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>Enter <span style="color:#66d9ef">the</span> width of <span style="color:#66d9ef">the</span> grid: eight
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>invalid input, try again
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Enter <span style="color:#66d9ef">the</span> <span style="color:#a6e22e">length</span> of <span style="color:#66d9ef">the</span> grid: <span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>Enter <span style="color:#66d9ef">the</span> width of <span style="color:#66d9ef">the</span> grid: <span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">▮▮▯▯▯▯▯▯</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">▮▯▯▯▯▯▯▯</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">▮▯▯▮▮▮▮▯</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">▯▯▮▯▮▮▯▯</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">▯▯▯▮▯▮▮▯</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">▯▯▯▯▯▯▮▯</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">▮▯▯▯▯▯▯▮</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Press enter to advance a step or <span style="color:#66d9ef">type</span> q to quit: 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">▮▮▯▯▯▯▯▯</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">▮▯▯▯▮▮▯▯</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">▯▮▯▮▯▯▮▯</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">▯▯▮▯▯▯▯▯</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">▯▯▯▮▯▯▮▯</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">▯▯▯▯▯▮▮▮</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">▯▯▯▯▯▯▯▯</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Press enter to advance a step or <span style="color:#66d9ef">type</span> q to quit: advance
+</span></span><span style="display:flex;"><span>Unknown input: <span style="color:#e6db74">&#39;advance&#39;.</span> Accepted <span style="color:#a6e22e">values</span> are: &lt;blank&gt;, <span style="color:#e6db74">&#39;q&#39;,</span> or <span style="color:#e6db74">&#39;Q</span><span style="color:#f92672">&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">▮▮▯▯▯▯▯▯</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">▮▯▯▯▮▮▯▯</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">▯▮▯▮▯▯▮▯</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">▯▯▮▯▯▯▯▯</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">▯▯▯▮▯▯▮▯</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">▯▯▯▯▯▮▮▮</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">▯▯▯▯▯▯▯▯</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Press enter to advance a step or <span style="color:#66d9ef">type</span> q to quit: q
+</span></span></code></pre></div><h2 id="all-done">All done?</h2>
+<p>That seems to be it for now. Thank&rsquo;s for reading this tutorial. My code for this project is on my <a href="https://github.com/ReadabilityLOL/Python-Implementation-of-Conway-s-Game-of-Life">Github</a> Feel free to contact me if I messed something up.</p>
+
   <p>
   <hr>
   
