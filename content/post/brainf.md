@@ -1,7 +1,7 @@
 +++
 title = "Let's make a Brainf*** interpreter"
 date = 2026-02-16T20:08:00-05:00
-draft = true
+draft = false
 tags = ["development", "tutorial"]
 +++
 
@@ -152,11 +152,13 @@ Now, why not make a little Brainf repl?
 ```python
 While True:
     parse(input("repl> "))
+    print()
     data = [0] * 30000
 ```
 ```bash
 repl> ++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.
 Hello World!
+
 repl> ^C
 ```
 
@@ -181,6 +183,7 @@ if len(sys.argv) > 1:
 else:
     while True:
         parse(input("repl> "))
+        print()
         data = [0] * 30000
 ```
 

@@ -6,8 +6,15 @@
     <description>Recent content in Tutorial on Glitched</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Feb 2026 22:17:24 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 16 Feb 2026 20:08:00 -0500</lastBuildDate>
     <atom:link href="https://glitched.tech/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Let&#39;s make a Brainf*** interpreter</title>
+      <link>https://glitched.tech/brainf/</link>
+      <pubDate>Mon, 16 Feb 2026 20:08:00 -0500</pubDate>
+      <guid>https://glitched.tech/brainf/</guid>
+      <description>&lt;h2 id=&#34;what-is-brainf&#34;&gt;What is Brainf***?&lt;/h2&gt;&#xA;&lt;p&gt;Brainf*** is a esoteric, Turing complete programming language involving only 8 commands and two lists. Because it is Turing complete, it is theoretically possible to compute any task doable by a computer in Brainf***, though it is significantly harder to do tasks here than in say, Python or C. It was initially designed with the goal of making the smallest possible compiler, which should make it a pretty simple project to implement.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Let&#39;s make Conway&#39;s Game of Life in Python!</title>
       <link>https://glitched.tech/gameoflife/</link>
