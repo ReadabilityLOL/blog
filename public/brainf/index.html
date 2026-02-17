@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html class="scanlines" lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Let&#39;s make a Brainf*** interpreter | Glitched</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+
+      <script src="/js/main.js"></script>
+
+<script src="https://kit.fontawesome.com/9f05d58ed6.js" crossorigin="anonymous"></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="b784ca14-ae7f-400a-ab68-c35fd54f8256"></script>
+
+
+</head>
+<body>
+  <header>
+    <h1><center><a href="http://localhost:1313/">Glitched</a></center></h1>
+
+
+  </header>
+  <main>
+  <div class="maincontainer">
+    <div class="col1">
+        
+<style>
+hr{
+  height: 1px;
+  background-color: #00ff00;
+  border: none;
+}
+</style>
+  <div class="section">
+  <h1>Let&#39;s make a Brainf*** interpreter</h1>
+   
+<ul style="padding-left:0;">
+   <li style="display: inline;">
+    <a href="http://localhost:1313/tags/development/">#development</a>
+  </li> <li style="display: inline;">
+    <a href="http://localhost:1313/tags/tutorial/">#tutorial</a>
+  </li></ul>
+
+
+  <hr>
+  <br>
+
+  
+  
+  <time datetime="2026-02-16T20:08:00-05:00">February 16, 2026</time>
+
+  <h2 id="what-is-brainf">What is Brainf***?</h2>
+<p>Brainf*** is a esoteric, Turing complete programming language involving only 8 commands and two lists. Because it is Turing complete, it is theoretically possible to compute any task doable by a computer in Brainf***, though it is significantly harder to do tasks here than in say, Python or C. It was initially designed with the goal of making the smallest possible compiler, which should make it a pretty simple project to implement.</p>
+<h2 id="begin-setup">Begin setup</h2>
+<p>As with my last project, we&rsquo;ll be doing this in Python, because I don&rsquo;t feel like trying anything else right now.</p>
+<p>The language consists of two lists, an instruction list, and a data list. Each gets a pointer, which tells it what index it is on. Let&rsquo;s start by making these lists. We&rsquo;ll make the instructions list a string, since a string is just a list of characters anyway. We&rsquo;ll also make the data list an array of 30,000 values, though theoretically it should be infinite.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>instructions <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>]<span style="color:#f92672">*</span><span style="color:#ae81ff">30000</span>
+</span></span></code></pre></div><p>That&rsquo;s basically all of the setup.</p>
+<h2 id="basically-all-of-the-instructions">Basically all of the instructions</h2>
+<p>We can easily replicate movement, (the &ldquo;&lt;&rdquo; and &ldquo;&gt;&rdquo; instructions) by adding and subtracting from the instructionPointer variable.</p>
+<p>Incrementing and decrementing (the &ldquo;+&rdquo; and &ldquo;-&rdquo; instructions) can be done in the same way, by adding and subtracting from the element we are currently on in the data list. Since typical Brainf implementations wrap around, meaning that -1 becomes 255, and 256 becomes 0, we&rsquo;ll make sure to take the modulus of the value after addition or subtraction.</p>
+<p>Displaying output is also really easy to implement because of the inbuilt <code>print</code> function. We also need to run the <code>chr</code> function, which converts a number to Unicode, just like what the &ldquo;.&rdquo; function is supposed to do.</p>
+<p>Taking input (the &ldquo;,&rdquo; instruction) is also quite simple. For this one, we can use the <code>input</code> function, and just grab the first character. It&rsquo;s not perfect, but it works. We&rsquo;ll convert this character into an integer using the <code>ord</code> function.</p>
+<p>We&rsquo;ll add the &ldquo;[&rdquo; and &ldquo;]&rdquo; instructions later, because they&rsquo;re a bit more complicated.</p>
+<h2 id="interpreting-code">Interpreting code</h2>
+<p>Since every command in Brainf is one character, we don&rsquo;t have to do any special parsing.</p>
+<p>We just need to loop through every character in the instruction list and do a different action based on the value. By the way, did you know that Python has switch statements now? Since we&rsquo;re doing all this in a function, move instructionPointer and datapointer inside the parse function. Since anything that&rsquo;s not one of these commands is considered a comment, we can just add a final case that does nothing.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">parse</span>():
+</span></span><span style="display:flex;"><span>    instructionPointer <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    datapointer <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(len(instructions)):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">match</span> instructions[x]:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;+&#34;</span>:
+</span></span><span style="display:flex;"><span>                data[datapointer] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>                data[datapointer] <span style="color:#f92672">%=</span> <span style="color:#ae81ff">256</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;-&#34;</span>:
+</span></span><span style="display:flex;"><span>                data[datapointer] <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>                data[datapointer] <span style="color:#f92672">%=</span> <span style="color:#ae81ff">256</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;&lt;&#34;</span>:
+</span></span><span style="display:flex;"><span>                datapointer <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;&gt;&#34;</span>:
+</span></span><span style="display:flex;"><span>                datapointer <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;.&#34;</span>:
+</span></span><span style="display:flex;"><span>                print(chr(data[datapointer]),end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;,&#34;</span>:
+</span></span><span style="display:flex;"><span>                data[datapointer] <span style="color:#f92672">=</span> ord(input()[<span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>                x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> _:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">pass</span>
+</span></span></code></pre></div><p>Testing it out, here it has an input statement at the end that I typed the letter h into</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>parse()
+</span></span><span style="display:flex;"><span>print(data[:<span style="color:#ae81ff">100</span>])
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>h
+</span></span><span style="display:flex;"><span>h <span style="color:#f92672">[</span>8, 104, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0<span style="color:#f92672">]</span>
+</span></span></code></pre></div><h2 id="loops">Loops</h2>
+<p>The last two instructions are a bit more complicated, since they actually involve changing control flow. Brainf <em>does</em> match brackets, so we&rsquo;ll need to add two counters that state how many left and right brackets deep we are.</p>
+<p>The way the &ldquo;[&rdquo; instruction works is this: If the number inside is 0, it jumps to right after its matching &ldquo;]&rdquo;, and if it isn&rsquo;t, it just continues on. The &ldquo;]&rdquo; instruction works similarly, except that it proceeds on if the number inside is 0, and jumps back if the number is nonzero.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;[&#34;</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> data[datapointer] <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        foundRBrackets <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>        foundLBrackets <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> foundLBrackets <span style="color:#f92672">&gt;</span> foundRBrackets:
+</span></span><span style="display:flex;"><span>            instructionPointer <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> instructions[instructionPointer] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;]&#34;</span>:
+</span></span><span style="display:flex;"><span>                foundRBrackets <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">elif</span> instructions[instructionPointer] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;[&#34;</span>:
+</span></span><span style="display:flex;"><span>                foundLBrackets <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;]&#34;</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> data[datapointer] <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        foundLBrackets <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>        foundRBrackets <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> foundLBrackets <span style="color:#f92672">&lt;</span> foundRBrackets:
+</span></span><span style="display:flex;"><span>            instructionPointer <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> instructions[instructionPointer] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;]&#34;</span>:
+</span></span><span style="display:flex;"><span>                foundRBrackets <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">elif</span> instructions[instructionPointer] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;[&#34;</span>:
+</span></span><span style="display:flex;"><span>                foundLBrackets <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><p>Now, to test it out with the classic &ldquo;Hello World!&rdquo;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>instructions <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;++++++++[&gt;++++[&gt;++&gt;+++&gt;+++&gt;+&lt;&lt;&lt;&lt;-]&gt;+&gt;+&gt;-&gt;&gt;+[&lt;]&lt;-]&gt;&gt;.&gt;---.+++++++..+++.&gt;&gt;.&lt;-.&lt;.+++.------.--------.&gt;&gt;+.&gt;++.&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>parse()
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Hello World!
+</span></span></code></pre></div><h2 id="final-steps">Final Steps</h2>
+<p>First off, let&rsquo;s make the function a bit more pure by having it accept instructions as an argument.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">parse</span>(instructions):
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>commands <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;++++++++[&gt;++++[&gt;++&gt;+++&gt;+++&gt;+&lt;&lt;&lt;&lt;-]&gt;+&gt;+&gt;-&gt;&gt;+[&lt;]&lt;-]&gt;&gt;.&gt;---.+++++++..+++.&gt;&gt;.&lt;-.&lt;.+++.------.--------.&gt;&gt;+.&gt;++.&#34;</span>
+</span></span><span style="display:flex;"><span>parse(commands)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Hello World!
+</span></span></code></pre></div><p>Now, why not make a little Brainf repl?</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>While <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>    parse(input(<span style="color:#e6db74">&#34;repl&gt; &#34;</span>))
+</span></span><span style="display:flex;"><span>    data <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>] <span style="color:#f92672">*</span> <span style="color:#ae81ff">30000</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>repl&gt; ++++++++<span style="color:#f92672">[</span>&gt;++++<span style="color:#f92672">[</span>&gt;++&gt;+++&gt;+++&gt;+<span style="color:#f92672">&lt;&lt;&lt;</span>&lt;-<span style="color:#f92672">]</span>&gt;+&gt;+&gt;-&gt;&gt;+<span style="color:#f92672">[</span>&lt;<span style="color:#f92672">]</span>&lt;-<span style="color:#f92672">]</span>&gt;&gt;.&gt;---.+++++++..+++.&gt;&gt;.&lt;-.&lt;.+++.------.--------.&gt;&gt;+.&gt;++.
+</span></span><span style="display:flex;"><span>Hello World!
+</span></span><span style="display:flex;"><span>repl&gt; ^C
+</span></span></code></pre></div><p>We could add a way to gracefully quit, but I think adding extra helpful features is antithetical to Brainf&rsquo;s purpose (also I&rsquo;m feeling a bit lazy).</p>
+<p>Let&rsquo;s modify it a bit so you can run your own Brainf code from a file:</p>
+<p>First, at the top:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> sys
+</span></span></code></pre></div><p>Then, modify the code making our repl.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> len(sys<span style="color:#f92672">.</span>argv) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">1</span>:]:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">with</span> open(x, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>            parse(file<span style="color:#f92672">.</span>read())
+</span></span><span style="display:flex;"><span>        data <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>] <span style="color:#f92672">*</span> <span style="color:#ae81ff">30000</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>        parse(input(<span style="color:#e6db74">&#34;repl&gt; &#34;</span>))
+</span></span><span style="display:flex;"><span>        data <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>] <span style="color:#f92672">*</span> <span style="color:#ae81ff">30000</span>
+</span></span></code></pre></div><p>Let&rsquo;s stick the &ldquo;Hello World!&rdquo; code in hello.bf, and try running it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python brainf.py hello.bf
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>❯ python brainf.py hello.bf
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Hello World!
+</span></span></code></pre></div><h2 id="all-done">All done?</h2>
+<p>Thanks for reading this tutorial. If I&rsquo;ve made a mistake, or if you just want to say something, feel free to contact me.</p>
+
+  <p>
+  <hr>
+  
+    
+
+
+  
+  
+  </div>
+
+
+    </div>
+    <div class="col2">
+      <div class="section">
+        <h2 style="margin-left:10%;"> Links! </h2>
+        <ul>
+          
+            <li><a href="/post/">blog</a></li>
+          
+            <li><a href="/notes/">notes</a></li>
+          
+            <li><a href="/page/project/">projects</a></li>
+          
+            <li><a href="/page/now/">now</a></li>
+          
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2 style="margin-left:10%;"> Contact me! </h2>
+        <ul>
+            <li><a href="https://discordapp.com/users/895429111873433630">Discord</a></li>
+            <li><a href="https://mastodon.social/@supreme_leadr">Mastodon</a></li>
+            <li><a href="mailto:joshua.anand316@gmail.com">Email</a></li>
+            <li><a href="https://github.com/readabilitylol">Github</a></li>
+            <a href="/page/verify">More</a>
+        </ul>
+      </div>
+
+      
+      <div class="section">
+        <h2 style="margin-left:10%;"> What I'm Reading! </h2>
+              <style type="text/css" media="screen">
+        .gr_grid_container {
+           
+        }
+
+        .gr_grid_book_container {
+           
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+          overflow: hidden;
+          margin-bottom:10%;
+        }
+
+        .gr_grid_book_container img {
+           
+          width:99%;
+           
+        }
+      </style>
+<center>
+      <div id="gr_grid_widget_1764644786">
+        
+
+      </div>
+      <script src="https://www.goodreads.com/review/grid_widget/195827318.Junk's%20bookshelf:%20currently-reading?cover_size=medium&hide_link=true&hide_title=true&num_books=3&order=a&shelf=currently-reading&sort=date_added&widget_id=1764644786" type="text/javascript" charset="utf-8"></script>
+
+</center>
+
+      </div>
+    </div>
+  </div>
+
+  </main>
+  <footer>
+    <p>Copyright 2026 - Powered by Hugo and Retro.</p>
+
+  </footer>
+</body>
+</html>

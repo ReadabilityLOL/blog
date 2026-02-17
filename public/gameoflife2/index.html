@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="scanlines" lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Let&#39;s make a web ui for Conway&#39;s game of life! | Glitched</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+
+      <script src="/js/main.js"></script>
+
+<script src="https://kit.fontawesome.com/9f05d58ed6.js" crossorigin="anonymous"></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="b784ca14-ae7f-400a-ab68-c35fd54f8256"></script>
+
+
+</head>
+<body>
+  <header>
+    <h1><center><a href="http://localhost:1313/">Glitched</a></center></h1>
+
+
+  </header>
+  <main>
+  <div class="maincontainer">
+    <div class="col1">
+        
+<style>
+hr{
+  height: 1px;
+  background-color: #00ff00;
+  border: none;
+}
+</style>
+  <div class="section">
+  <h1>Let&#39;s make a web ui for Conway&#39;s game of life!</h1>
+   
+<ul style="padding-left:0;">
+   <li style="display: inline;">
+    <a href="http://localhost:1313/tags/development/">#development</a>
+  </li> <li style="display: inline;">
+    <a href="http://localhost:1313/tags/tutorial/">#tutorial</a>
+  </li></ul>
+
+
+  <hr>
+  <br>
+
+  
+  
+  <time datetime="2026-02-16T14:35:44-05:00">February 16, 2026</time>
+
+  <h2 id="intro">Intro</h2>
+<p>This is a sequel to my <a href="%22https://glitched.tech/gameoflife%22">previous post</a>. I&rsquo;ve decided that I may as well try to make the game of life look good. If you&rsquo;re following along, I would suggest going back to the first post.</p>
+<p>Goals:</p>
+<ol>
+<li>Create a web-based UI for the Game of Life</li>
+<li>Allow board resizing</li>
+<li>Allow users to make custom setups, rather than just randomly generated ones</li>
+</ol>
+<h2 id="pyscript">Pyscript</h2>
+<p>Since we already wrote all of this in Python, it would be a shame to get rid of it. We&rsquo;ll be using <a href="https://pyscript.net">pyscript</a> to use python in our website.</p>
+<p>Here&rsquo;s our starter html, with some code to run our previous python file and put it in a web terminal thing.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!doctype html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">head</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width,initial-scale=1.0&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://pyscript.net/releases/2026.2.1/core.css&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;module&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://pyscript.net/releases/2026.2.1/core.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;py&#34;</span> <span style="color:#a6e22e">config</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;./config.json&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;./gameoflife.py&#34;</span> <span style="color:#a6e22e">terminal</span> <span style="color:#a6e22e">worker</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p>Before we run it though, we need to slightly modify our original code and put <code>await</code> in front of all of our inputs.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>y <span style="color:#f92672">=</span> int(<span style="color:#66d9ef">await</span> input(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Enter the length of the grid: &#34;</span>))
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> int(<span style="color:#66d9ef">await</span> input(<span style="color:#e6db74">&#34;Enter the width of the grid: &#34;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>value <span style="color:#f92672">=</span> (<span style="color:#66d9ef">await</span> input(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Press enter to advance a step or type q to quit: &#34;</span>))<span style="color:#f92672">.</span>strip()
+</span></span></code></pre></div><p>To run, install npm&rsquo;s <code>serve</code> or a different webserver and just serve the folder you&rsquo;re doing this in.</p>
+<h2 id="setting-up-the-grid">Setting up the grid</h2>
+<p>Javascript is scarier than python, and we&rsquo;re already doing a lot in python, so why don&rsquo;t we continue with that?</p>
+<p>First off, let&rsquo;s comment out the bit that runs all of our functions in the python file. Do the same with the html file, and remove that script tag in the <code>body</code>.</p>
+<p>Now, let&rsquo;s make a grid in pyscript. Since we already have a python file with most of the logic, and since we&rsquo;re probably not trying to make this code maintainable anyways, let&rsquo;s do everything in <code>gameoflife.py</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;py&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;./gameoflife.py&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><p>First, let&rsquo;s make a container in <code>gameoflife.html</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;game&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><p>Now, in <code>gameoflife.py</code></p>
+
+  <p>
+  <hr>
+  
+    
+
+
+  
+  
+  </div>
+
+
+    </div>
+    <div class="col2">
+      <div class="section">
+        <h2 style="margin-left:10%;"> Links! </h2>
+        <ul>
+          
+            <li><a href="/post/">blog</a></li>
+          
+            <li><a href="/notes/">notes</a></li>
+          
+            <li><a href="/page/project/">projects</a></li>
+          
+            <li><a href="/page/now/">now</a></li>
+          
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2 style="margin-left:10%;"> Contact me! </h2>
+        <ul>
+            <li><a href="https://discordapp.com/users/895429111873433630">Discord</a></li>
+            <li><a href="https://mastodon.social/@supreme_leadr">Mastodon</a></li>
+            <li><a href="mailto:joshua.anand316@gmail.com">Email</a></li>
+            <li><a href="https://github.com/readabilitylol">Github</a></li>
+            <a href="/page/verify">More</a>
+        </ul>
+      </div>
+
+      
+      <div class="section">
+        <h2 style="margin-left:10%;"> What I'm Reading! </h2>
+              <style type="text/css" media="screen">
+        .gr_grid_container {
+           
+        }
+
+        .gr_grid_book_container {
+           
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+          overflow: hidden;
+          margin-bottom:10%;
+        }
+
+        .gr_grid_book_container img {
+           
+          width:99%;
+           
+        }
+      </style>
+<center>
+      <div id="gr_grid_widget_1764644786">
+        
+
+      </div>
+      <script src="https://www.goodreads.com/review/grid_widget/195827318.Junk's%20bookshelf:%20currently-reading?cover_size=medium&hide_link=true&hide_title=true&num_books=3&order=a&shelf=currently-reading&sort=date_added&widget_id=1764644786" type="text/javascript" charset="utf-8"></script>
+
+</center>
+
+      </div>
+    </div>
+  </div>
+
+  </main>
+  <footer>
+    <p>Copyright 2026 - Powered by Hugo and Retro.</p>
+
+  </footer>
+</body>
+</html>
