@@ -60,8 +60,26 @@ Now, let's make a grid in pyscript. Since we already have a python file with mos
 First, let's make a container in `gameoflife.html`
 
 ```html
-<div class="game"></div>
+<div id="gamegrid"></div>
 ```
 
-Now, in `gameoflife.py`
+Now, in `gameoflife.py`, we'll set up the grid.
+
+First, we'll import some stuff from pyscript
+
+```python
+from pyscript import web
+```
+Next, we'll make a function to update and clear the grid.
+
+```python
+def makeGrid():
+    grid = web.page["#gamegrid"]
+    for y in gameArray:
+        row = web.div("row")
+        for x in y:
+            row.append(web.div("cell"))
+        grid.append(row)
+            
+```
 

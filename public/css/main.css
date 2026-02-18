@@ -81,8 +81,11 @@ img {
   max-width:100%;
 }
 
-code{
-  white-space: pre-line;
+pre,
+pre code {
+  white-space: pre-wrap !important;
+  tab-size: 4;
+  -moz-tab-size: 4;
 }
 
 /* shamelessly stolen off the internet from https://codepen.io/ynef/pen/yvvyGv */

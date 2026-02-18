@@ -85,9 +85,20 @@ hr{
 <p>Now, let&rsquo;s make a grid in pyscript. Since we already have a python file with most of the logic, and since we&rsquo;re probably not trying to make this code maintainable anyways, let&rsquo;s do everything in <code>gameoflife.py</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;py&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;./gameoflife.py&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
 </span></span></code></pre></div><p>First, let&rsquo;s make a container in <code>gameoflife.html</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;game&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
-</span></span></code></pre></div><p>Now, in <code>gameoflife.py</code></p>
-
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;gamegrid&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><p>Now, in <code>gameoflife.py</code>, we&rsquo;ll set up the grid.</p>
+<p>First, we&rsquo;ll import some stuff from pyscript</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pyscript <span style="color:#f92672">import</span> web
+</span></span></code></pre></div><p>Next, we&rsquo;ll make a function to update and clear the grid.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">makeGrid</span>():
+</span></span><span style="display:flex;"><span>    grid <span style="color:#f92672">=</span> web<span style="color:#f92672">.</span>page[<span style="color:#e6db74">&#34;#gamegrid&#34;</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> gameArray:
+</span></span><span style="display:flex;"><span>        row <span style="color:#f92672">=</span> web<span style="color:#f92672">.</span>div(<span style="color:#e6db74">&#34;row&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> y:
+</span></span><span style="display:flex;"><span>            row<span style="color:#f92672">.</span>append(web<span style="color:#f92672">.</span>div(<span style="color:#e6db74">&#34;cell&#34;</span>))
+</span></span><span style="display:flex;"><span>        grid<span style="color:#f92672">.</span>append(row)
+</span></span><span style="display:flex;"><span>            
+</span></span></code></pre></div>
   <p>
   <hr>
   
@@ -106,8 +117,6 @@ hr{
         <ul>
           
             <li><a href="/post/">blog</a></li>
-          
-            <li><a href="/notes/">notes</a></li>
           
             <li><a href="/page/project/">projects</a></li>
           
