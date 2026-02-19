@@ -11,7 +11,7 @@ This is a sequel to my [previous post]("https://glitched.tech/gameoflife"). I've
 
 Goals:
 1. Create a web-based UI for the Game of Life
-2. Allow board resizing
+2. Make the board fit screen width and length
 3. Allow users to make custom setups, rather than just randomly generated ones
 
 ## Pyscript
@@ -70,16 +70,144 @@ First, we'll import some stuff from pyscript
 ```python
 from pyscript import web
 ```
-Next, we'll make a function to update and clear the grid.
+Next, we'll write some code to update the grid.
 
 ```python
-def makeGrid():
+grid = web.page["#gamegrid"]
+for y in gameArray:
+    row = web.div(class="row")
+    for x in y:
+        row.append(web.div("cell", class="cell"))
+    grid.append(row)
+```
+
+If you were to run this, you'd notice it looks terrible and nothing like Conway's Game of Life. The first thing we should do to resolve this is turn everything into a flexbox.
+
+Create styles.css and put this in there:
+
+```css
+.row{
+    display: flex;
+    flex-direction: row;
+}
+```
+
+Next, of course, include it in your html file.
+
+```html
+<link rel="stylesheet" href="styles.css">
+```
+
+Now, if you run it, you'll see the word "cell" over and over, in a grid-shaped pattern. 
+
+Let's edit styles.css again to let the cells expand in size to fit the page. While we're at it, let's also add borders to each cell so we can differentiate them.
+
+```css
+.cell{
+    border: 1px solid black;
+    aspect-ratio: 1 / 1;
+    flex: 1 0 0;
+}
+```
+
+You might notice that the cells flow off the page, but we can fix that later.
+
+Now that we've done that, we can get rid of the word "cell" from `gameoflife.py`.
+
+Let's change the line of code updating the grid to add a class depending on whether the cell is living or dead:
+
+```python
+grid = web.page["#gamegrid"]
+for y in gameArray:
+    row = web.div(classes=["row"])
+    for x in y:
+        if x == 1:
+            row.append(web.div(classes=["cell","alive"]))
+        else:
+            row.append(web.div(classes=["cell","dead"]))
+    grid.append(row)
+```
+
+Then, let's update `styles.css` to change the background color based on class.
+
+```css
+.alive{
+    background-color:black;
+}
+
+.dead{
+    background-color:white;
+}
+```
+
+Let's stick the grid updater code in a function, so we don't have to keep calling it. I've also added a line to clear the grid each time.
+
+```python
+def updatePage():
     grid = web.page["#gamegrid"]
     for y in gameArray:
-        row = web.div("row")
+        row = web.div(classes=["row"])
         for x in y:
-            row.append(web.div("cell"))
+            if x == 1:
+                row.append(web.div(classes=["cell","alive"]))
+            else:
+                row.append(web.div(classes=["cell","dead"]))
         grid.append(row)
-            
 ```
+
+Now, just to test this out fully, let's add a button at the bottom of the html that just advances a turn in the Game of Life.
+
+```html
+<button id="advance">Advance</button>
+```
+
+To handle it in Python, we also need to import `when` from Pyscript
+
+```python
+from pyscript import web, when
+```
+
+Then, let's add a script to handle it.
+
+```python
+@when("click","#advance")
+def advance():
+    global gameArray
+    gameArray = step()
+    updatePage()
+```
+
+You may have noticed that I used the `global` keyword here, something that is generally considered bad practice. It is also bad practice here, I was just feeling lazy. Feel free to find a different solution.
+
+## Sizing based on window size
+
+Instead of creating a grid with a size we decide, why don't we grab the available width and height and then divide it by the number of pixels per box?
+
+First, import `window` from pyscript as well. Also, import `math`.
+
+```python
+from pyscript import web, when, window
+import math
+```
+
+Then, let's change our setup code.
+
+```python
+gameArray = createGrid(
+    math.floor(window.screen.availHeight/60),
+    math.floor(window.screen.availWidth/60)
+)
+
+populate()
+
+updatePage()
+
+@when("click","#advance")
+def advance():
+    global gameArray
+    gameArray = step()
+    updatePage()
+```
+
+You'll probably notice that the game of life overflows down the screen. I've decided to ignore this and call it a feature. You'll also most likely notice that the game is inefficient. Perhaps we'll try and optimize it later.
 

@@ -55,7 +55,7 @@ hr{
 <p>Goals:</p>
 <ol>
 <li>Create a web-based UI for the Game of Life</li>
-<li>Allow board resizing</li>
+<li>Make the board fit screen width and length</li>
 <li>Allow users to make custom setups, rather than just randomly generated ones</li>
 </ol>
 <h2 id="pyscript">Pyscript</h2>
@@ -89,16 +89,92 @@ hr{
 </span></span></code></pre></div><p>Now, in <code>gameoflife.py</code>, we&rsquo;ll set up the grid.</p>
 <p>First, we&rsquo;ll import some stuff from pyscript</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pyscript <span style="color:#f92672">import</span> web
-</span></span></code></pre></div><p>Next, we&rsquo;ll make a function to update and clear the grid.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">makeGrid</span>():
+</span></span></code></pre></div><p>Next, we&rsquo;ll write some code to update the grid.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>grid <span style="color:#f92672">=</span> web<span style="color:#f92672">.</span>page[<span style="color:#e6db74">&#34;#gamegrid&#34;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> gameArray:
+</span></span><span style="display:flex;"><span>    row <span style="color:#f92672">=</span> web<span style="color:#f92672">.</span>div(class<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> y:
+</span></span><span style="display:flex;"><span>        row<span style="color:#f92672">.</span>append(web<span style="color:#f92672">.</span>div(<span style="color:#e6db74">&#34;cell&#34;</span>, class<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cell&#34;</span>))
+</span></span><span style="display:flex;"><span>    grid<span style="color:#f92672">.</span>append(row)
+</span></span></code></pre></div><p>If you were to run this, you&rsquo;d notice it looks terrible and nothing like Conway&rsquo;s Game of Life. The first thing we should do to resolve this is turn everything into a flexbox.</p>
+<p>Create styles.css and put this in there:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">row</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">flex-direction</span>: <span style="color:#66d9ef">row</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Next, of course, include it in your html file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;styles.css&#34;</span>&gt;
+</span></span></code></pre></div><p>Now, if you run it, you&rsquo;ll see the word &ldquo;cell&rdquo; over and over, in a grid-shaped pattern.</p>
+<p>Let&rsquo;s edit styles.css again to let the cells expand in size to fit the page. While we&rsquo;re at it, let&rsquo;s also add borders to each cell so we can differentiate them.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">cell</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">black</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">aspect-ratio</span>: <span style="color:#ae81ff">1</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">flex</span>: <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>You might notice that the cells flow off the page, but we can fix that later.</p>
+<p>Now that we&rsquo;ve done that, we can get rid of the word &ldquo;cell&rdquo; from <code>gameoflife.py</code>.</p>
+<p>Let&rsquo;s change the line of code updating the grid to add a class depending on whether the cell is living or dead:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>grid <span style="color:#f92672">=</span> web<span style="color:#f92672">.</span>page[<span style="color:#e6db74">&#34;#gamegrid&#34;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> gameArray:
+</span></span><span style="display:flex;"><span>    row <span style="color:#f92672">=</span> web<span style="color:#f92672">.</span>div(classes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;row&#34;</span>])
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> y:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> x <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>            row<span style="color:#f92672">.</span>append(web<span style="color:#f92672">.</span>div(classes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;cell&#34;</span>,<span style="color:#e6db74">&#34;alive&#34;</span>]))
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            row<span style="color:#f92672">.</span>append(web<span style="color:#f92672">.</span>div(classes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;cell&#34;</span>,<span style="color:#e6db74">&#34;dead&#34;</span>]))
+</span></span><span style="display:flex;"><span>    grid<span style="color:#f92672">.</span>append(row)
+</span></span></code></pre></div><p>Then, let&rsquo;s update <code>styles.css</code> to change the background color based on class.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">alive</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">background-color</span>:<span style="color:#66d9ef">black</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">dead</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">background-color</span>:<span style="color:#66d9ef">white</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Let&rsquo;s stick the grid updater code in a function, so we don&rsquo;t have to keep calling it. I&rsquo;ve also added a line to clear the grid each time.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">updatePage</span>():
 </span></span><span style="display:flex;"><span>    grid <span style="color:#f92672">=</span> web<span style="color:#f92672">.</span>page[<span style="color:#e6db74">&#34;#gamegrid&#34;</span>]
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> gameArray:
-</span></span><span style="display:flex;"><span>        row <span style="color:#f92672">=</span> web<span style="color:#f92672">.</span>div(<span style="color:#e6db74">&#34;row&#34;</span>)
+</span></span><span style="display:flex;"><span>        row <span style="color:#f92672">=</span> web<span style="color:#f92672">.</span>div(classes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;row&#34;</span>])
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> y:
-</span></span><span style="display:flex;"><span>            row<span style="color:#f92672">.</span>append(web<span style="color:#f92672">.</span>div(<span style="color:#e6db74">&#34;cell&#34;</span>))
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> x <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>                row<span style="color:#f92672">.</span>append(web<span style="color:#f92672">.</span>div(classes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;cell&#34;</span>,<span style="color:#e6db74">&#34;alive&#34;</span>]))
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                row<span style="color:#f92672">.</span>append(web<span style="color:#f92672">.</span>div(classes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;cell&#34;</span>,<span style="color:#e6db74">&#34;dead&#34;</span>]))
 </span></span><span style="display:flex;"><span>        grid<span style="color:#f92672">.</span>append(row)
-</span></span><span style="display:flex;"><span>            
-</span></span></code></pre></div>
+</span></span></code></pre></div><p>Now, just to test this out fully, let&rsquo;s add a button at the bottom of the html that just advances a turn in the Game of Life.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;advance&#34;</span>&gt;Advance&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span></code></pre></div><p>To handle it in Python, we also need to import <code>when</code> from Pyscript</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pyscript <span style="color:#f92672">import</span> web, when
+</span></span></code></pre></div><p>Then, let&rsquo;s add a script to handle it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@when</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#e6db74">&#34;#advance&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">advance</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">global</span> gameArray
+</span></span><span style="display:flex;"><span>    gameArray <span style="color:#f92672">=</span> step()
+</span></span><span style="display:flex;"><span>    updatePage()
+</span></span></code></pre></div><p>You may have noticed that I used the <code>global</code> keyword here, something that is generally considered bad practice. It is also bad practice here, I was just feeling lazy. Feel free to find a different solution.</p>
+<h2 id="sizing-based-on-window-size">Sizing based on window size</h2>
+<p>Instead of creating a grid with a size we decide, why don&rsquo;t we grab the available width and height and then divide it by the number of pixels per box?</p>
+<p>First, import <code>window</code> from pyscript as well. Also, import <code>math</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pyscript <span style="color:#f92672">import</span> web, when, window
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> math
+</span></span></code></pre></div><p>Then, let&rsquo;s change our setup code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>gameArray <span style="color:#f92672">=</span> createGrid(
+</span></span><span style="display:flex;"><span>    math<span style="color:#f92672">.</span>floor(window<span style="color:#f92672">.</span>screen<span style="color:#f92672">.</span>availHeight<span style="color:#f92672">/</span><span style="color:#ae81ff">60</span>),
+</span></span><span style="display:flex;"><span>    math<span style="color:#f92672">.</span>floor(window<span style="color:#f92672">.</span>screen<span style="color:#f92672">.</span>availWidth<span style="color:#f92672">/</span><span style="color:#ae81ff">60</span>)
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>populate()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>updatePage()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@when</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#e6db74">&#34;#advance&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">advance</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">global</span> gameArray
+</span></span><span style="display:flex;"><span>    gameArray <span style="color:#f92672">=</span> step()
+</span></span><span style="display:flex;"><span>    updatePage()
+</span></span></code></pre></div><p>You&rsquo;ll probably notice that the game of life overflows down the screen. I&rsquo;ve decided to ignore this and call it a feature. You&rsquo;ll also most likely notice that the game is inefficient. Perhaps we&rsquo;ll try and optimize it later.</p>
+
   <p>
   <hr>
   
