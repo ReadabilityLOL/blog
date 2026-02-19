@@ -104,7 +104,7 @@ Let's edit styles.css again to let the cells expand in size to fit the page. Whi
 
 ```css
 .cell{
-    border: 1px solid black;
+    border: 1px solid #d3d3d3;
     aspect-ratio: 1 / 1;
     flex: 1 0 0;
 }
