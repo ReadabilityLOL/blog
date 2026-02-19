@@ -194,8 +194,8 @@ Then, let's change our setup code.
 
 ```python
 gameArray = createGrid(
-    math.floor(window.screen.availHeight/60),
-    math.floor(window.screen.availWidth/60)
+    math.floor(window.screen.availHeight/20),
+    math.floor(window.screen.availWidth/20)
 )
 
 populate()
