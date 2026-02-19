@@ -6,8 +6,15 @@
     <description>Recent content on Glitched</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Feb 2026 20:08:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 19 Feb 2026 14:00:00 -0500</lastBuildDate>
     <atom:link href="https://glitched.tech/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Let&#39;s make a web ui for Conway&#39;s game of life!</title>
+      <link>https://glitched.tech/gameoflife2/</link>
+      <pubDate>Thu, 19 Feb 2026 14:00:00 -0500</pubDate>
+      <guid>https://glitched.tech/gameoflife2/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;This is a sequel to my &lt;a href=&#34;%22https://glitched.tech/gameoflife%22&#34;&gt;previous post&lt;/a&gt;. I&amp;rsquo;ve decided that I may as well try to make the game of life look good. If you&amp;rsquo;re following along, I would suggest going back to the first post.&lt;/p&gt;&#xA;&lt;p&gt;Goals:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Create a web-based UI for the Game of Life&lt;/li&gt;&#xA;&lt;li&gt;Make the board fit screen width and length&lt;/li&gt;&#xA;&lt;li&gt;Allow users to make custom setups, rather than just randomly generated ones&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;pyscript&#34;&gt;Pyscript&lt;/h2&gt;&#xA;&lt;p&gt;Since we already wrote all of this in Python, it would be a shame to get rid of it. We&amp;rsquo;ll be using &lt;a href=&#34;https://pyscript.net&#34;&gt;pyscript&lt;/a&gt; to use python in our website.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Let&#39;s make a Brainf*** interpreter</title>
       <link>https://glitched.tech/brainf/</link>

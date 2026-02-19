@@ -1,7 +1,7 @@
 +++
 title = "Let's make a web ui for Conway's game of life!"
-date = 2026-02-16T14:35:44-05:00
-draft = true
+date = 2026-02-19T14:00:00-05:00
+draft = false
 tags = ["development","tutorial"]
 +++
 
@@ -209,5 +209,167 @@ def advance():
     updatePage()
 ```
 
-You'll probably notice that the game of life overflows down the screen. I've decided to ignore this and call it a feature. You'll also most likely notice that the game is inefficient. Perhaps we'll try and optimize it later.
+You'll probably notice that the game of life overflows down the screen. I've decided to ignore this and call it a feature. You'll also most likely notice that the game is inefficient and slows down a lot if there are many cells. Maybe I'll fix this later.
 
+## Allowing custom setup
+
+To allow users to start the game with a custom setup, we'll need to do a couple things. First of all, we'll of course need to add a function to check if a cell has been clicked. Second of all, we'll need to assign each on-screen cell a coordinate that we can relate to our Python grid of cells.
+
+Let's start by adding the ability to click cells.
+
+```python
+@when("click",".cell")
+def cellclick(event):
+    target = event.target
+    if "alive" in target.classList:
+        target.classList.add("dead")
+        target.classList.remove("alive")
+    elif "dead" in target.classList:
+        target.classList.add("alive")
+        target.classList.remove("dead")
+```
+
+Now, we need to link the clicks on screen to the array in Python. I personally wasn't sure how to create a proper coordinate system for the on-screen grid, so I instead gave each box an id relating to their coordinates.
+
+```python
+def updatePage():
+    grid = web.page["#gamegrid"]
+    grid.innerHTML = ""
+    for y in range(len(gameArray)):
+        row = web.div(classes=["row"])
+        for x in range(len(gameArray[y])):
+            if gameArray[y][x] == 1:
+                row.append(web.div(classes=["cell","alive"],id=f"{y}_{x}"))
+            else:
+                row.append(web.div(classes=["cell","dead"],id=f"{y}_{x}"))
+        grid.append(row)
+```
+
+Then, we also update the `cellclick` function to update gameArray.
+
+```python
+@when("click",".cell")
+def cellclick(event):
+    target = event.target
+    y,x = (target.id).split("_")
+    x = int(x)
+    y = int(y)
+
+    if "alive" in target.classList:
+        target.classList.add("dead")
+        target.classList.remove("alive")
+        gameArray[y][x] = 0
+    elif "dead" in target.classList:
+        target.classList.add("alive")
+        target.classList.remove("dead")
+        gameArray[y][x] = 1
+```
+
+## Adding a reset button
+
+First, add a button titled "reset"
+
+```html
+<button id="reset">reset</button>
+```
+And the python code, of course
+
+```python
+@when("click","#reset")
+def reset():
+    global gameArray
+    for y in range(len(gameArray)):
+        for x in range(len(gameArray[y])):
+            gameArray[y][x] = 0
+    updatePage()
+
+```
+
+## Adding a randomize button
+
+Once again, add a button titled "randomize"
+
+```html
+<button id="randomize">randomize</button>
+```
+And the Python
+
+```python
+@when("click","#randomize")
+def randomize():
+    reset()
+    populate()
+    updatePage()
+```
+
+## A small bug
+
+You may have noticed that after clicking any buttons, it's impossible to modify the grid, which seems like a pretty big issue. I'm pretty sure this is because we are a cutally deleting and regenerating the grid every time we do anything, which deletes the helpful functions.
+
+Now, a quick rant here. It turns out that you can't have the id of an element start with a number. You might be thinking, "But Josh, haven't you had the id of all the cells start with a number?". Yes. This is true, but it turns out you can't search for an id starting with a number, but it's all right to just have one. That's why I had to modify the code in `updatePage` and `cellclick`. It didn't inconvenience me too much, but it could have been really annoying if I hadn't caught this until later.
+
+Anyway, what I did was create a new function, `createPage`, that creates all the elements, and then update `updatePage` to just modify the cells. This should also speed the whole thing up a bit.
+
+Here's `createPage`:
+
+```python
+def createPage():
+    grid = web.page["#gamegrid"]
+    grid.innerHTML = ""
+    for y in range(len(gameArray)):
+        row = web.div(classes=["row"])
+        for x in range(len(gameArray[y])):
+            if gameArray[y][x] == 1:
+                row.append(web.div(classes=["cell","alive"],id=f"a{y}_{x}"))
+            else:
+                row.append(web.div(classes=["cell","dead"],id=f"a{y}_{x}"))
+        grid.append(row)
+
+```
+
+Here's `updatePage()`:
+
+```python
+def updatePage():
+    grid = web.page["#gamegrid"]
+    for y in range(len(gameArray)):
+        row = web.div(classes=["row"])
+        for x in range(len(gameArray[y])):
+            target = web.page[f"a{y}_{x}"]
+            if gameArray[y][x] == 1:
+                #row.append(web.div(classes=["cell","alive"],id=f"{y}_{x}"))
+                if "dead" in target.classList:
+                    target.classList.add("alive")
+                    target.classList.remove("dead")
+            else:
+                #row.append(web.div(classes=["cell","dead"],id=f"{y}_{x}"))
+                if "alive" in target.classList:
+                    target.classList.add("dead")
+                    target.classList.remove("alive")
+        grid.append(row)
+```
+
+And here's `cellclick`:
+
+```python
+@when("click",".cell")
+def cellclick(event):
+    print("clicked")
+    target = event.target
+    y,x = ((target.id)[1:]).split("_")
+    x = int(x)
+    y = int(y)
+
+    if "alive" in target.classList:
+        target.classList.add("dead")
+        target.classList.remove("alive")
+        gameArray[y][x] = 0
+    elif "dead" in target.classList:
+        target.classList.add("alive")
+        target.classList.remove("dead")
+        gameArray[y][x] = 1
+```
+
+## Done?
+
+We're almost done with everything now, all we need to do is make everything look better. The code for it is on [my Github](https://github.com/ReadabilityLOL/Python-Implementation-of-Conway-s-Game-of-Life). Feel free to contact me if you think I've made a mistake.

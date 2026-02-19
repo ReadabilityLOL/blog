@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html class="scanlines" lang="en" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>Let&#39;s make a web ui for Conway&#39;s game of life! | Glitched</title>
 
-    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/main.min.cf51232c681e75092fccdc0b112c69286cfdf85d68eb63fa53be6763c430998e.css" integrity="sha256-z1EjLGgedQkvzNwLESxpKGz9&#43;F1o62P6U75nY8QwmY4=" crossorigin="anonymous">
 
 
-      <script src="/js/main.js"></script>
+        <script src="/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
 
 <script src="https://kit.fontawesome.com/9f05d58ed6.js" crossorigin="anonymous"></script>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="b784ca14-ae7f-400a-ab68-c35fd54f8256"></script>
@@ -17,7 +17,7 @@
 </head>
 <body>
   <header>
-    <h1><center><a href="http://localhost:1313/">Glitched</a></center></h1>
+    <h1><center><a href="https://glitched.tech/">Glitched</a></center></h1>
 
 
   </header>
@@ -37,9 +37,9 @@ hr{
    
 <ul style="padding-left:0;">
    <li style="display: inline;">
-    <a href="http://localhost:1313/tags/development/">#development</a>
+    <a href="https://glitched.tech/tags/development/">#development</a>
   </li> <li style="display: inline;">
-    <a href="http://localhost:1313/tags/tutorial/">#tutorial</a>
+    <a href="https://glitched.tech/tags/tutorial/">#tutorial</a>
   </li></ul>
 
 
@@ -48,7 +48,7 @@ hr{
 
   
   
-  <time datetime="2026-02-16T14:35:44-05:00">February 16, 2026</time>
+  <time datetime="2026-02-19T14:00:00-05:00">February 19, 2026</time>
 
   <h2 id="intro">Intro</h2>
 <p>This is a sequel to my <a href="%22https://glitched.tech/gameoflife%22">previous post</a>. I&rsquo;ve decided that I may as well try to make the game of life look good. If you&rsquo;re following along, I would suggest going back to the first post.</p>
@@ -173,7 +173,120 @@ hr{
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">global</span> gameArray
 </span></span><span style="display:flex;"><span>    gameArray <span style="color:#f92672">=</span> step()
 </span></span><span style="display:flex;"><span>    updatePage()
-</span></span></code></pre></div><p>You&rsquo;ll probably notice that the game of life overflows down the screen. I&rsquo;ve decided to ignore this and call it a feature. You&rsquo;ll also most likely notice that the game is inefficient. Perhaps we&rsquo;ll try and optimize it later.</p>
+</span></span></code></pre></div><p>You&rsquo;ll probably notice that the game of life overflows down the screen. I&rsquo;ve decided to ignore this and call it a feature. You&rsquo;ll also most likely notice that the game is inefficient and slows down a lot if there are many cells. Maybe I&rsquo;ll fix this later.</p>
+<h2 id="allowing-custom-setup">Allowing custom setup</h2>
+<p>To allow users to start the game with a custom setup, we&rsquo;ll need to do a couple things. First of all, we&rsquo;ll of course need to add a function to check if a cell has been clicked. Second of all, we&rsquo;ll need to assign each on-screen cell a coordinate that we can relate to our Python grid of cells.</p>
+<p>Let&rsquo;s start by adding the ability to click cells.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@when</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#e6db74">&#34;.cell&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">cellclick</span>(event):
+</span></span><span style="display:flex;"><span>    target <span style="color:#f92672">=</span> event<span style="color:#f92672">.</span>target
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;alive&#34;</span> <span style="color:#f92672">in</span> target<span style="color:#f92672">.</span>classList:
+</span></span><span style="display:flex;"><span>        target<span style="color:#f92672">.</span>classList<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;dead&#34;</span>)
+</span></span><span style="display:flex;"><span>        target<span style="color:#f92672">.</span>classList<span style="color:#f92672">.</span>remove(<span style="color:#e6db74">&#34;alive&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">elif</span> <span style="color:#e6db74">&#34;dead&#34;</span> <span style="color:#f92672">in</span> target<span style="color:#f92672">.</span>classList:
+</span></span><span style="display:flex;"><span>        target<span style="color:#f92672">.</span>classList<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;alive&#34;</span>)
+</span></span><span style="display:flex;"><span>        target<span style="color:#f92672">.</span>classList<span style="color:#f92672">.</span>remove(<span style="color:#e6db74">&#34;dead&#34;</span>)
+</span></span></code></pre></div><p>Now, we need to link the clicks on screen to the array in Python. I personally wasn&rsquo;t sure how to create a proper coordinate system for the on-screen grid, so I instead gave each box an id relating to their coordinates.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">updatePage</span>():
+</span></span><span style="display:flex;"><span>    grid <span style="color:#f92672">=</span> web<span style="color:#f92672">.</span>page[<span style="color:#e6db74">&#34;#gamegrid&#34;</span>]
+</span></span><span style="display:flex;"><span>    grid<span style="color:#f92672">.</span>innerHTML <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> range(len(gameArray)):
+</span></span><span style="display:flex;"><span>        row <span style="color:#f92672">=</span> web<span style="color:#f92672">.</span>div(classes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;row&#34;</span>])
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(len(gameArray[y])):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> gameArray[y][x] <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>                row<span style="color:#f92672">.</span>append(web<span style="color:#f92672">.</span>div(classes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;cell&#34;</span>,<span style="color:#e6db74">&#34;alive&#34;</span>],id<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>y<span style="color:#e6db74">}</span><span style="color:#e6db74">_</span><span style="color:#e6db74">{</span>x<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>))
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                row<span style="color:#f92672">.</span>append(web<span style="color:#f92672">.</span>div(classes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;cell&#34;</span>,<span style="color:#e6db74">&#34;dead&#34;</span>],id<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>y<span style="color:#e6db74">}</span><span style="color:#e6db74">_</span><span style="color:#e6db74">{</span>x<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>))
+</span></span><span style="display:flex;"><span>        grid<span style="color:#f92672">.</span>append(row)
+</span></span></code></pre></div><p>Then, we also update the <code>cellclick</code> function to update gameArray.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@when</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#e6db74">&#34;.cell&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">cellclick</span>(event):
+</span></span><span style="display:flex;"><span>    target <span style="color:#f92672">=</span> event<span style="color:#f92672">.</span>target
+</span></span><span style="display:flex;"><span>    y,x <span style="color:#f92672">=</span> (target<span style="color:#f92672">.</span>id)<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;_&#34;</span>)
+</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">=</span> int(x)
+</span></span><span style="display:flex;"><span>    y <span style="color:#f92672">=</span> int(y)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;alive&#34;</span> <span style="color:#f92672">in</span> target<span style="color:#f92672">.</span>classList:
+</span></span><span style="display:flex;"><span>        target<span style="color:#f92672">.</span>classList<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;dead&#34;</span>)
+</span></span><span style="display:flex;"><span>        target<span style="color:#f92672">.</span>classList<span style="color:#f92672">.</span>remove(<span style="color:#e6db74">&#34;alive&#34;</span>)
+</span></span><span style="display:flex;"><span>        gameArray[y][x] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">elif</span> <span style="color:#e6db74">&#34;dead&#34;</span> <span style="color:#f92672">in</span> target<span style="color:#f92672">.</span>classList:
+</span></span><span style="display:flex;"><span>        target<span style="color:#f92672">.</span>classList<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;alive&#34;</span>)
+</span></span><span style="display:flex;"><span>        target<span style="color:#f92672">.</span>classList<span style="color:#f92672">.</span>remove(<span style="color:#e6db74">&#34;dead&#34;</span>)
+</span></span><span style="display:flex;"><span>        gameArray[y][x] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><h2 id="adding-a-reset-button">Adding a reset button</h2>
+<p>First, add a button titled &ldquo;reset&rdquo;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;reset&#34;</span>&gt;reset&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span></code></pre></div><p>And the python code, of course</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@when</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#e6db74">&#34;#reset&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">reset</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">global</span> gameArray
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> range(len(gameArray)):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(len(gameArray[y])):
+</span></span><span style="display:flex;"><span>            gameArray[y][x] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    updatePage()
+</span></span></code></pre></div><h2 id="adding-a-randomize-button">Adding a randomize button</h2>
+<p>Once again, add a button titled &ldquo;randomize&rdquo;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;randomize&#34;</span>&gt;randomize&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span></code></pre></div><p>And the Python</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@when</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#e6db74">&#34;#randomize&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">randomize</span>():
+</span></span><span style="display:flex;"><span>    reset()
+</span></span><span style="display:flex;"><span>    populate()
+</span></span><span style="display:flex;"><span>    updatePage()
+</span></span></code></pre></div><h2 id="a-small-bug">A small bug</h2>
+<p>You may have noticed that after clicking any buttons, it&rsquo;s impossible to modify the grid, which seems like a pretty big issue. I&rsquo;m pretty sure this is because we are a cutally deleting and regenerating the grid every time we do anything, which deletes the helpful functions.</p>
+<p>Now, a quick rant here. It turns out that you can&rsquo;t have the id of an element start with a number. You might be thinking, &ldquo;But Josh, haven&rsquo;t you had the id of all the cells start with a number?&rdquo;. Yes. This is true, but it turns out you can&rsquo;t search for an id starting with a number, but it&rsquo;s all right to just have one. That&rsquo;s why I had to modify the code in <code>updatePage</code> and <code>cellclick</code>. It didn&rsquo;t inconvenience me too much, but it could have been really annoying if I hadn&rsquo;t caught this until later.</p>
+<p>Anyway, what I did was create a new function, <code>createPage</code>, that creates all the elements, and then update <code>updatePage</code> to just modify the cells. This should also speed the whole thing up a bit.</p>
+<p>Here&rsquo;s <code>createPage</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">createPage</span>():
+</span></span><span style="display:flex;"><span>    grid <span style="color:#f92672">=</span> web<span style="color:#f92672">.</span>page[<span style="color:#e6db74">&#34;#gamegrid&#34;</span>]
+</span></span><span style="display:flex;"><span>    grid<span style="color:#f92672">.</span>innerHTML <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> range(len(gameArray)):
+</span></span><span style="display:flex;"><span>        row <span style="color:#f92672">=</span> web<span style="color:#f92672">.</span>div(classes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;row&#34;</span>])
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(len(gameArray[y])):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> gameArray[y][x] <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>                row<span style="color:#f92672">.</span>append(web<span style="color:#f92672">.</span>div(classes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;cell&#34;</span>,<span style="color:#e6db74">&#34;alive&#34;</span>],id<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;a</span><span style="color:#e6db74">{</span>y<span style="color:#e6db74">}</span><span style="color:#e6db74">_</span><span style="color:#e6db74">{</span>x<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>))
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                row<span style="color:#f92672">.</span>append(web<span style="color:#f92672">.</span>div(classes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;cell&#34;</span>,<span style="color:#e6db74">&#34;dead&#34;</span>],id<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;a</span><span style="color:#e6db74">{</span>y<span style="color:#e6db74">}</span><span style="color:#e6db74">_</span><span style="color:#e6db74">{</span>x<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>))
+</span></span><span style="display:flex;"><span>        grid<span style="color:#f92672">.</span>append(row)
+</span></span></code></pre></div><p>Here&rsquo;s <code>updatePage()</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">updatePage</span>():
+</span></span><span style="display:flex;"><span>    grid <span style="color:#f92672">=</span> web<span style="color:#f92672">.</span>page[<span style="color:#e6db74">&#34;#gamegrid&#34;</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> range(len(gameArray)):
+</span></span><span style="display:flex;"><span>        row <span style="color:#f92672">=</span> web<span style="color:#f92672">.</span>div(classes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;row&#34;</span>])
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(len(gameArray[y])):
+</span></span><span style="display:flex;"><span>            target <span style="color:#f92672">=</span> web<span style="color:#f92672">.</span>page[<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;a</span><span style="color:#e6db74">{</span>y<span style="color:#e6db74">}</span><span style="color:#e6db74">_</span><span style="color:#e6db74">{</span>x<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>]
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> gameArray[y][x] <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">#row.append(web.div(classes=[&#34;cell&#34;,&#34;alive&#34;],id=f&#34;{y}_{x}&#34;))</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;dead&#34;</span> <span style="color:#f92672">in</span> target<span style="color:#f92672">.</span>classList:
+</span></span><span style="display:flex;"><span>                    target<span style="color:#f92672">.</span>classList<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;alive&#34;</span>)
+</span></span><span style="display:flex;"><span>                    target<span style="color:#f92672">.</span>classList<span style="color:#f92672">.</span>remove(<span style="color:#e6db74">&#34;dead&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">#row.append(web.div(classes=[&#34;cell&#34;,&#34;dead&#34;],id=f&#34;{y}_{x}&#34;))</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;alive&#34;</span> <span style="color:#f92672">in</span> target<span style="color:#f92672">.</span>classList:
+</span></span><span style="display:flex;"><span>                    target<span style="color:#f92672">.</span>classList<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;dead&#34;</span>)
+</span></span><span style="display:flex;"><span>                    target<span style="color:#f92672">.</span>classList<span style="color:#f92672">.</span>remove(<span style="color:#e6db74">&#34;alive&#34;</span>)
+</span></span><span style="display:flex;"><span>        grid<span style="color:#f92672">.</span>append(row)
+</span></span></code></pre></div><p>And here&rsquo;s <code>cellclick</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@when</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#e6db74">&#34;.cell&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">cellclick</span>(event):
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;clicked&#34;</span>)
+</span></span><span style="display:flex;"><span>    target <span style="color:#f92672">=</span> event<span style="color:#f92672">.</span>target
+</span></span><span style="display:flex;"><span>    y,x <span style="color:#f92672">=</span> ((target<span style="color:#f92672">.</span>id)[<span style="color:#ae81ff">1</span>:])<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;_&#34;</span>)
+</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">=</span> int(x)
+</span></span><span style="display:flex;"><span>    y <span style="color:#f92672">=</span> int(y)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;alive&#34;</span> <span style="color:#f92672">in</span> target<span style="color:#f92672">.</span>classList:
+</span></span><span style="display:flex;"><span>        target<span style="color:#f92672">.</span>classList<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;dead&#34;</span>)
+</span></span><span style="display:flex;"><span>        target<span style="color:#f92672">.</span>classList<span style="color:#f92672">.</span>remove(<span style="color:#e6db74">&#34;alive&#34;</span>)
+</span></span><span style="display:flex;"><span>        gameArray[y][x] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">elif</span> <span style="color:#e6db74">&#34;dead&#34;</span> <span style="color:#f92672">in</span> target<span style="color:#f92672">.</span>classList:
+</span></span><span style="display:flex;"><span>        target<span style="color:#f92672">.</span>classList<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;alive&#34;</span>)
+</span></span><span style="display:flex;"><span>        target<span style="color:#f92672">.</span>classList<span style="color:#f92672">.</span>remove(<span style="color:#e6db74">&#34;dead&#34;</span>)
+</span></span><span style="display:flex;"><span>        gameArray[y][x] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><h2 id="done">Done?</h2>
+<p>We&rsquo;re almost done with everything now, all we need to do is make everything look better. The code for it is on <a href="https://github.com/ReadabilityLOL/Python-Implementation-of-Conway-s-Game-of-Life">my Github</a>. Feel free to contact me if you think I&rsquo;ve made a mistake.</p>
 
   <p>
   <hr>
