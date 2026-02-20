@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html class="scanlines" lang="en" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>Let&#39;s make our UI for the Game of Life look better! | Glitched</title>
 
-    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/main.min.cf51232c681e75092fccdc0b112c69286cfdf85d68eb63fa53be6763c430998e.css" integrity="sha256-z1EjLGgedQkvzNwLESxpKGz9&#43;F1o62P6U75nY8QwmY4=" crossorigin="anonymous">
 
 
-      <script src="/js/main.js"></script>
+        <script src="/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
 
 <script src="https://kit.fontawesome.com/9f05d58ed6.js" crossorigin="anonymous"></script>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="b784ca14-ae7f-400a-ab68-c35fd54f8256"></script>
@@ -17,7 +17,7 @@
 </head>
 <body>
   <header>
-    <h1><center><a href="http://localhost:1313/">Glitched</a></center></h1>
+    <h1><center><a href="https://glitched.tech/">Glitched</a></center></h1>
 
 
   </header>
@@ -37,9 +37,9 @@ hr{
    
 <ul style="padding-left:0;">
    <li style="display: inline;">
-    <a href="http://localhost:1313/tags/development/">#development</a>
+    <a href="https://glitched.tech/tags/development/">#development</a>
   </li> <li style="display: inline;">
-    <a href="http://localhost:1313/tags/tutorial/">#tutorial</a>
+    <a href="https://glitched.tech/tags/tutorial/">#tutorial</a>
   </li></ul>
 
 
@@ -53,6 +53,7 @@ hr{
   <h2 id="intro">Intro</h2>
 <p>We&rsquo;ve basically finished the Conway&rsquo;s Game of Life project. All we need to do now is make it look better, with some nicer css.</p>
 <h2 id="some-quick-changes">Some quick changes</h2>
+<p>I&rsquo;m hosting on cloudflare, so I changed the html file to index.html</p>
 <p>You may have noticed that the grid currently goes off the screen a bit. To change that, I&rsquo;ve made some quick CSS and Python changes.</p>
 <p>Here&rsquo;s the updated CSS:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">html</span><span style="color:#f92672">,</span> <span style="color:#f92672">body</span>{
@@ -89,9 +90,9 @@ hr{
 </span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">dead</span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">background-color</span>:<span style="color:#66d9ef">white</span>;
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>I decreased the number of rows by 10% in the Python.</p>
+</span></span></code></pre></div><p>I decreased the number of rows by 25% in the Python code.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>gameArray <span style="color:#f92672">=</span> createGrid(
-</span></span><span style="display:flex;"><span>    math<span style="color:#f92672">.</span>floor((window<span style="color:#f92672">.</span>screen<span style="color:#f92672">.</span>availHeight<span style="color:#f92672">/</span><span style="color:#ae81ff">20</span>)<span style="color:#f92672">*</span><span style="color:#ae81ff">0.9</span>),
+</span></span><span style="display:flex;"><span>    math<span style="color:#f92672">.</span>floor((window<span style="color:#f92672">.</span>screen<span style="color:#f92672">.</span>availHeight<span style="color:#f92672">/</span><span style="color:#ae81ff">20</span>)<span style="color:#f92672">*</span><span style="color:#ae81ff">0.75</span>),
 </span></span><span style="display:flex;"><span>    math<span style="color:#f92672">.</span>floor(window<span style="color:#f92672">.</span>screen<span style="color:#f92672">.</span>availWidth<span style="color:#f92672">/</span><span style="color:#ae81ff">20</span>)
 </span></span><span style="display:flex;"><span>)
 </span></span></code></pre></div><h2 id="styling-the-buttons">Styling the buttons</h2>
@@ -100,7 +101,53 @@ hr{
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>;
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">3</span><span style="color:#66d9ef">%</span>;
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><h2 id="adding-a-header">Adding a header</h2>
+<p>Let&rsquo;s add a header to index.html.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">center</span>&gt;&lt;<span style="color:#f92672">h1</span>&gt;Welcome to Conway&#39;s Game of Life!&lt;/<span style="color:#f92672">h1</span>&gt;&lt;/<span style="color:#f92672">center</span>&gt;
+</span></span></code></pre></div><p>Let&rsquo;s style it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;preconnect&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://fonts.googleapis.com&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;preconnect&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://fonts.gstatic.com&#34;</span> <span style="color:#a6e22e">crossorigin</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span>&gt;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">*</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-family</span>: <span style="color:#e6db74">&#34;Noto Sans&#34;</span>, <span style="color:#66d9ef">sans-serif</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-optical-sizing</span>: <span style="color:#66d9ef">auto</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-weight</span>: <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">weight</span><span style="color:#f92672">&gt;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-style</span>: <span style="color:#66d9ef">normal</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-variation-settings</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;wdth&#34;</span> <span style="color:#ae81ff">100</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="more-styling">More styling</h2>
+<p>I made the background color blue and added border radii.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">h1</span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">padding</span>:<span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">min-width</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">40</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">black</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">h1</span><span style="color:#f92672">,</span> <span style="color:#f92672">button</span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#79b5ff</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">button</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">ch</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">3</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">black</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Let&rsquo;s make the margins on the side larger.</p>
+<p>.row{
+display:flex;
+flex: 1 1 0;
+flex-direction: row;
+min-height: 0;
+width:90%;
+margin-left:5%;
+}</p>
+<h2 id="done">Done?</h2>
+<p>I think I&rsquo;m pretty done with this project now, unless I think of something later. Thank&rsquo;s for following this tutorial.</p>
+
   <p>
   <hr>
   
