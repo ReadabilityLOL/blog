@@ -143,4 +143,4 @@ Let's make the margins on the side larger.
 
 ## Done?
 
-I think I'm pretty done with this project now, unless I think of something later. Thank's for following this tutorial.
+I think I'm pretty done with this project now, unless I think of something later. Thanks for following this tutorial.
