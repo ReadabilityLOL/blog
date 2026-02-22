@@ -6,8 +6,15 @@
     <description>Recent content in Welcome to my website! on Glitched</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Feb 2026 09:38:20 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 22 Feb 2026 14:29:03 -0500</lastBuildDate>
     <atom:link href="https://glitched.tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making a first person shooter game, part 0</title>
+      <link>https://glitched.tech/makingashooter0/</link>
+      <pubDate>Sun, 22 Feb 2026 14:29:03 -0500</pubDate>
+      <guid>https://glitched.tech/makingashooter0/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Note: This is more of a devlog than a tutorial&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;in-which-i-make-a-mistake&#34;&gt;In which I make a mistake&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m currently taking AP Lang at my school, a class which typically involves writing rhetorical analyses of nonfiction text and constructing arguments. My teacher, however, has figured that the actual curriculum given by College Board is a bit light for a class taking up a whole year. As such, she also assigned us an inquiry project, which is a completely self-guided project that each of us has to undertake. The good thing about it was that we could do anything we wanted for it. The bad thing about it was that we could do anything we wanted for it.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Let&#39;s make our UI for the Game of Life look better!</title>
       <link>https://glitched.tech/gameoflife3/</link>

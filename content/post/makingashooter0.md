@@ -1,7 +1,7 @@
 +++
 title = 'Making a first person shooter game, part 0'
 date = 2026-02-22T14:29:03-05:00
-draft = true
+draft = false
 +++
 
 > Note: This is more of a devlog than a tutorial
