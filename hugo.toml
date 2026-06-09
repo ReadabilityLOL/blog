@@ -21,7 +21,7 @@ name = "Joshua Anand"
     giscus = "readabilitylol/blog"
 
 [Permalinks]
-    post = "/:filename/"
+    post = "/:contentbasename/"
 
 [[menu.main]]
 name = "blog"
@@ -63,3 +63,8 @@ weight = 3
     excludeFiles = 'obsidian-notes/*'
     source = 'content'
     target = 'content'
+  
+
+[security]
+  allowContent = ['^*$']
+
