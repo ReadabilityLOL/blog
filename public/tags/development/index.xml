@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Development on Glitched</title>
-		<link>http://localhost:1313/tags/development/</link>
+		<link>https://glitched.tech/tags/development/</link>
 		<description>Recent content in Development on Glitched</description>
 		<generator>Hugo</generator>
 		<language>en</language>
@@ -12,47 +12,47 @@
 		
 			<lastBuildDate>Fri, 20 Feb 2026 09:38:20 -0500</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/tags/development/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://glitched.tech/tags/development/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Let&#39;s make our UI for the Game of Life look better!</title>
-				<link>http://localhost:1313/gameoflife3/</link>
+				<link>https://glitched.tech/gameoflife3/</link>
 				<pubDate>Fri, 20 Feb 2026 09:38:20 -0500</pubDate>
-				<guid>http://localhost:1313/gameoflife3/</guid>
+				<guid>https://glitched.tech/gameoflife3/</guid>
 				<description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;We&amp;rsquo;ve basically finished the Conway&amp;rsquo;s Game of Life project. All we need to do now is make it look better, with some nicer css.&lt;/p&gt;&#xA;&lt;h2 id=&#34;some-quick-changes&#34;&gt;Some quick changes&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m hosting on cloudflare, so I changed the html file to index.html&lt;/p&gt;&#xA;&lt;p&gt;You may have noticed that the grid currently goes off the screen a bit. To change that, I&amp;rsquo;ve made some quick CSS and Python changes.&lt;/p&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s the updated CSS:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;html&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;body&lt;/span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;height&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;%&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;margin&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;row&lt;/span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;display&lt;/span&gt;:&lt;span style=&#34;color:#66d9ef&#34;&gt;flex&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;flex&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;flex-direction&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;row&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;min-height&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;cell&lt;/span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;border&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;solid&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;#d3d3d3&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;flex&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;height&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;%&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;aspect-ratio&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;min-width&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;min-height&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;gamegrid&lt;/span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;display&lt;/span&gt;:&lt;span style=&#34;color:#66d9ef&#34;&gt;flex&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;flex&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;direction&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;column&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;height&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;vh&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;alive&lt;/span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;background-color&lt;/span&gt;:&lt;span style=&#34;color:#66d9ef&#34;&gt;black&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;dead&lt;/span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;background-color&lt;/span&gt;:&lt;span style=&#34;color:#66d9ef&#34;&gt;white&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I decreased the number of rows by 25% in the Python code.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Let&#39;s make a web ui for Conway&#39;s game of life!</title>
-				<link>http://localhost:1313/gameoflife2/</link>
+				<link>https://glitched.tech/gameoflife2/</link>
 				<pubDate>Thu, 19 Feb 2026 14:00:00 -0500</pubDate>
-				<guid>http://localhost:1313/gameoflife2/</guid>
+				<guid>https://glitched.tech/gameoflife2/</guid>
 				<description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;This is a sequel to my &lt;a href=&#34;%22https://glitched.tech/gameoflife%22&#34;&gt;previous post&lt;/a&gt;. I&amp;rsquo;ve decided that I may as well try to make the game of life look good. If you&amp;rsquo;re following along, I would suggest going back to the first post.&lt;/p&gt;&#xA;&lt;p&gt;Goals:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Create a web-based UI for the Game of Life&lt;/li&gt;&#xA;&lt;li&gt;Make the board fit screen width and length&lt;/li&gt;&#xA;&lt;li&gt;Allow users to make custom setups, rather than just randomly generated ones&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;pyscript&#34;&gt;Pyscript&lt;/h2&gt;&#xA;&lt;p&gt;Since we already wrote all of this in Python, it would be a shame to get rid of it. We&amp;rsquo;ll be using &lt;a href=&#34;https://pyscript.net&#34;&gt;pyscript&lt;/a&gt; to use python in our website.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Let&#39;s make a Brainf*** interpreter</title>
-				<link>http://localhost:1313/brainf/</link>
+				<link>https://glitched.tech/brainf/</link>
 				<pubDate>Mon, 16 Feb 2026 20:08:00 -0500</pubDate>
-				<guid>http://localhost:1313/brainf/</guid>
+				<guid>https://glitched.tech/brainf/</guid>
 				<description>&lt;h2 id=&#34;what-is-brainf&#34;&gt;What is Brainf***?&lt;/h2&gt;&#xA;&lt;p&gt;Brainf*** is a esoteric, Turing complete programming language involving only 8 commands and two lists. Because it is Turing complete, it is theoretically possible to compute any task doable by a computer in Brainf***, though it is significantly harder to do tasks here than in say, Python or C. It was initially designed with the goal of making the smallest possible compiler, which should make it a pretty simple project to implement.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Let&#39;s make Conway&#39;s Game of Life in Python!</title>
-				<link>http://localhost:1313/gameoflife/</link>
+				<link>https://glitched.tech/gameoflife/</link>
 				<pubDate>Sat, 14 Feb 2026 22:17:24 -0500</pubDate>
-				<guid>http://localhost:1313/gameoflife/</guid>
+				<guid>https://glitched.tech/gameoflife/</guid>
 				<description>&lt;h2 id=&#34;what-is-conways-game-of-life&#34;&gt;What is Conway&amp;rsquo;s game of life?&lt;/h2&gt;&#xA;&lt;p&gt;Conway&amp;rsquo;s Game of Life is a simulation that runs on an infinite two dimensional grid. Each square in the grid can be in one of two states, dead or alive. On each turn, the cells interact with their neighbors, following a few rules.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Every living cell with less than two live neighbors dies because of underpopulation&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Every living cell with more than three neighbors dies because of overpopulation&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Removing comments from this site</title>
-				<link>http://localhost:1313/nomorecomments/</link>
+				<link>https://glitched.tech/nomorecomments/</link>
 				<pubDate>Fri, 13 Feb 2026 16:53:07 -0500</pubDate>
-				<guid>http://localhost:1313/nomorecomments/</guid>
+				<guid>https://glitched.tech/nomorecomments/</guid>
 				<description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;After a few months having comments on this site, I have now decided to remove them. This is because my github account was temporarily suspended, probably because I kept reloading comments and having giscus load over and over. This broke a lot of stuff, including cloudflare, which couldn&amp;rsquo;t connect to my github repo. Because of this, I have removed comment from my site until I find a new solution or can guarantee that I won&amp;rsquo;t manage to do this again sometime.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Adding comments to this site</title>
-				<link>http://localhost:1313/addingcomments/</link>
+				<link>https://glitched.tech/addingcomments/</link>
 				<pubDate>Tue, 05 Aug 2025 20:59:01 +0000</pubDate>
-				<guid>http://localhost:1313/addingcomments/</guid>
+				<guid>https://glitched.tech/addingcomments/</guid>
 				<description>&lt;h1 id=&#34;intro&#34;&gt;Intro&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve had this blog for around one and a half years, and while it is true that I keep abandoning it for months at a time, I think I should still try to make it as good as possible. According to Cloudflare, I get around 70 unique visitors a day. I&amp;rsquo;m almost 100% certain that these are all bots, but there is a slim chance that some of you reading this are in fact human. Because of that, I figured that now would be a good time to add comments to my blog.&lt;/p&gt;</description>
 			</item>
 	</channel>
