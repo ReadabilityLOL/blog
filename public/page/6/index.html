@@ -34,10 +34,9 @@
 
       </div>
 
-      <div class="section">
-            <center><h1>Random image</h1></center>
-            <img src="/randimage/Josh_s%20psyche.png">
-      </div>
+
+
+      
 
 
 
@@ -67,6 +66,49 @@
 
       
 
+      <div class="section">
+            <center>
+                  <h2 id="quote">
+                  </h2>
+            </center>
+
+            <hr width="50%">
+
+            <center>
+                  <div id="author">
+                  </div>
+            </center>
+
+            <script>
+            const quote = document.getElementById("quote") 
+            const author = document.getElementById("author") 
+
+            quotes = {
+                  "They misunderestimated me":"George W. Bush",
+                  "Will the highways on the Internet become more few?":"George W. Bush",
+                  "Our enemies are innovative and resourceful, and so are we. They never stop thinking about new ways to harm our country and our people, and neither do we.":"George W. Bush",
+                  "Real stupidity beats artificial intelligence every time.": "Terry Pratchett",
+                  "Build a man a fire, and he'll be warm for a day. Set a man on fire, and he'll be warm for the rest of his life.": "Terry Pratchett"
+            }
+
+            keys = Object.keys(quotes)
+
+            let i = Math.floor(Math.random() * keys.length)
+
+            key = keys[i]
+
+            let thingy = quotes[key]
+            
+            quote.textContent = key
+            author.textContent = thingy
+
+
+            console.log(quotes)
+            console.log(key,thingy)
+
+            </script>
+
+      </div>
 
 
     </div>
