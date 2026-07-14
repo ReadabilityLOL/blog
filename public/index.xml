@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Sun, 22 Feb 2026 14:29:03 -0500</lastBuildDate>
+			<lastBuildDate>Tue, 14 Jul 2026 12:12:46 -0400</lastBuildDate>
 		
 			<atom:link href="https://glitched.tech/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Aphantasia</title>
+				<link>https://glitched.tech/2026_07_14_aphantasia/</link>
+				<pubDate>Tue, 14 Jul 2026 12:12:46 -0400</pubDate>
+				<guid>https://glitched.tech/2026_07_14_aphantasia/</guid>
+				<description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;A couple years ago, I learned about Aphantasia, which according to &lt;a href=&#34;https://en.wikipedia.org/wiki/Aphantasia&#34;&gt;the wikipedia article&lt;/a&gt;, is &amp;ldquo;the inability to voluntarily visualize mental images&amp;rdquo;. From the moment that I heard about it, I was pretty sure I had it. For one, I always just assumed that &amp;ldquo;visualizing&amp;rdquo; or &amp;ldquo;picturing&amp;rdquo; things was a metaphor.&lt;/p&gt;&#xA;&lt;p&gt;Below is a representation on different people&amp;rsquo;s visualization ability. On this scale, I rate around a 5.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Aphantasia_apple_test.png/1920px-Aphantasia_apple_test.png&#34; alt=&#34;An image of different levels of visual imagery&#34; title=&#34;I&amp;#39;m a 5 on this scale&#34;&gt;&#xA;&#xA;&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Making a first person shooter game, part 0</title>
 				<link>https://glitched.tech/makingashooter0/</link>
