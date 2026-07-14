@@ -8,6 +8,7 @@ nocomments = true
 
 # My Projects
 
+- [AKking](https://supremeleadr.itch.io/akking)
 - [Josh's dark theme](https://addons.mozilla.org/en-US/firefox/addon/josh-s-dark-theme/)
 - [Python text editor](https://github.com/ReadabilityLOL/Python-text-editor)
 - [FailRSS](https://github.com/readabilityLOL/FAIL), [Site link](https://failrss.glitched.tech)
