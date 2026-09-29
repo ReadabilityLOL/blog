@@ -124,6 +124,42 @@
             }
           },
           {
+            "id": "5ac1b8eebce28833",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.13.4"
+            }
+          },
+          {
+            "id": "74408811f62e3982",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.6"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.13.6"
+            }
+          },
+          {
+            "id": "5dcd2dd145e8ac86",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.13.7"
+            }
+          },
+          {
             "id": "d212ed9e7ad5a2e3",
             "type": "leaf",
             "state": {
@@ -166,7 +202,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -186,7 +222,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -329,7 +367,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "524e699a87a427ae",
+  "active": "5dcd2dd145e8ac86",
   "lastOpenFiles": [
     "Math.md",
     "Everything's an argument chapter 1.md",
