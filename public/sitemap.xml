@@ -113,12 +113,6 @@
     <loc>https://glitched.tech/posts/</loc>
     <lastmod>2023-01-01T08:30:00-07:00</lastmod>
   </url><url>
-    <loc>https://glitched.tech/page/</loc>
-    <lastmod>2015-04-03T02:13:50+00:00</lastmod>
-  </url><url>
-    <loc>https://glitched.tech/page/verify/</loc>
-    <lastmod>2015-04-03T02:13:50+00:00</lastmod>
-  </url><url>
     <loc>https://glitched.tech/notes/</loc>
   </url><url>
     <loc>https://glitched.tech/notes/apush-unit-2/</loc>
@@ -157,6 +151,10 @@
   </url><url>
     <loc>https://glitched.tech/categories/</loc>
   </url><url>
+    <loc>https://glitched.tech/page/</loc>
+  </url><url>
     <loc>https://glitched.tech/page/now/</loc>
+  </url><url>
+    <loc>https://glitched.tech/page/verify/</loc>
   </url>
 </urlset>

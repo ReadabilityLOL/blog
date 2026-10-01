@@ -1,6 +1,5 @@
 +++
 title = "Where I'm at"
-date = 2015-04-03T02:13:50Z
 author = "My Name"
 description = "How to contact me."
 nocomments=true
@@ -12,6 +11,9 @@ Email: <givespamhere7@gmail.com>
 Github: <https://github.com/readabilityLOL>  
 Discord: <https://discordapp.com/users/895429111873433630>  
 Mastodon: <https://mastodon.social/@supreme_leadr>  
+
+## Information and Misinformation
+
 
 ## Games
 Steam: <https://steamcommunity.com/profiles/76561199730632106/>  
