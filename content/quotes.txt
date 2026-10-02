@@ -1,0 +1,6 @@
+{"They misunderestimated me":"George W. Bush",
+                  "Will the highways on the Internet become more few?":"George W. Bush",
+                  "Our enemies are innovative and resourceful, and so are we. They never stop thinking about new ways to harm our country and our people, and neither do we.":"George W. Bush",
+                  "Real stupidity beats artificial intelligence every time.": "Terry Pratchett",
+                  "Build a man a fire, and he'll be warm for a day. Set a man on fire, and he'll be warm for the rest of his life.": "Terry Pratchett"
+            }
